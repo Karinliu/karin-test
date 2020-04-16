@@ -12,7 +12,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "watch:sass": "node-sass sass/index.scss ./src/styles.css -w",
+    "watch:sass": "node-sass sass/index.scss ./src/styles/styles.css -w",
     "devserver": "npm-run-all --parallel start watch:sass",
     "compile:sass": "node-sass sass/index.scss css/style.comp.css",
     "start": "react-scripts start",
