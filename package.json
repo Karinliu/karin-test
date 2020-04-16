@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "engines": {
-    "node": "12.10.x"
+    "yarn": "1.x"
   },
   "private": true,
   "dependencies": {
