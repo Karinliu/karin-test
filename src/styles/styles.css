@@ -1,0 +1,82 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; }
+
+.login-header {
+  background: #DA106C;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  z-index: -1; }
+  .login-header:after {
+    content: " ";
+    position: inherit;
+    bottom: -8em;
+    z-index: -1;
+    border-top: 8em solid #DA106C;
+    border-right: 28em solid transparent; }
+
+.login-block {
+  background: #fff;
+  width: 80%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 85%;
+  margin: auto;
+  padding: 1.5em;
+  border-radius: 1em;
+  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1); }
+  .login-block .logo {
+    background-image: url("../assets/logo_lijn5_gray.png");
+    background-repeat: no-repeat;
+    background-position: right; }
+    .login-block .logo img {
+      width: 100%; }
+  .login-block p {
+    margin-top: 2em;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    margin-right: 0.5em;
+    padding-right: 1em;
+    cursor: pointer; }
+    .login-block p:hover, .login-block p:focus {
+      border-bottom: 1px solid #DA106C;
+      color: #DA106C; }
+  .login-block form {
+    display: inline-block;
+    margin-top: 2em; }
+    .login-block form fieldset label {
+      display: block; }
+      .login-block form fieldset label input {
+        display: block;
+        border: none;
+        border-bottom: 1px solid black;
+        color: gray; }
+        .login-block form fieldset label input:hover, .login-block form fieldset label input:focus {
+          border-bottom: 1px solid #DA106C; }
+
+.btn {
+  border: none;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  margin: 0;
+  margin-top: 2em;
+  padding: 0.5em;
+  border-radius: 0.5em; }
+  .btn:hover, .btn:focus {
+    color: black; }
+
+.btn-pink {
+  background: #DA106C; }
+  .btn-pink:hover, .btn-pink:focus {
+    background: rgba(222, 16, 105, 0.85); }

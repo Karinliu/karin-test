@@ -15,7 +15,7 @@
   "scripts": {
     "watch:sass": "node-sass sass/index.scss ./src/styles/styles.css -w",
     "devserver": "npm-run-all --parallel start watch:sass",
-    "compile:sass": "node-sass sass/index.scss css/style.comp.css",
+    "compile:sass": "node-sass sass/index.scss ./src/styles/styles.comp.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
