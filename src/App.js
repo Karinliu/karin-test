@@ -1,11 +1,6 @@
 import React from 'react';
 import './styles.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { Router, Route, Switch } from "react-router";
 
 export default function App() {
   return (
