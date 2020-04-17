@@ -12,7 +12,6 @@ $shadow: rgba(0, 0, 0, 0.1);
 html,
 body,
 #root{
-	height: 100%;
 	width: 100%;
 	overflow-x: hidden;
 }
@@ -33,30 +32,30 @@ body,
 		bottom: -8em;
 		z-index: -1;
 		border-top: 8em solid $primaryColor;
-		border-right: 28em solid transparent;
+		border-right: 22.5em solid transparent;
 	}
 }
 
+h1{
+	font-size: 1.5em;
+}
+
 .login-block{
+	display: block;
+
 	.logo{
 		background-image: url('../assets/logo_lijn5_gray.png');
 		background-repeat: no-repeat;
 		background-position: right;
-
-		img{
-			width: 100%
-		}
 	}
 
 	background: $white;
 	width: 80%;
-	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
-	height: 85%;
-	margin: auto;
+	margin: 3em auto;
 	padding: 1.5em;
 	border-radius: 1em;
 	box-shadow: 0 0.5em 1em 0 $shadow;
@@ -76,18 +75,20 @@ body,
 			}
 		}
 		form{
-			display: inline-block;
-			margin-top: 2em;
+			display: block;
+			margin-top: 1em;
 			fieldset{
 
 				label{
 					display: block;
+					margin-bottom: 1em;
 
 					input{
 						display: block;
 						border: none;
 						border-bottom: 1px solid black;
 						color: gray;
+						width: 100%;
 
 						&:hover,
 						&:focus{
@@ -106,8 +107,8 @@ body,
 	color: white;
 	width: 100%;
 	margin: 0;
-	margin-top: 2em;
-	padding: 0.5em;
+	margin-top: 1em;
+	padding: 0.6em;
 	border-radius: 0.5em;
 
 	&:hover,
@@ -124,3 +125,74 @@ body,
 		background: rgba(222, 16, 105, 0.85)
 	}
 }
+
+
+/* Media Query for Mobile Devices */ 
+@media (max-width: 480px) { 
+    body { 
+        background-color: red; 
+    } 
+
+    .login-block{
+	display: block;
+
+	.logo{
+		img{
+			width: 100%
+		}
+	}
+
+
+} 
+
+/* Media Query for low resolution  Tablets, Ipads */ 
+@media (min-width: 481px){ 
+    body { 
+        background-color: yellow; 
+    } 
+} 
+
+// MIN/MAX WIDTH low resolution  Tablets, Ipads 
+@media (min-width: 481px) and (max-width: 767px) { 
+
+}
+  
+/* Media Query for Tablets Ipads portrait mode */ 
+@media (min-width: 768px){ 
+    body { 
+        background-color: blue; 
+    } 
+
+    .login-block{
+    	.logo{
+
+			img{
+				width: 10em;
+			}
+		}
+    }
+} 
+
+// MIN/MAX WIDTH Tablets Ipads portrait mode 
+@media (min-width: 768px) and (max-width: 1024px){ 
+
+} 
+  
+/* Media Query for Laptops and Desktops */ 
+@media (min-width: 1025px){ 
+    body { 
+        background-color: green; 
+    } 
+} 
+
+// MIN/MAX WIDTH Laptops and Desktops */ 
+@media (min-width: 1025px) and (max-width: 1280px){ 
+
+}
+  
+/* Media Query for Large screens */ 
+@media (min-width: 1281px) { 
+    body { 
+        background-color: white; 
+    } 
+} 

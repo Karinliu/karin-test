@@ -26,16 +26,16 @@ class Login extends Component {
             		</div>
             	</div>
 	            <div className="row">
-	            	<form className="container" action="">
-						<fieldset className="row">
-				            <label className="col"> 
+	            	<form className="col" action="">
+						<fieldset>
+				            <label> 
 				    				Assigned location
 									<input 
 					               		type="text"
 					               		placeholder="Location"
 					               	/>
 							</label>  
-							<label className="col"> 
+							<label> 
 				    				Assignee
 									<input 
 					               		type="text"

@@ -1,7 +1,6 @@
 html,
 body,
 #root {
-  height: 100%;
   width: 100%;
   overflow-x: hidden; }
 
@@ -19,18 +18,20 @@ body,
     bottom: -8em;
     z-index: -1;
     border-top: 8em solid #DA106C;
-    border-right: 28em solid transparent; }
+    border-right: 22.5em solid transparent; }
+
+h1 {
+  font-size: 1.5em; }
 
 .login-block {
+  display: block;
   background: #fff;
   width: 80%;
-  position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  height: 85%;
-  margin: auto;
+  margin: 3em auto;
   padding: 1.5em;
   border-radius: 1em;
   box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1); }
@@ -51,15 +52,17 @@ body,
       border-bottom: 1px solid #DA106C;
       color: #DA106C; }
   .login-block form {
-    display: inline-block;
-    margin-top: 2em; }
+    display: block;
+    margin-top: 1em; }
     .login-block form fieldset label {
-      display: block; }
+      display: block;
+      margin-bottom: 1em; }
       .login-block form fieldset label input {
         display: block;
         border: none;
         border-bottom: 1px solid black;
-        color: gray; }
+        color: gray;
+        width: 100%; }
         .login-block form fieldset label input:hover, .login-block form fieldset label input:focus {
           border-bottom: 1px solid #DA106C; }
 
@@ -70,8 +73,8 @@ body,
   color: white;
   width: 100%;
   margin: 0;
-  margin-top: 2em;
-  padding: 0.5em;
+  margin-top: 1em;
+  padding: 0.6em;
   border-radius: 0.5em; }
   .btn:hover, .btn:focus {
     color: black; }
@@ -80,3 +83,33 @@ body,
   background: #DA106C; }
   .btn-pink:hover, .btn-pink:focus {
     background: rgba(222, 16, 105, 0.85); }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) {
+  
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) {
+
+  .login-block .logo {
+    background-image: url("../assets/logo_lijn5_gray.png");
+    background-repeat: no-repeat;
+    background-position: right; }
+    .login-block .logo img {
+      width: 10em; } }
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
+
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+
+}
