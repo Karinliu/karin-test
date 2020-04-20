@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Title, Header} from '../components/';
 
-class CheckOffList extends Component {
+class ExtraExpenses extends Component {
     render() {
         return (
         	 <>
@@ -16,4 +16,4 @@ class CheckOffList extends Component {
     }
 }
 
-export default CheckOffList
+export default ExtraExpenses

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Title, Header} from '../components/';
+import {Title} from '../components/';
 import {logo} from '../assets'
 import { Link } from 'react-router-dom';
 
@@ -8,17 +8,13 @@ class Login extends Component {
         return (
 			<>
         	<header className="login-header"></header>
-            <div className="container login-block">
+            <div className="container login-page">
             	<div className="row logo">
             		<div className="col">
             			<img src={logo} alt="logo"/> 
             		</div>
             	</div>
-            	<div className="row">
-	              <div className="col">
-	              	<Title text="Geld overzicht"/>
-	              </div>
-            	</div>
+	            <Title text="Geld overzicht"/>
             	<div className="row">
             		<div className="col">
             			<p>Login</p>

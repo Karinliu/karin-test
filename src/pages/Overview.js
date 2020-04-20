@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Header} from '../components/';
+import {Title, Header, MoneyBlock} from '../components/';
 import { Link } from 'react-router-dom';
 import {piggybank, calendar, checklist} from '../assets'
 
@@ -11,17 +11,11 @@ class Overview extends Component {
             <Header text="Home"
                     textLink ="/Overview"/>
             <div className = "container" >
-                <div className="row">
-                    <Title classes="header-title" text="Overzicht"/> 
-                </div>
-
-                <div className="row">
-                    <div className="col col-md-8 col-lg-5 money-block">
-                        <p>Te besteden deze maand</p>
-                        <p className="money">€ 250,00</p>
-                        <p>van de <span>€ 400,00</span></p>
-                    </div>
-                </div>
+                <Title classes="header-title" text="Overzicht"/> 
+                
+                <MoneyBlock
+                    toSpend="250"
+                    allMoney="400"/>
 
                 <div class="row carousel">
                     <div className="col slide" id="slide-1">

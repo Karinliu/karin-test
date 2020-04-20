@@ -4,7 +4,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import {Login, Overview, CheckOffList, AllExpenses, Help, Add, NotFound} from './pages';
+import {Login, Overview, ExtraExpenses, Clothes, ClothesAdd, AllExpenses, Help, Add, Groceries,GroceriesAdd, NotFound} from './pages';
 
 function App() {
   return (
@@ -12,10 +12,14 @@ function App() {
         <Switch>
           <Route exact path='/' component={Login}/>
           <Route path='/Overview' component={Overview}/>
-          <Route path='/AfvinkLijst' component={CheckOffList}/>
+          <Route path='/ExtraUitgaven' component={ExtraExpenses}/>
           <Route path='/AlleUitgaven' component={AllExpenses}/>
           <Route path='/Toevoegen' component={Add}/>
           <Route path='/Help' component={Help}/>
+          <Route path='/BoodschappenToevoegen' component={GroceriesAdd}/>
+          <Route path='/Boodschappen' component={Groceries}/>
+          <Route path='/Kleding' component={Clothes}/>
+          <Route path='/KledingToevoegen' component={ClothesAdd}/>
           <Route component={NotFound} />
         </Switch>
     </Router>

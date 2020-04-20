@@ -8,6 +8,9 @@ body,
 .background-gray {
   background-color: #FDFCFF; }
 
+.d-none {
+  display: none; }
+
 .login-header {
   background: #DA106C;
   position: absolute;
@@ -46,7 +49,7 @@ h1 {
   .btn-pink:hover, .btn-pink:focus {
     background: rgba(222, 16, 105, 0.85); }
 
-.login-block {
+.login-page {
   display: block;
   background: #fff;
   width: 80%;
@@ -58,33 +61,33 @@ h1 {
   padding: 1.5em;
   border-radius: 1em;
   box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1); }
-  .login-block .logo {
+  .login-page .logo {
     background-image: url("../assets/images/logo_lijn5_gray.png");
     background-repeat: no-repeat;
     background-position: right; }
-  .login-block p {
+  .login-page p {
     margin-top: 2em;
     display: inline-block;
     border-bottom: 1px solid black;
     margin-right: 0.5em;
     padding-right: 1em;
     cursor: pointer; }
-    .login-block p:hover, .login-block p:focus {
+    .login-page p:hover, .login-page p:focus {
       border-bottom: 1px solid #DA106C;
       color: #DA106C; }
-  .login-block form {
+  .login-page form {
     display: block;
     margin-top: 1em; }
-    .login-block form fieldset label {
+    .login-page form fieldset label {
       display: block;
       margin-bottom: 1em; }
-      .login-block form fieldset label input {
+      .login-page form fieldset label input {
         display: block;
         border: none;
         border-bottom: 1px solid black;
         color: gray;
         width: 100%; }
-        .login-block form fieldset label input:hover, .login-block form fieldset label input:focus {
+        .login-page form fieldset label input:hover, .login-page form fieldset label input:focus {
           border-bottom: 1px solid #DA106C; }
 
 header {
@@ -296,6 +299,36 @@ header.header2 {
             background-color: #DA106C;
             border: 1px solid #DA106C; }
 
+.groceries {
+  background-image: url("../assets/images/purple_groceries.png"); }
+
+.clothes {
+  background-image: url("../assets/images/purple_clothes.png"); }
+
+.free_time {
+  background-image: url("../assets/images/purple_free_time.png"); }
+
+.save_money {
+  background-image: url("../assets/images/purple_sparen.png"); }
+
+.fixed_charges {
+  background-image: url("../assets/images/purple_vaste_lasten.png"); }
+
+.help {
+  background-image: url("../assets/images/purple_help.png"); }
+
+.call {
+  background-image: url("../assets/images/purple_call.png"); }
+
+.chat {
+  background-image: url("../assets/images/purple_chat.png"); }
+
+.tips {
+  background-image: url("../assets/images/purple_tips.png"); }
+
+.email {
+  background-image: url("../assets/images/purple_email.png"); }
+
 nav.category ul {
   padding: 0;
   margin: 1.5em; }
@@ -325,18 +358,6 @@ nav.category ul {
         margin-right: 1em;
         border-radius: 0.3em;
         background-color: white; }
-      nav.category ul li a .groceries {
-        background-image: url("../assets/images/purple_groceries.png"); }
-      nav.category ul li a .clothes {
-        background-image: url("../assets/images/purple_clothes.png"); }
-      nav.category ul li a .free_time {
-        background-image: url("../assets/images/purple_free_time.png"); }
-      nav.category ul li a .save_money {
-        background-image: url("../assets/images/purple_sparen.png"); }
-      nav.category ul li a .fixed_charges {
-        background-image: url("../assets/images/purple_vaste_lasten.png"); }
-      nav.category ul li a .help {
-        background-image: url("../assets/images/purple_help.png"); }
       nav.category ul li a:hover, nav.category ul li a:focus {
         color: #7E1EDA; }
         nav.category ul li a:hover span, nav.category ul li a:focus span {
@@ -354,11 +375,89 @@ nav.category ul {
         nav.category ul li a:hover .help, nav.category ul li a:focus .help {
           background-image: url("../assets/images/white_help.png"); }
 
+.help-page nav.category ul li a span {
+  background-size: auto 65%; }
+
+.help-page nav.category ul li a:hover .call, .help-page nav.category ul li a:focus .call {
+  background-image: url("../assets/images/white_call.png"); }
+
+.help-page nav.category ul li a:hover .chat, .help-page nav.category ul li a:focus .chat {
+  background-image: url("../assets/images/white_chat.png"); }
+
+.help-page nav.category ul li a:hover .tips, .help-page nav.category ul li a:focus .tips {
+  background-image: url("../assets/images/white_tips.png"); }
+
+.help-page nav.category ul li a:hover .email, .help-page nav.category ul li a:focus .email {
+  background-image: url("../assets/images/white_email.png"); }
+
+.groceries-page h2 {
+  text-align: center;
+  margin: 0 auto; }
+
+.groceries-page .category-image {
+  height: 7em;
+  width: 7em;
+  display: block;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1.5em;
+  background-size: contain;
+  margin-bottom: 1em; }
+
+.groceries-page .category-btn {
+  margin: 1.5em;
+  padding: 0;
+  margin-top: 0; }
+
+#root > .pink-list {
+  margin-top: 4em; }
+
+#root > .pink-list ~ .pink-list {
+  margin-top: 0; }
+
+#root .pink-list {
+  background: rgba(222, 16, 105, 0.1);
+  padding: 1.5em;
+  margin-bottom: 1.5em; }
+  #root .pink-list:first-of-type {
+    margin-top: 4em; }
+  #root .pink-list h2 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #DA106C; }
+  #root .pink-list .item-list {
+    flex-wrap: nowrap;
+    overflow-x: scroll; }
+    #root .pink-list .item-list section {
+      border: 1px solid white;
+      background-color: white;
+      display: block;
+      width: 9rem;
+      height: 9rem;
+      padding: .5em;
+      position: relative;
+      border-radius: 0.5em; }
+      #root .pink-list .item-list section img {
+        margin: auto;
+        display: inline-block;
+        max-height: 8rem;
+        max-width: 8rem;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        left: 0;
+        right: 0; }
+
+#root .clothes-page .item-list {
+  flex-wrap: wrap;
+  overflow-x: auto; }
+
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
-  .login-block {
+  .login-page {
     display: block; }
-    .login-block .logo img {
+    .login-page .logo img {
       width: 100%; }
   header nav ul li {
     font-size: 1.4em; }
@@ -400,7 +499,7 @@ nav.category ul {
 @media (min-width: 768px) {
   body {
     background-color: blue; }
-  .login-block .logo img {
+  .login-page .logo img {
     width: 10em; }
   .money-block {
     margin: 2em auto; } }
@@ -409,7 +508,7 @@ nav.category ul {
 @media (min-width: 1025px) {
   body {
     background-color: green; }
-  .login-block {
+  .login-page {
     width: 50%; }
   .money-block {
     background-size: auto 100%;

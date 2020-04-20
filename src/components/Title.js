@@ -5,7 +5,10 @@ class Title extends Component {
     console.log('alert')
   }
   render() {
-    return <h1 className={this.props.classes}>{this.props.text}</h1>
+    return (
+    	<div className="row">
+    		<h1 className={this.props.classes}>{this.props.text}</h1>
+    	</div>)
   }
 }
 export default Title

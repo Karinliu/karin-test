@@ -1,4 +1,17 @@
 {
+  "data_help": [{
+        "title": "Bellen",
+        "class": "call"
+    },{
+        "title": "Chatten",
+        "class": "chat"
+    },{
+        "title": "Tips",
+        "class": "tips"
+    },{
+        "title": "Brieven/Emails",
+        "class": "email"
+    }],
   "data_category": [{
         "title": "Boodschappen",
         "class": "groceries"

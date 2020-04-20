@@ -33,6 +33,10 @@ body,
     background-color: $background-gray;
 }
 
+.d-none{
+    display: none;
+}
+
 
 // Navigation/header
 .login-header {
@@ -86,7 +90,7 @@ h1 {
 }
 
 // Login Page
-.login-block {
+.login-page {
     display: block;
 
     .logo {
@@ -235,7 +239,7 @@ header.header2 {
     border-radius: 0.5em;
     box-shadow: 0 0.5em 1em 0 $shadow;
 
-    div{
+    div {
         display: block;
         padding: 0.5em 1em;
 
@@ -245,7 +249,7 @@ header.header2 {
             margin: 0;
             padding: 0;
 
-            &:last-child{
+            &:last-child {
                 font-size: 1.3em;
             }
         }
@@ -464,6 +468,47 @@ header.header2 {
     }
 }
 
+.groceries {
+    background-image: url('../assets/images/purple_groceries.png');
+}
+
+.clothes {
+    background-image: url('../assets/images/purple_clothes.png');
+}
+
+.free_time {
+    background-image: url('../assets/images/purple_free_time.png');
+}
+
+.save_money {
+    background-image: url('../assets/images/purple_sparen.png');
+}
+
+.fixed_charges {
+    background-image: url('../assets/images/purple_vaste_lasten.png');
+}
+
+.help {
+    background-image: url('../assets/images/purple_help.png');
+}
+
+.call {
+    background-image: url('../assets/images/purple_call.png');
+}
+
+.chat {
+    background-image: url('../assets/images/purple_chat.png');
+}
+
+.tips {
+    background-image: url('../assets/images/purple_tips.png');
+}
+
+.email {
+    background-image: url('../assets/images/purple_email.png');
+}
+
+
 nav.category {
     ul {
         padding: 0;
@@ -497,30 +542,6 @@ nav.category {
                     margin-right: 1em;
                     border-radius: 0.3em;
                     background-color: white;
-                }
-
-                .groceries {
-                    background-image: url('../assets/images/purple_groceries.png');
-                }
-
-                .clothes {
-                    background-image: url('../assets/images/purple_clothes.png');
-                }
-
-                .free_time {
-                    background-image: url('../assets/images/purple_free_time.png');
-                }
-
-                .save_money {
-                    background-image: url('../assets/images/purple_sparen.png');
-                }
-
-                .fixed_charges {
-                    background-image: url('../assets/images/purple_vaste_lasten.png');
-                }
-
-                .help {
-                    background-image: url('../assets/images/purple_help.png');
                 }
 
                 &:hover,
@@ -561,6 +582,132 @@ nav.category {
     }
 }
 
+.help-page {
+    nav.category {
+        ul {
+            li {
+                a {
+                    span {
+                        background-size: auto 65%;
+                    }
+
+                    &:hover,
+                    &:focus {
+
+                        .call {
+                            background-image: url('../assets/images/white_call.png');
+                        }
+
+                        .chat {
+                            background-image: url('../assets/images/white_chat.png');
+                        }
+
+                        .tips {
+                            background-image: url('../assets/images/white_tips.png');
+                        }
+
+                        .email {
+                            background-image: url('../assets/images/white_email.png');
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.groceries-page {
+
+    h2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .category-image {
+        height: 7em;
+        width: 7em;
+        display: block;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 1.5em;
+        background-size: contain;
+        margin-bottom: 1em;
+    }
+
+    .category-btn {
+        margin: 1.5em;
+        padding: 0;
+        margin-top: 0;
+    }
+}
+
+
+#root {
+    & > .pink-list {
+        margin-top: 4em;
+    }
+
+    & > .pink-list ~ .pink-list{
+        margin-top: 0;
+    }
+
+    .pink-list {
+        background: $primaryColorLight;
+        padding: 1.5em;
+        margin-bottom: 1.5em;
+
+        &:first-of-type {
+            margin-top: 4em;
+        }
+
+        h2 {
+            font-size: 1em;
+            font-weight: bold;
+            color: $primaryColor;
+        }
+
+        .item-list {
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+
+            section {
+                border: 1px solid white;
+                background-color: white;
+                display: block;
+                width: 9rem;
+                height: 9rem;
+                padding: .5em;
+                position: relative;
+                border-radius: 0.5em;
+
+                img {
+                    margin: auto;
+                    display: inline-block;
+                    max-height: 8rem;
+                    max-width: 8rem;
+                    top: 0;
+                    bottom: 0;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+
+                }
+            }
+        }
+
+    }
+}
+
+#root {
+    .clothes-page {
+        .item-list {
+            flex-wrap: wrap;
+            overflow-x: auto;
+        }
+    }
+}
 
 
 
@@ -570,7 +717,7 @@ nav.category {
         // background-color: red;
     }
 
-    .login-block {
+    .login-page {
         display: block;
 
         .logo {
@@ -645,7 +792,7 @@ nav.category {
         background-color: blue;
     }
 
-    .login-block {
+    .login-page {
         .logo {
 
             img {
@@ -668,7 +815,7 @@ nav.category {
         background-color: green;
     }
 
-    .login-block {
+    .login-page {
         width: 50%;
     }
 

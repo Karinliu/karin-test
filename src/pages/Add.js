@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import {Title, Header, TemplateCategory, HeaderMoney} from '../components/';
-import json from '../assets/json/index.json';
+import {categoriesJson} from '../assets/';
 
 class Add extends Component {
     render() {
-        console.log(json.data_category.map(data => data.title))
+        const categories = categoriesJson.data_category.map(data =>
+                <TemplateCategory image_purple={data.class} text={data.title}/>
+            )
         return (
         	 <>
             <Header text="Terug"
@@ -12,14 +14,10 @@ class Add extends Component {
                     addClass="header2"/>
             <HeaderMoney toSpend="60,00" />
             <div className="container background-gray">
-                <div className="row">
-                    <Title classes="header-title" text="Toevoegen"/> 
-                </div>
+                <Title classes="header-title" text="Toevoegen"/> 
                 <nav className="row category">
                     <ul className="col">
-                        {json.data_category.map(data =>
-                            <TemplateCategory image_purple={data.class} text={data.title}/>
-                        )}
+                        {categories}
                     </ul>
                 </nav>
             </div>
