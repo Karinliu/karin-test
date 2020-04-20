@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import Title from '../components/Title';
+import {Title, Header} from '../components/';
 
 class AllExpenses extends Component {
     render() {
         return (
+        	 <>
+            <Header text="Terug"
+                    textLink ="/"/>
             <div className="container">
-              <Title text="Alle uitgaven"/>
+              <Title classes="header-title" text="Alle uitgaven"/> 
             </div>
+
+            </>
         )
     }
 }

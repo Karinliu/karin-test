@@ -5,7 +5,7 @@ class Title extends Component {
     console.log('alert')
   }
   render() {
-    return <h1 onClick={() => this.testMethod()}>{this.props.text}</h1>
+    return <h1 className={this.props.classes}>{this.props.text}</h1>
   }
 }
 export default Title

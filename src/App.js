@@ -2,10 +2,9 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
-import {Login, Overview, CheckOffList, AllExpenses, NotFound} from './pages';
+import {Login, Overview, CheckOffList, AllExpenses, Help, Add, NotFound} from './pages';
 
 function App() {
   return (
@@ -15,6 +14,8 @@ function App() {
           <Route path='/Overview' component={Overview}/>
           <Route path='/AfvinkLijst' component={CheckOffList}/>
           <Route path='/AlleUitgaven' component={AllExpenses}/>
+          <Route path='/Toevoegen' component={Add}/>
+          <Route path='/Help' component={Help}/>
           <Route component={NotFound} />
         </Switch>
     </Router>

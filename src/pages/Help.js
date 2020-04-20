@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import {Title, Header} from '../components/';
 
-class CheckOffList extends Component {
+class Help extends Component {
     render() {
         return (
         	 <>
             <Header text="Terug"
-                    textLink ="/"/>
+                    textLink ="/Overview"/>
             <div className="container">
-              <Title classes="header-title" text="Extra uitgaven"/> 
+              <Title classes="header-title" text="Help"/> 
             </div>
 
-            </>        
+            </>
         )
     }
 }
 
-export default CheckOffList
+export default Help

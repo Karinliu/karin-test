@@ -1,23 +1,24 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import {App, CheckOffList, AllExpenses, NotFound} from '../pages';
 
 class Header extends Component {
 	render() {
 		return(
-	    <nav>
-	    	<ul>
-		    	<li>
-		    		<Link to="/">Home</Link>
-		      	</li>			    	
-		      	<li>
-		    		<Link to="/AfvinkLijst">Afvink Lijst</Link>
-		      	</li>			      	
-		      	<li>
-		    		<Link to="/AlleUitgaven">Alle uitgaven</Link>
-		      	</li>		    	
-	    	</ul>
-	    </nav>
+	    <header className={this.props.addClass}>
+	    	<nav>
+		    	<ul>
+			    	<li>
+			    		<Link className={this.props.text} to={this.props.textLink}>{this.props.text}</Link>
+			      	</li>	    	
+			      	<li>
+			    		<Link className="to-do" aria-label="Afvink lijst" to="/AfvinkLijst"></Link>
+			      	</li>			      	
+			      	<li>
+			    		<Link className="help" aria-label="Help" to="/Help"></Link>
+			      	</li>		    	
+		    	</ul>
+		    </nav>
+	    </header>
       )
   }
 }

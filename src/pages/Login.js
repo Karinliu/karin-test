@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import Title from '../components/Title';
-import logo from '../assets/logo.png'
+import {Title, Header} from '../components/';
+import {logo} from '../assets'
 import { Link } from 'react-router-dom';
 
 class Login extends Component {
     render() {
         return (
-<>
+			<>
         	<header className="login-header"></header>
             <div className="container login-block">
             	<div className="row logo">

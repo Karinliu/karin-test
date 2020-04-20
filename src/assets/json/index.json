@@ -1,0 +1,21 @@
+{
+  "data_category": [{
+        "title": "Boodschappen",
+        "class": "groceries"
+    },{
+        "title": "Kleding",
+        "class": "clothes"
+    },{
+        "title": "Vrije tijd",
+        "class": "free_time"
+    },{
+        "title": "Sparen",
+        "class": "save_money"
+    },{
+        "title": "Vaste lasten",
+        "class": "fixed_charges"
+    },{
+         "title": "Help",
+         "class": "help"
+    }]
+}
