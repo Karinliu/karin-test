@@ -482,12 +482,19 @@ nav.category ul {
         vertical-align: bottom; }
         #root .pink-list .item-list .col button:hover, #root .pink-list .item-list .col button:focus {
           background: #7E1EDA;
-          color: #fff;
+          color: transparent;
           cursor: pointer; }
+          #root .pink-list .item-list .col button:hover:before, #root .pink-list .item-list .col button:hover:after, #root .pink-list .item-list .col button:focus:before, #root .pink-list .item-list .col button:focus:after {
+            color: #fff;
+            position: absolute; }
       #root .pink-list .item-list .col .remove-btn {
         display: none; }
-      #root .pink-list .item-list .col .add-button {
+        #root .pink-list .item-list .col .remove-btn:hover:before, #root .pink-list .item-list .col .remove-btn:focus:before {
+          content: "-"; }
+      #root .pink-list .item-list .col .add-btn {
         float: right; }
+        #root .pink-list .item-list .col .add-btn:hover:before, #root .pink-list .item-list .col .add-btn:focus:before {
+          content: "+"; }
 
 #root .clothes-page .item-list {
   flex-wrap: wrap;

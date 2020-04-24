@@ -738,18 +738,37 @@ nav.category {
                     &:hover,
                     &:focus{
                         background: $secondaryColor;
-                        color: $white;
+                        color: transparent;
                         cursor: pointer;
+
+                        &:before,
+                        &:after{
+                            color: $white;
+                            position: absolute;
+                        }
                     }
                 }
 
                 .remove-btn{
                     display: none;
+                    &:hover,
+                    &:focus{
+                            &:before{
+                            content: "-";
+                        }
+                    }
 
                 }
 
-                .add-button{
+                .add-btn{
                     float: right;
+
+                    &:hover,
+                    &:focus{
+                            &:before{
+                            content: "+";
+                        }
+                    }
                 }
             }
         }
