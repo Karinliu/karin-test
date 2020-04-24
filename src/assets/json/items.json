@@ -14,147 +14,147 @@
     }],
   "data_vegetables": [{
         "title": "Aardappelen (1 kg)",
-        "price": "1,79",
+        "price": "1.79",
         "image_link": "https://static-images.jumbo.com/product_images/77340ZK-2_720x720.png"
     },{
         "title": "Avocado (per stuk)",
-        "price": "1,35",
+        "price": "1.35",
         "image_link": "https://pngimg.com/uploads/avocado/avocado_PNG15489.png"
     },{
         "title": "Brocolli (500 gram)",
-        "price": "1,49",
+        "price": "1.49",
         "image_link": "https://pluspng.com/img-png/broccoli-hd-png-isolated-broccoli-vegetables-healthy-food-green-795.png"
     },{
          "title": "Bloemkool",
-         "price": "2,89",
+         "price": "2.89",
          "image_link": "https://www.deframbozenboerderij.nl/image/cache/catalog/Producten/bloemkool-500x500.png"
   },{
          "title": "Komkommer 1 stuk",
-         "price": "0,59",
+         "price": "0.59",
          "image_link": "https://pngimage.net/wp-content/uploads/2018/06/komkommer-png-3.png"
   },{
          "title": "Paprika per stuk",
-         "price": "0,99",
+         "price": "0.99",
          "image_link": "https://www.stickpng.com/assets/images/585ea783cb11b227491c3538.png"
   },{
          "title": "Sla",
-         "price": "1,09",
+         "price": "1.09",
          "image_link": "https://www.stickpng.com/assets/images/585ea50dcb11b227491c3526.png"
   },{
          "title": "Tomaten 500 gram",
-         "price": "1,29",
+         "price": "1.29",
          "image_link": "https://pngimg.com/uploads/tomato/tomato_PNG12567.png"
   },{
          "title": "Uien 1 kilo",
-         "price": "0,99",
+         "price": "0.99",
          "image_link": "https://pluspng.com/img-png/onion-png-brown-onion-png-image-1265.png"
   },{
          "title": "Wortels 1 kilo",
-         "price": "0,75",
+         "price": "0.75",
          "image_link": "https://pluspng.com/img-png/carrot-png-carrot-cutting-pieces-png-500.png"
   },{
          "title": "Appels per kilo",
-         "price": "1,99",
+         "price": "1.99",
          "image_link": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Single_apple.png"
   },{
          "title": "Bananen 1 kilo",
-         "price": "1,99",
+         "price": "1.99",
          "image_link": "https://i.pinimg.com/originals/39/ca/0e/39ca0e8f1bc2a9ed642dc3e4411802a8.png"
   },{
          "title": "Kiwi 1 kilo",
-         "price": "3,29",
+         "price": "3.29",
          "image_link": "https://pluspng.com/img-png/kiwi-png-kiwi-png-image-fruit-kiwi-png-pictures-download-png-image-2464.png"
   },{
          "title": "Citroen per stuk",
-         "price": "0,69",
+         "price": "0.69",
          "image_link": "https://pngimg.com/uploads/lemon/lemon_PNG25203.png"
   }],
   "data_oil": [{
         "title": "Olie",
-        "price": "1,19",
+        "price": "1.19",
         "image_link": "https://www.aldi.nl/content/dam/aldi/netherlands/aldi_merken/0801_01.png/_jcr_content/renditions/opt.1250w.png.res/1548160264474/opt.1250w.png"
     },{
         "title": "Boter",
-        "price": "1,35",
+        "price": "1.35",
         "image_link": "https://pngimg.com/uploads/butter/butter_PNG17.png"
     },{
         "title": "Yoghurt 1 kilo",
-        "price": "1,69",
+        "price": "1.69",
         "image_link": "https://lh3.googleusercontent.com/proxy/OJoVsZFU4nl-fS_oQERLIZVRZ5EgLOoFmX1buRh5OzGBKnaSUbv6SIY9W_SiNbBsbzj2Gu8YTPOBblf4co1FLdQFPS20HM-r6ckmmSRwaoSqDOFLY0bCHB9MjwM"
     },{
         "title": "Mayonaise",
-        "price": "2,39",
+        "price": "2.39",
         "image_link": "https://www.pngkey.com/png/full/100-1002783_garlic-mayo-sauce-png.png"
     },{
         "title": "Ketchup",
-        "price": "1,65",
+        "price": "1.65",
         "image_link": "https://pngimg.com/uploads/ketchup/ketchup_PNG21.png"
     },{
         "title": "Peper",
-        "price": "2,29",
+        "price": "2.29",
         "image_link": "https://static.ah.nl/image-optimization/static/product/AHI_43545239353735343335_1_200x200_JPG.JPG?options=399,q85"
     },{
         "title": "Zout",
-        "price": "2,29",
+        "price": "2.29",
         "image_link": "https://static.ah.nl/image-optimization/static/product/AHI_43545239353735343437_1_200x200_JPG.JPG?options=399,q85"
     },{
         "title": "Suiker",
-        "price": "1,15",
+        "price": "1.15",
         "image_link": "https://static.ah.nl/image-optimization/static/product/AHI_43545239353537353030_1_200x200_JPG.JPG?options=399,q85"
     }],
   "data_meat_fish": [{
         "title": "Vlees 300 gram",
-        "price": "2,49",
+        "price": "2.49",
         "image_link": "https://www.limburgsmaaktnaarmeer.be/site/data/images/product/thumb_gehakt.png"
     },{
         "title": "Vis 350 gram",
-        "price": "3,99",
+        "price": "3.99",
         "image_link": "https://static.ah.nl/image-optimization/static/product/AHI_43545238303135343132_1_200x200_JPG.JPG?options=399,q85"
     },{
         "title": "Eieren 10 stuks",
-        "price": "1,63",
+        "price": "1.63",
         "image_link": "https://www.stickpng.com/assets/images/580b57fbd9996e24bc43c104.png"
     }],
   "data_grain": [{
         "title": "Brood",
-        "price": "1,22",
+        "price": "1.22",
         "image_link": "https://sgorun.nl/wp-content/uploads/2019/06/Natuurlijk-Brood-Natuurlijk-volkoren-brood-1-V-1000x720.png"
     },{
         "title": "Noten 200 gram",
-        "price": "2,39",
+        "price": "2.39",
         "image_link": "https://i.dlpng.com/static/png/6790328_preview.png"
     }],
     "data_drinks": [{
         "title": "Melk 1,5 Liter",
-        "price": "1,45",
+        "price": "1.45",
         "image_link": "https://webcomicms.net/sites/default/files/clipart/171971/milk-png-transparent-images-171971-135652.png"
     },{
         "title": "Thee",
-        "price": "2,75",
+        "price": "2.75",
         "image_link": "https://www.gejoma.nl/resize/engelse_thee.png/0/1100/True/pickwick-thee-engels-thee.png"
     },{
         "title": "Koffie",
-        "price": "5,99",
+        "price": "5.99",
         "image_link": "https://static.ah.nl/image-optimization/static/product/AHI_43545239353733333134_2_200x200_JPG.JPG?options=399,q85"
     },{
         "title": "Frisdrank",
-        "price": "5,99",
+        "price": "5.99",
         "image_link": "https://pluspng.com/img-png/coca-cola-png-clipart-png-image-2000.png"
     },{
         "title": "Bier",
-        "price": "5,99",
+        "price": "5.99",
         "image_link": "https://static.ah.nl/image-optimization/static/product/AHI_43545239353733333134_2_200x200_JPG.JPG?options=399,q85"
     },{
         "title": "Limonade",
-        "price": "5,99",
+        "price": "5.99",
         "image_link": "https://static.ah.nl/image-optimization/static/product/AHI_43545239353733333134_2_200x200_JPG.JPG?options=399,q85"
     },{
         "title": "Wijn",
-        "price": "5,99",
+        "price": "5.99",
         "image_link": "https://static.ah.nl/image-optimization/static/product/AHI_43545239363530323738_1_200x200_JPG.JPG?options=399,q85"
     },{
         "title": "Vruchtensap",
-        "price": "1,69",
+        "price": "1.69",
         "image_link": "https://nubewust.nl/wp-content/uploads/2013/08/Vruchtensap-appelsientje.png"
     }],
     "data_clothes": [{

@@ -5,11 +5,15 @@ body,
   overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif; }
 
-.background-gray {
-  background-color: #FDFCFF; }
-
 .d-none {
   display: none; }
+
+.container {
+  margin-top: 3.2em; }
+
+.background-gray {
+  background-color: #FDFCFF;
+  margin-top: 8.7em; }
 
 .login-header {
   background: #DA106C;
@@ -91,7 +95,10 @@ h1 {
           border-bottom: 1px solid #DA106C; }
 
 header {
-  background-color: #DA106C; }
+  position: fixed;
+  background-color: #DA106C;
+  width: 100%;
+  z-index: 10; }
   header nav {
     padding: 0 1em; }
     header nav ul {
@@ -137,15 +144,16 @@ header.header2 {
   margin-bottom: 2em; }
 
 .to-spend {
-  position: absolute;
   background: white;
-  margin-top: -4em;
   width: 70%;
   left: 0;
   right: 0;
   border: 1px solid #DEE2E6;
   border-radius: 0.5em;
-  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 15;
+  margin-top: 4em; }
   .to-spend div {
     display: block;
     padding: 0.5em 1em; }
@@ -411,7 +419,7 @@ nav.category ul {
   margin-top: 0; }
 
 #root > .pink-list {
-  margin-top: 4em; }
+  margin-top: 10em; }
 
 #root > .pink-list ~ .pink-list {
   margin-top: 0; }
@@ -429,25 +437,57 @@ nav.category ul {
   #root .pink-list .item-list {
     flex-wrap: nowrap;
     overflow-x: scroll; }
-    #root .pink-list .item-list section {
-      border: 1px solid white;
-      background-color: white;
-      display: block;
-      width: 9rem;
-      height: 9rem;
-      padding: .5em;
-      position: relative;
-      border-radius: 0.5em; }
-      #root .pink-list .item-list section img {
-        margin: auto;
+    #root .pink-list .item-list .col {
+      display: block; }
+      #root .pink-list .item-list .col section {
+        border: 1px solid white;
+        background-color: white;
+        display: block;
+        width: 9rem;
+        height: 9rem;
+        padding: .5em;
+        position: relative;
+        border-radius: 0.5em; }
+        #root .pink-list .item-list .col section img {
+          margin: auto;
+          display: inline-block;
+          max-height: 8rem;
+          max-width: 8rem;
+          top: 0;
+          bottom: 0;
+          position: absolute;
+          left: 0;
+          right: 0; }
+      #root .pink-list .item-list .col p {
+        width: max-content;
         display: inline-block;
-        max-height: 8rem;
-        max-width: 8rem;
-        top: 0;
-        bottom: 0;
-        position: absolute;
-        left: 0;
-        right: 0; }
+        vertical-align: text-top;
+        margin-top: 0.5em;
+        margin-bottom: 0;
+        width: 100%; }
+      #root .pink-list .item-list .col .price-item {
+        margin-top: 1em;
+        width: max-content;
+        vertical-align: baseline;
+        margin: 0.5em; }
+      #root .pink-list .item-list .col button {
+        color: #7E1EDA;
+        border: 1px solid #7E1EDA;
+        border-radius: 50%;
+        background-color: transparent;
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5em;
+        margin-top: 0.5em;
+        vertical-align: bottom; }
+        #root .pink-list .item-list .col button:hover, #root .pink-list .item-list .col button:focus {
+          background: #7E1EDA;
+          color: #fff;
+          cursor: pointer; }
+      #root .pink-list .item-list .col .remove-btn {
+        display: none; }
+      #root .pink-list .item-list .col .add-button {
+        float: right; }
 
 #root .clothes-page .item-list {
   flex-wrap: wrap;
@@ -462,7 +502,7 @@ nav.category ul {
   header nav ul li {
     font-size: 1.4em; }
   .header-title {
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     width: max-content;
@@ -470,7 +510,8 @@ nav.category ul {
     top: 0;
     color: white;
     margin: 0.65em auto;
-    font-weight: 400; } }
+    font-weight: 400;
+    z-index: 10; } }
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) {

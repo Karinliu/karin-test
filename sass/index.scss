@@ -29,12 +29,17 @@ body,
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.background-gray {
-    background-color: $background-gray;
-}
-
 .d-none{
     display: none;
+}
+
+.container{
+    margin-top: 3.2em;
+}
+
+.background-gray {
+    background-color: $background-gray;
+    margin-top: 8.7em;
 }
 
 
@@ -153,7 +158,10 @@ h1 {
 }
 
 header {
+    position: fixed;
     background-color: $primaryColor;
+    width: 100%;
+    z-index: 10;
 
     nav {
         padding: 0 1em;
@@ -229,15 +237,16 @@ header.header2 {
 }
 
 .to-spend {
-    position: absolute;
     background: white;
-    margin-top: -4em;
     width: 70%;
     left: 0;
     right: 0;
     border: 1px solid $borderNav;
     border-radius: 0.5em;
     box-shadow: 0 0.5em 1em 0 $shadow;
+    position: fixed;
+    z-index: 15;
+    margin-top: 4em;
 
     div {
         display: block;
@@ -646,7 +655,7 @@ nav.category {
 
 #root {
     & > .pink-list {
-        margin-top: 4em;
+        margin-top: 10em;
     }
 
     & > .pink-list ~ .pink-list{
@@ -672,27 +681,75 @@ nav.category {
             flex-wrap: nowrap;
             overflow-x: scroll;
 
-            section {
-                border: 1px solid white;
-                background-color: white;
+            .col{
                 display: block;
-                width: 9rem;
-                height: 9rem;
-                padding: .5em;
-                position: relative;
-                border-radius: 0.5em;
 
-                img {
-                    margin: auto;
+                    section {
+                        border: 1px solid white;
+                        background-color: white;
+                        display: block;
+                        width: 9rem;
+                        height: 9rem;
+                        padding: .5em;
+                        position: relative;
+                        border-radius: 0.5em;
+
+                    img {
+                        margin: auto;
+                        display: inline-block;
+                        max-height: 8rem;
+                        max-width: 8rem;
+                        top: 0;
+                        bottom: 0;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+
+                    }
+                }
+                
+                p{
+                    width: max-content;
                     display: inline-block;
-                    max-height: 8rem;
-                    max-width: 8rem;
-                    top: 0;
-                    bottom: 0;
-                    position: absolute;
-                    left: 0;
-                    right: 0;
+                    vertical-align: text-top;
+                    margin-top: 0.5em;
+                    margin-bottom: 0;
+                    width: 100%;
+                }
 
+                .price-item{
+                        margin-top: 1em;
+                        width: max-content;
+                        vertical-align: baseline;
+                        margin: 0.5em;
+                    }
+
+                button{
+                    color: $secondaryColor;
+                    border: 1px solid $secondaryColor;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    font-size: 1.5em;
+                    margin-top: 0.5em;
+                    vertical-align: bottom;
+
+                    &:hover,
+                    &:focus{
+                        background: $secondaryColor;
+                        color: $white;
+                        cursor: pointer;
+                    }
+                }
+
+                .remove-btn{
+                    display: none;
+
+                }
+
+                .add-button{
+                    float: right;
                 }
             }
         }
@@ -738,7 +795,7 @@ nav.category {
     }
 
     .header-title {
-        position: absolute;
+        position: fixed;
         left: 0;
         right: 0;
         width: max-content;
@@ -747,6 +804,7 @@ nav.category {
         color: white;
         margin: 0.65em auto;
         font-weight: 400;
+        z-index: 10;
     }
 }
 
