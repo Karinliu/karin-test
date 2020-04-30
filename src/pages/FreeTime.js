@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
 import {Header, MoneyBlock, ChosenCategory} from '../components/';
 import {categoriesJson} from '../assets/';
-import {myAccount} from '../assets/';
 
-class Groceries extends Component {
+class FreeTime extends Component {
     render() {
         const clickedPage = categoriesJson.data_category.map(data =>
                     <ChosenCategory 
                     image_purple={data.class} 
                     title={data.title}
-                    textLink="/BoodschappenToevoegen"/>
-                )[0]
-
-        const moneyToSpend = myAccount.my_account.map(data =>
-            data.total_money*0.8/4*0.6)
+                    textLink="/VrijeTijdToevoegen"/>
+                )[2]
 
         return (
              <>
@@ -22,7 +18,8 @@ class Groceries extends Component {
                     addClass=""/>
             <div className="container overview-page">
                 <MoneyBlock
-                    toSpend={moneyToSpend}/>
+                    toSpend="100"
+                    allMoney="200"/>
 
                     {clickedPage}
             </div>
@@ -32,4 +29,4 @@ class Groceries extends Component {
     }
 }
 
-export default Groceries
+export default FreeTime

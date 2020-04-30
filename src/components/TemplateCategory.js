@@ -5,7 +5,7 @@ class TemplateCategory extends Component {
   render() {
     return (
     	<>
-    		<li><Link to={this.props.text}><span className={this.props.image_purple}></span>{this.props.text}</Link></li>	
+    		<li><Link to={this.props.text_link}><span className={this.props.image_purple}></span>{this.props.text}</Link></li>	
 		</>
     	)
   }

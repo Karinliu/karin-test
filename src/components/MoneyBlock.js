@@ -1,14 +1,19 @@
 import React, { Component } from 'react'
+import {myAccount} from '../assets/';
 
 class MoneyBlock extends Component {
 	render() {
+
+    const moneyToSpend = myAccount.my_account.map(data =>
+                data.total_money)
+
 		return(
 			<>
            	<div className="row">
-           	    <div className="col col-md-8 col-lg-5 money-block">
+           	    <div className="col money-block">
            	        <p>Te besteden deze maand</p>
            	        <p className="money">€ {this.props.toSpend}</p>
-           	        <p>van de <span>€ {this.props.allMoney}</span></p>
+           	        <p>van de <span>€ {moneyToSpend}</span></p>
            	    </div>
      		</div>	
      		</>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Title, Header,PinkItemsList,TitleCategory,  HeaderMoney} from '../components/';
 import {itemsJson} from '../assets/';
+import {myAccount} from '../assets/';
 
 class GroceriesAdd extends Component {
     render() {
@@ -40,13 +41,16 @@ class GroceriesAdd extends Component {
                     price={data.price}
                     image_link={data.image_link}/>)
 
+        const moneyToSpend = myAccount.my_account.map(data =>
+            data.total_money*0.8/4*0.8)
+
 
         return (
         	 <>
             <Header text="Terug"
-                    textLink ="/Overview"
+                    textLink ="/Boodschappen"
                     addClass="header2"/>
-            <HeaderMoney toSpend="60,00" />
+            <HeaderMoney toSpend={moneyToSpend} />
             <div className="container pink-list">
                 <Title classes="header-title"/> 
                 
@@ -83,6 +87,13 @@ class GroceriesAdd extends Component {
                     {items_5}
                 </div>
             </div>
+
+            <div className="container btn-container">
+            <div className="row">
+                <div className="col">
+                    <button className="btn btn-pink">Toevoegen</button>
+                </div>
+            </div></div>
 
             </>
         )

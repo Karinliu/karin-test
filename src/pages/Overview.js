@@ -2,10 +2,14 @@ import React, { Component } from 'react';
 import {Title, Header, MoneyBlock} from '../components/';
 import { Link } from 'react-router-dom';
 import {piggybank, calendar, checklist} from '../assets'
+import {myAccount} from '../assets/';
 
 class Overview extends Component {
 
     render() {
+        const moneyToSpend = myAccount.my_account.map(data =>
+                data.total_money*0.8)
+
         return ( 
             <>
             <Header text="Home"
@@ -14,8 +18,7 @@ class Overview extends Component {
                 <Title classes="header-title" text="Overzicht"/> 
                 
                 <MoneyBlock
-                    toSpend="250"
-                    allMoney="400"/>
+                    toSpend={moneyToSpend}/>
 
                 <div class="row carousel">
                     <div className="col slide" id="slide-1">

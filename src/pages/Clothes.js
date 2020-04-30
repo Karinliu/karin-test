@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Header, MoneyBlock, ChosenCategory} from '../components/';
 import {categoriesJson} from '../assets/';
+import {myAccount} from '../assets/';
 
 class Clothes extends Component {
     render() {
@@ -11,15 +12,17 @@ class Clothes extends Component {
                     textLink="/KledingToevoegen"/>
                 )[1]
 
+        const moneyToSpend = myAccount.my_account.map(data =>
+            data.total_money*0.8/4*0.4)
+
         return (
              <>
             <Header text="Terug"
-                    textLink ="/Overview"
+                    textLink ="/Toevoegen"
                     addClass=""/>
-            <div className="container groceries-page">
+            <div className="container overview-page">
                 <MoneyBlock
-                    toSpend="100"
-                    allMoney="200"/>
+                    toSpend={moneyToSpend}/>
 
                     {clickedPage}
             </div>

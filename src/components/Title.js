@@ -7,7 +7,9 @@ class Title extends Component {
   render() {
     return (
     	<div className="row">
+    		<div className="col">
     		<h1 className={this.props.classes}>{this.props.text}</h1>
+    		</div>
     	</div>)
   }
 }

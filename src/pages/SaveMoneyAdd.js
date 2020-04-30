@@ -1,24 +1,19 @@
 import React, { Component } from 'react';
 import {Title, Header, TemplateCategory, HeaderMoney} from '../components/';
 import {categoriesJson} from '../assets/';
-import {myAccount} from '../assets/';
 
-class Add extends Component {
+class SaveMoneyAdd extends Component {
     render() {
-
-        const categories = categoriesJson.data_category.map(data =>
+        const categories = categoriesJson.data_save_money_categories.map(data =>
                 <TemplateCategory text_link={data.text_link} image_purple={data.class} text={data.title}/>
             )
-        const moneyToSpend = myAccount.my_account.map(data =>
-        data.total_money*0.8/4)
-
         return (
-        	 <>
+             <>
             <Header text="Terug"
-                    textLink ="/Overview"
+                    textLink ="/Sparen"
                     addClass="header2"/>
-            <HeaderMoney toSpend={moneyToSpend} />
-            <div className="container background-gray">
+            <HeaderMoney toSpend="60,00" />
+            <div className="container save-money-page background-gray">
                 <Title classes="header-title" text="Toevoegen"/> 
                 <nav className="row category">
                     <ul className="col">
@@ -32,4 +27,4 @@ class Add extends Component {
     }
 }
 
-export default Add
+export default SaveMoneyAdd

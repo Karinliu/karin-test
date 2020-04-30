@@ -159,16 +159,28 @@
     }],
     "data_clothes": [{
         "title": "Schoenen",
+        "id_item":"shoes",
         "image_link": "https://pluspng.com/img-png/shoes-png-sneaker-png-transparent-image-2500.png"
     },{
-        "title": "Noten 200 gram",
-        "image_link": "https://i.dlpng.com/static/png/6790328_preview.png"
+        "title": "Jas",
+        "id_item":"jacket",
+        "image_link": "https://lh3.googleusercontent.com/proxy/iZocRY-_3Xon06IL2haML2YMwhFx6znSwabvo-QXQdMy_ohhJvxkQpNXvTf3IpPy95ilGJIDG61IvvDOBDA3Jmo2qExqPx8x7tsvjfZgm7smyu3irP3WvnUw0Tg3PQ"
     },{
-        "title": "Noten 200 gram",
-        "image_link": "https://i.dlpng.com/static/png/6790328_preview.png"
+        "title": "Accessoires",
+        "id_item":"accessoires",
+        "image_link": "https://pngimage.net/wp-content/uploads/2018/05/accessory-png.png"
     },{
-        "title": "Noten 200 gram",
-        "image_link": "https://i.dlpng.com/static/png/6790328_preview.png"
+        "title": "Broeken",
+        "id_item":"pants",
+        "image_link": "https://i.pinimg.com/originals/ed/0f/ce/ed0fce3059f63c534ce4e5b1f56e0ffa.png"
+    },{
+        "title": "Truien en/of Shirts",
+        "id_item":"shirts",
+        "image_link": "https://www.bymusthaves.com/media/catalog/product/cache/1050af551a1f2fabb426864b2d66d730/p/u/pully-beige.png"
+    },{
+        "title": "Overige",
+        "id_item":"overige",
+        "image_link": "https://pluspng.com/img-png/free-png-plus-sign-plus-icon-512.png"
     }]
 
 }

@@ -25,9 +25,9 @@ function PinkItemList({ price, image_link, title }) {
         <section>
           <img src={image_link} alt={title}/>
         </section>
-        <p>{title}</p>
         {/*<p>total price {overallNumber}</p>*/}
-      <p>the price is {overallNumber}</p>
+      <p className="overall-price">the price is {overallNumber}</p>
+      <p className="title-item">{title}</p>
       <button className="remove-btn" onClick={() => minOne()}>
         {count}
       </button>

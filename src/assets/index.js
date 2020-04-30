@@ -7,3 +7,4 @@ export { default as logo } from './images/logo.png'
 
 export { default as categoriesJson } from './json/categories'
 export { default as itemsJson } from './json/items'
+export { default as myAccount } from './json/myAccount'

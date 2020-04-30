@@ -8,12 +8,21 @@ body,
 .d-none {
   display: none; }
 
+.d-show {
+  display: block; }
+
 .container {
   margin-top: 3.2em; }
 
 .background-gray {
   background-color: #FDFCFF;
   margin-top: 8.7em; }
+
+.btn-container {
+  margin: -1em 0em 1em 0em; }
+  .btn-container .col {
+    margin: 0 1.5em;
+    padding: 0; }
 
 .login-header {
   background: #DA106C;
@@ -52,6 +61,21 @@ h1 {
   background: #DA106C; }
   .btn-pink:hover, .btn-pink:focus {
     background: rgba(222, 16, 105, 0.85); }
+
+.btn-red {
+  background: #FD9393; }
+  .btn-red:hover, .btn-red:focus {
+    opacity: 0.6; }
+
+.btn-green {
+  background: #7DC8BC; }
+  .btn-green:hover, .btn-green:focus {
+    opacity: 0.6; }
+
+.btn-orange {
+  background: #FFA474; }
+  .btn-orange:hover, .btn-orange:focus {
+    opacity: 0.6; }
 
 .login-page {
   display: block;
@@ -337,6 +361,15 @@ header.header2 {
 .email {
   background-image: url("../assets/images/purple_email.png"); }
 
+.see_money {
+  background-image: url("../assets/images/purple_eye.png"); }
+
+.add_save {
+  background-image: url("../assets/images/purple_jar.png"); }
+
+.take_money {
+  background-image: url("../assets/images/purple_arrow_down.png"); }
+
 nav.category ul {
   padding: 0;
   margin: 1.5em; }
@@ -383,26 +416,24 @@ nav.category ul {
         nav.category ul li a:hover .help, nav.category ul li a:focus .help {
           background-image: url("../assets/images/white_help.png"); }
 
-.help-page nav.category ul li a span {
-  background-size: auto 65%; }
+.help-page {
+  margin-top: 3.5em; }
+  .help-page nav.category ul li a span {
+    background-size: auto 65%; }
+  .help-page nav.category ul li a:hover .call, .help-page nav.category ul li a:focus .call {
+    background-image: url("../assets/images/white_call.png"); }
+  .help-page nav.category ul li a:hover .chat, .help-page nav.category ul li a:focus .chat {
+    background-image: url("../assets/images/white_chat.png"); }
+  .help-page nav.category ul li a:hover .tips, .help-page nav.category ul li a:focus .tips {
+    background-image: url("../assets/images/white_tips.png"); }
+  .help-page nav.category ul li a:hover .email, .help-page nav.category ul li a:focus .email {
+    background-image: url("../assets/images/white_email.png"); }
 
-.help-page nav.category ul li a:hover .call, .help-page nav.category ul li a:focus .call {
-  background-image: url("../assets/images/white_call.png"); }
-
-.help-page nav.category ul li a:hover .chat, .help-page nav.category ul li a:focus .chat {
-  background-image: url("../assets/images/white_chat.png"); }
-
-.help-page nav.category ul li a:hover .tips, .help-page nav.category ul li a:focus .tips {
-  background-image: url("../assets/images/white_tips.png"); }
-
-.help-page nav.category ul li a:hover .email, .help-page nav.category ul li a:focus .email {
-  background-image: url("../assets/images/white_email.png"); }
-
-.groceries-page h2 {
+.overview-page h2 {
   text-align: center;
   margin: 0 auto; }
 
-.groceries-page .category-image {
+.overview-page .category-image {
   height: 7em;
   width: 7em;
   display: block;
@@ -413,10 +444,60 @@ nav.category ul {
   background-size: contain;
   margin-bottom: 1em; }
 
-.groceries-page .category-btn {
+.overview-page .category-btn {
   margin: 1.5em;
   padding: 0;
   margin-top: 0; }
+
+.save-money-page nav.category ul li a span {
+  background-size: 70% auto; }
+
+.save-money-page nav.category ul li a:hover .see_money, .save-money-page nav.category ul li a:focus .see_money {
+  background-image: url("../assets/images/white_eye.png"); }
+
+.save-money-page nav.category ul li a:hover .add_save, .save-money-page nav.category ul li a:focus .add_save {
+  background-image: url("../assets/images/white_jar.png"); }
+
+.save-money-page nav.category ul li a:hover .take_money, .save-money-page nav.category ul li a:focus .take_money {
+  background-image: url("../assets/images/white_arrow_down.png"); }
+
+.piggybank-view-page {
+  margin-top: 9.7em; }
+  .piggybank-view-page .jar-money {
+    background: red; }
+
+.clothes-page-two {
+  padding-top: 10em;
+  background-color: rgba(222, 16, 105, 0.1); }
+  .clothes-page-two .col {
+    margin: 0.5em 0;
+    flex: auto; }
+    .clothes-page-two .col label {
+      background-color: rgba(255, 255, 255, 0.6);
+      display: flex;
+      padding: 1em; }
+      .clothes-page-two .col label input {
+        margin-right: 1em; }
+      .clothes-page-two .col label span {
+        display: none; }
+      .clothes-page-two .col label section {
+        background-color: #fff;
+        border-radius: 0.5em;
+        padding: 0.5em;
+        width: 5rem;
+        display: block; }
+        .clothes-page-two .col label section img {
+          width: 100%;
+          display: inline-block; }
+      .clothes-page-two .col label p {
+        margin: auto 1em; }
+  .clothes-page-two .option-block {
+    padding: 1.5em;
+    background-color: #fff;
+    border-radius: 2em 2em 0 0; }
+    .clothes-page-two .option-block p {
+      font-size: 1.2em;
+      text-align: center; }
 
 #root > .pink-list {
   margin-top: 10em; }
@@ -499,6 +580,40 @@ nav.category ul {
 #root .clothes-page .item-list {
   flex-wrap: wrap;
   overflow-x: auto; }
+  #root .clothes-page .item-list .col label {
+    padding-top: 0.5em;
+    margin-bottom: 1em; }
+    #root .clothes-page .item-list .col label input[type="checkbox"] {
+      opacity: 0;
+      position: absolute; }
+    #root .clothes-page .item-list .col label span {
+      position: absolute;
+      opacity: 0;
+      transition: 0.3s; }
+    #root .clothes-page .item-list .col label input[type="checkbox"]:checked + span {
+      display: block;
+      color: #fff;
+      background-color: #7E1EDA;
+      transition: 0.3s;
+      padding: 0.3em 0.7em;
+      border-radius: 2em;
+      z-index: 1;
+      position: absolute;
+      top: 0em;
+      right: 2em;
+      opacity: 1;
+      box-shadow: 0.25em 0.25em 0.5em 0em rgba(0, 0, 0, 0.1); }
+
+.error-page {
+  margin-top: 5.2em; }
+  .error-page .row .col {
+    margin: 1.5em;
+    padding: 0; }
+  .error-page .row .error-block {
+    background-image: url("../assets/images/404.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 20em; }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {

@@ -14,21 +14,40 @@
     }],
   "data_category": [{
         "title": "Boodschappen",
-        "class": "groceries"
+        "class": "groceries",
+        "text_link":"Boodschappen"
     },{
         "title": "Kleding",
-        "class": "clothes"
+        "class": "clothes",
+        "text_link":"Kleding"
     },{
         "title": "Vrije tijd",
-        "class": "free_time"
+        "class": "free_time",
+        "text_link":"VrijeTijd"
     },{
         "title": "Sparen",
-        "class": "save_money"
+        "class": "save_money",
+        "text_link":"Sparen"
     },{
         "title": "Vaste lasten",
-        "class": "fixed_charges"
+        "class": "fixed_charges",
+        "text_link":"VasteLasten"
     },{
          "title": "Help",
-         "class": "help"
+         "class": "help",
+         "text_link":"help"
+    }],
+  "data_save_money_categories": [{
+        "title": "Spaarpot Bekijken",
+        "class": "see_money",
+         "text_link":"BekijkenSpaarpot"
+    },{
+        "title": "Toevoegen spaarpot",
+        "class": "add_save",
+         "text_link":"ToevoegenSpaarpot"
+    },{
+        "title": "Geld uithalen",
+        "class": "take_money",
+         "text_link":"UithalenSpaarpot"
     }]
 }
