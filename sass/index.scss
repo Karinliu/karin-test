@@ -573,6 +573,10 @@ body,
         background-image: url('../assets/images/purple_arrow_down.png');
     }
 
+    .grooming {
+        background-image: url('../assets/images/purple_grooming.png');
+    }
+
     nav.category {
         ul {
             padding: 0;
@@ -652,6 +656,10 @@ body,
 
                             .help {
                                 background-image: url('../assets/images/white_help.png');
+                            }
+
+                            .grooming {
+                                background-image: url('../assets/images/white_grooming.png');
                             }
 
                         }
@@ -757,15 +765,29 @@ body,
     }
 
     .piggybank-view-page {
-        margin-top: 9.7em;
-
-        .jar-money {
-            background: red;
-            height: 70vh;
+            height: 80vh;
             background-image: url('../assets/images/jar.png');
             background-size: auto 100%;
             background-repeat: no-repeat;
             background-position: center;
+            margin-top: 4.7em;
+
+        .jar-money {
+            margin-top: 7em;
+
+            .col{
+                text-align: center;
+                font-size: 2em;
+                max-width: 60vw;
+                margin: 0 auto;
+                margin-top: 2em;
+
+                span{
+                    color: $primaryColor;
+                    display: block;
+                }
+            }
+
         }
 
     }

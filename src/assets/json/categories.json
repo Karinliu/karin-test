@@ -33,6 +33,10 @@
         "class": "save_money",
         "text_link":"Sparen"
     },{
+        "title": "Verzorging",
+        "class": "grooming",
+        "text_link":"Verzorging"
+    },{
         "title": "Vaste lasten",
         "class": "fixed_charges",
         "text_link":"VasteLasten"

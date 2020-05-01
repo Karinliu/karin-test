@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Footer, Header,PinkItemsList2,TitleCategory,  HeaderMoney} from '../components/';
+import {Title, Header,PinkItemsList2,TitleCategory,  HeaderMoney} from '../components/';
 import {itemsJson, myAccount, smiley} from '../assets/';
 import { Link } from 'react-router-dom';
 
@@ -64,7 +64,7 @@ class ClothesAdd extends Component {
             boxClassHide.push('d-none');
         }
 
-        const items =  itemsJson.data_clothes.map(data => 
+        const items =  itemsJson.data_grooming.map(data => 
             <PinkItemsList2 
                     handleClick={this.handleClick}
                     title={data.title}
@@ -76,7 +76,7 @@ class ClothesAdd extends Component {
         const newItems = this.state.items.map(data=>{
             const item = data;
 
-            const itemsnew =  itemsJson.data_clothes.filter(data => {
+            const itemsnew =  itemsJson.data_grooming.filter(data => {
                 return data.id_item === item;
             })
 
@@ -104,6 +104,8 @@ class ClothesAdd extends Component {
 
             />)
 
+    
+
         const moneyToSpend = myAccount.my_account.map(data =>
             data.total_money*0.8/4*0.4)
 
@@ -116,7 +118,7 @@ class ClothesAdd extends Component {
             <div className={boxClassSee.join('container pink-list clothes-page ')}>
                 <Title classes="header-title"/> 
                 
-                <TitleCategory title="Deze kledingstuk wil ik gaan halen"/>
+                <TitleCategory title="Dit wil ik gaan doen"/>
 
                 <form onSubmit={this.submitHandler} method="post" action="/">
                 <div className="row item-list">
@@ -146,6 +148,7 @@ class ClothesAdd extends Component {
                     </div>
                 </div>
             </div>
+
             </>
         )
     }

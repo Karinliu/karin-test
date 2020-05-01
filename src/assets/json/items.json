@@ -181,6 +181,64 @@
         "title": "Overige",
         "id_item":"overige",
         "image_link": "https://pluspng.com/img-png/free-png-plus-sign-plus-icon-512.png"
+    }],
+    "data_grooming": [{
+        "title": "Kapper",
+        "id_item":"hairdresser",
+        "image_link": "https://pngimage.net/wp-content/uploads/2018/06/scissors-hair-png-3.png"
+    },{
+        "title": "Nagels",
+        "id_item":"nails",
+        "image_link": "https://lh3.googleusercontent.com/proxy/HoIRh1w96_DfBdPazhGmFLFq0S2UcedlY6pTF2tuKk-pZ8hKIDW3lsx5HtXpup3ypPLCs7WpkGJ99toyH0XAyEa9dbSa93vkeG3GUUMsrwvHeBrH9ki_DNrdOVfHzDiJ1Q"
+    },{
+        "title": "Spa/Sauna",
+        "id_item":"spa",
+        "image_link": "https://pngimage.net/wp-content/uploads/2018/06/spa-png-5.png"
+    },{
+        "title": "Schoonheidssalon",
+        "id_item":"pants",
+        "image_link": "https://lh3.googleusercontent.com/proxy/qjyjFMklKZpJ8nCBD6jpjlEGMefCv7BQLmeNCnprDGsztqEp-m4Rpx1wsofNbkH5jYTMudoo3ZmJHucl8wZFDBBLfA0eKLdhx9nT"
+    },{
+        "title": "Zonnebank",
+        "id_item":"shirts",
+        "image_link": "https://www.tanlounge.nl/wp-content/uploads/2018/07/zonnebank-level-3.png"
+    },{
+        "title": "Overige",
+        "id_item":"overige",
+        "image_link": "https://pluspng.com/img-png/free-png-plus-sign-plus-icon-512.png"
+    }],
+    "data_free_time": [{
+        "title": "Dierentuin",
+        "id_item":"zoo",
+        "image_link": "https://i.pinimg.com/736x/8c/a8/3f/8ca83ff03438b5e5efa18730ad111865.jpg"
+    },{
+        "title": "Bioscoop",
+        "id_item":"cinema",
+        "image_link": "https://www.zonnebloem.nl/~/media/images/department%20websites/custom/fl/w/werkgroep%20flevoland/activity/109517.png?mw=800"
+    },{
+        "title": "Uit eten",
+        "id_item":"dinner",
+        "image_link": "https://thumbs.dreamstime.com/b/cafe-bistro-building-front-view-vector-cartoon-illustration-waitress-68486942.jpg"
+    },{
+        "title": "Pretpark",
+        "id_item":"theme_park",
+        "image_link": "https://lh3.googleusercontent.com/proxy/D5LP9QrDuPiFg-hFGaa4hhFVyZCSMF_QqCVFQ0Y6TGNnscpg9T1EdFVe21i4Zj_g5qMJpJI4therNgGjt-wlTonKLOr9jJN9y7pBOprGmX00gbHiRiAQ6UkOdSav6mYs"
+    },{
+        "title": "Bowlen",
+        "id_item":"bowling",
+        "image_link": "https://pluspng.com/img-png/ten-pin-bowling-png-bowling-png-3518.png"
+    },{
+        "title": "Museum",
+        "id_item":"museum",
+        "image_link": "https://icons.iconarchive.com/icons/aha-soft/large-home/512/Museum-icon.png"
+    },{
+        "title": "Event",
+        "id_item":"Event",
+        "image_link": "https://pngimage.net/wp-content/uploads/2018/05/events-png-8.png"
+    },{
+        "title": "Overige",
+        "id_item":"overige",
+        "image_link": "https://pluspng.com/img-png/free-png-plus-sign-plus-icon-512.png"
     }]
 
 }

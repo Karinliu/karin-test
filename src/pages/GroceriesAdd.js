@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Footer, Header,PinkItemsList,TitleCategory,  HeaderMoney} from '../components/';
+import {Title, Header,PinkItemsList,TitleCategory,  HeaderMoney} from '../components/';
 import {itemsJson} from '../assets/';
 import {myAccount} from '../assets/';
 
@@ -94,8 +94,6 @@ class GroceriesAdd extends Component {
                     <button className="btn btn-pink plus-icon">Toevoegen</button>
                 </div>
             </div></div>
-
-            <Footer/>  
 
             </>
         )

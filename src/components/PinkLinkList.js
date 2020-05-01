@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { myAccount } from '../assets/';
 
 class PinkLinkList extends Component {
     render() {

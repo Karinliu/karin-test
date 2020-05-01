@@ -10,6 +10,7 @@ class Overview extends Component {
         const moneyToSpend = myAccount.my_account.map(data =>
                 data.total_money*0.8)
 
+
         return ( 
             <>
             <Header text="Home"
