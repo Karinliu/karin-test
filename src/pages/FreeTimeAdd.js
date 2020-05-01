@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Header,PinkItemsList,TitleCategory,  HeaderMoney} from '../components/';
+import {Title, Footer, Header,PinkItemsList,TitleCategory,  HeaderMoney} from '../components/';
 import {itemsJson} from '../assets/';
 
 class FreeTimeAdd extends Component {
@@ -24,6 +24,8 @@ class FreeTimeAdd extends Component {
                     {items}
                 </div>
             </div>
+
+            <Footer/>  
 
             </>
         )

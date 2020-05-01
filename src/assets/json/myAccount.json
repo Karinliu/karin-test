@@ -1,5 +1,22 @@
 {
-  "my_account": [{
+    "my_account": [
+    {
         "total_money": "400"
+    }],
+    "phone_numbers": [
+    {
+    	"contact": "Lijn5 Alkmaar",
+        "user_link": "tel:088 513 1401",
+        "image_link": "https://moniqueschlangen.nl/wp-content/uploads/2015/09/logo_Lijn5-e1444834296885.png"
+    },{
+    	"contact": "",
+    	"user_link":"",
+    	"image_link": ""
+    }],
+    "chat_link": [
+    {
+    	"contact": "Whatsapp",
+        "user_link": "whatsapp://send?abid=phonenumber&text=Hello%2C%20World!",
+        "image_link": "https://icons.iconarchive.com/icons/dtafalonso/android-l/512/WhatsApp-icon.png"
     }]
 }

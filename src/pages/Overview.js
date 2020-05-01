@@ -14,7 +14,7 @@ class Overview extends Component {
             <>
             <Header text="Home"
                     textLink ="/Overview"/>
-            <div className = "container" >
+            <div className = "container home-page" >
                 <Title classes="header-title" text="Overzicht"/> 
                 
                 <MoneyBlock
@@ -28,6 +28,13 @@ class Overview extends Component {
                             <p>Tekst</p>
 
                             <Link to="/sparen">Ga naar mijn spaarpot <span>></span></Link>
+                            <nav className="carousel-dots">
+                                <ul>
+                                    <li><a className="selected" href="#slide-1" >Go to first slide</a></li>
+                                    <li><a href="#slide-2">Go to first slide</a></li>
+                                    <li><a href="#slide-3">Go to third slide</a></li>
+                                </ul>
+                            </nav>
                         </label>
                         <a href="#slide-3" class="carousel-prev">Go to last slide</a>
                         <a href="#slide-2" class="carousel-next">Go to second slide</a>
@@ -40,6 +47,13 @@ class Overview extends Component {
                             <p>Tekst</p>
 
                             <Link to="/sparen">Ga naar overzicht alle uitgaven <span>></span></Link>
+                            <nav className="carousel-dots">
+                                <ul>
+                                    <li><a href="#slide-1" >Go to first slide</a></li>
+                                    <li><a className="selected" href="#slide-2">Go to first slide</a></li>
+                                    <li><a href="#slide-3">Go to third slide</a></li>
+                                </ul>
+                            </nav>
                         </label>
                          <a href="#slide-1" class="carousel-prev">Go to first slide</a>
                             <a href="#slide-3" class="carousel-next">Go to third slide</a>
@@ -47,46 +61,27 @@ class Overview extends Component {
 
                     <div className="col slide" id="slide-3">
                         <label> 
-{/*                            <input type="radio" id="slide" name="slide"/>*/}
                             <h2><span aria-hidden="true"><img src={checklist} alt="checklist"/></span>Extra uitgaven</h2>
                             <p>Tekst</p>
 
                             <Link to="/sparen">Ga naar overzicht extra uitgaven <span>></span></Link>
+                            <nav className="carousel-dots">
+                                <ul>
+                                    <li><a href="#slide-1" >Go to first slide</a></li>
+                                    <li><a href="#slide-2">Go to first slide</a></li>
+                                    <li><a className="selected" href="#slide-3">Go to third slide</a></li>
+                                </ul>
+                            </nav>
                         </label>
                         <a href="#slide-2" class="carousel-prev">Go to second slide</a>
                         <a href="#slide-1" class="carousel-next">Go to first slide</a>
-                        <Link className="btn-pink btn add-category" aria-label="Afvink lijst" to="/Toevoegen">Toevoegen</Link>
                     </div>
                 </div>
-{/*                    <div className="row carousel-navigation">
-                        <ol>
-                          <li>
-                            <label>
-                                <a href="#slide-1">
-                                    <input id="slide" name="slide" type="radio"/>
-                                    <span>Go to slide 1 </span>
-                                </a>
-                            </label>
-                          </li>
-                          <li>
-                            <label>
-                            
-                                <a href="#slide-2">
-                                    <input id="slide" name="slide" type="radio"/>
-                                    <span>Go to slide 2</span>
-                                </a>
-                            </label>
-                          </li>
-                          <li>
-                            <label>
-                                <a href="#slide-3">
-                                    <input id="slide" name="slide" type="radio"/>
-                                    <span>Go to slide 3</span>
-                                </a>
-                            </label>
-                          </li>
-                        </ol>
-                    </div>*/}
+                <div className="row">
+                    <div className="col col-md-10 col-lg-6 add-activity">
+                        <Link className="plus-icon btn-pink btn add-category" aria-label="Afvink lijst" to="/Toevoegen">Activiteit toevoegen</Link>
+                    </div>
+                </div>
 
                 </div>
             </>

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import {Title, Header} from '../components/';
+import {Title, Footer, Header} from '../components/';
 import { Link } from 'react-router-dom';
 
 
-class NotFound extends Component {
+class Mail extends Component {
     render() {
         return (
         	 <>
@@ -17,15 +17,16 @@ class NotFound extends Component {
                   </div>
               </div>
               <div className="row">
-              <div className="col col-md-10 col-lg-6 btn-block">
+              <div className="col">
                   <Link className="btn btn-pink" to="/Overview">Terug naar overzicht</Link>
               </div>
               </div>
             </div>
 
+            <Footer/>  
             </>
         )
     }
 }
 
-export default NotFound
+export default Mail

@@ -1,12 +1,7 @@
 import React, { Component } from 'react'
-import { myAccount } from '../assets/';
 
 class PinkItemsList2 extends Component {
     render() {
-
-        const moneyToSpend = myAccount.my_account.map(data =>
-            data.total_money)
-
         return ( 
           <>
             <div className="col">

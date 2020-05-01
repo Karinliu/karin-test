@@ -26,7 +26,6 @@ class Clothes extends Component {
 
                     {clickedPage}
             </div>
-
             </>
         )
     }

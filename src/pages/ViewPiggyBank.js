@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import {Title, Header, TitleCategory,  HeaderMoney} from '../components/';
+import {Title, Footer, Header, HeaderMoney} from '../components/';
 
 class ViewPiggyBank extends Component {
     render() {
         return (
              <>
             <Header text="Terug"
-                    textLink ="/Kleding"
+                    textLink ="/SparenToevoegen"
                     addClass="header2"/>
             <HeaderMoney toSpend="60,00" />
             <div className="container piggybank-view-page">
@@ -14,9 +14,12 @@ class ViewPiggyBank extends Component {
                 
                 <div className="row">
                     <div className="col jar-money">
+                    <p>Tekst</p>
                     </div>
                 </div>
             </div>
+
+            <Footer/>  
 
             </>
         )

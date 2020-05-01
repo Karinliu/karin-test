@@ -1,16 +1,20 @@
 {
   "data_help": [{
         "title": "Bellen",
-        "class": "call"
+        "class": "call",
+        "text_link":"Bellen"
     },{
         "title": "Chatten",
-        "class": "chat"
+        "class": "chat",
+        "text_link":"Chatten"
     },{
         "title": "Tips",
-        "class": "tips"
+        "class": "tips",
+        "text_link":"Tips"
     },{
         "title": "Brieven/Emails",
-        "class": "email"
+        "class": "email",
+        "text_link":"Mail"
     }],
   "data_category": [{
         "title": "Boodschappen",

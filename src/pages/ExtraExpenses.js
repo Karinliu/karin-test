@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Header} from '../components/';
+import {Title, Footer, Header} from '../components/';
 
 class ExtraExpenses extends Component {
     render() {
@@ -11,7 +11,10 @@ class ExtraExpenses extends Component {
               <Title classes="header-title" text="Extra uitgaven"/> 
             </div>
 
-            </>        
+            <Footer/>  
+
+            </>      
+
         )
     }
 }

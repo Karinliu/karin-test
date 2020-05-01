@@ -10,7 +10,7 @@ class MoneyBlock extends Component {
 		return(
 			<>
            	<div className="row">
-           	    <div className="col money-block">
+           	    <div className="col col-md-10 col-lg-6 money-block">
            	        <p>Te besteden deze maand</p>
            	        <p className="money">€ {this.props.toSpend}</p>
            	        <p>van de <span>€ {moneyToSpend}</span></p>

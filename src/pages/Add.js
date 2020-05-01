@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Header, TemplateCategory, HeaderMoney} from '../components/';
+import {Title, Header, Footer, TemplateCategory, HeaderMoney} from '../components/';
 import {categoriesJson} from '../assets/';
 import {myAccount} from '../assets/';
 
@@ -18,7 +18,7 @@ class Add extends Component {
                     textLink ="/Overview"
                     addClass="header2"/>
             <HeaderMoney toSpend={moneyToSpend} />
-            <div className="container background-gray">
+            <div className="container background-gray add-category-page">
                 <Title classes="header-title" text="Toevoegen"/> 
                 <nav className="row category">
                     <ul className="col">
@@ -26,6 +26,8 @@ class Add extends Component {
                     </ul>
                 </nav>
             </div>
+
+            <Footer/>
 
             </>
         )

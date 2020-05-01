@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Header, TemplateCategory, HeaderMoney} from '../components/';
+import {Title, Footer, Header, TemplateCategory, HeaderMoney} from '../components/';
 import {categoriesJson} from '../assets/';
 
 class SaveMoneyAdd extends Component {
@@ -21,6 +21,8 @@ class SaveMoneyAdd extends Component {
                     </ul>
                 </nav>
             </div>
+
+            <Footer/>  
 
             </>
         )

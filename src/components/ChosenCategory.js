@@ -15,8 +15,8 @@ class ChosenCategory extends Component {
                 </div>
             </div>
             <div className="row">
-                <div className="col category-btn">
-                <Link className="btn-pink btn add-category" aria-label="Afvink lijst" to={this.props.textLink}>Toevoegen</Link>
+                <div className="col col-md-10 col-lg-6 category-btn">
+                <Link className="btn-pink btn add-category plus-icon" aria-label="Afvink lijst" to={this.props.textLink}>Toevoegen</Link>
                 </div>
             </div>
         </>

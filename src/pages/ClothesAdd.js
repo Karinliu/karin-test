@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import {Title, Header,PinkItemsList2,TitleCategory,  HeaderMoney} from '../components/';
-import {itemsJson} from '../assets/';
-import {myAccount} from '../assets/';
+import {Title, Footer, Header,PinkItemsList2,TitleCategory,  HeaderMoney} from '../components/';
+import {itemsJson, myAccount, smiley} from '../assets/';
 import { Link } from 'react-router-dom';
 
 class ClothesAdd extends Component {
@@ -10,6 +9,7 @@ class ClothesAdd extends Component {
         this.state = {
             addClass: '',
             items: [],
+            chooseCategory: ''
         }
     }
 
@@ -22,7 +22,6 @@ class ClothesAdd extends Component {
     handleClick = (e) => {
         if (e.target.checked === true) {
             const listItem = e.target.value;
-            const itemInformation = e.target.data
             const items = [...this.state.items, listItem]
             // const items = [listItem + ', '+this.state.items]
 
@@ -47,6 +46,10 @@ class ClothesAdd extends Component {
 
     toggleDetails(){
         this.setState({addClass: !this.state.addClass})
+    }
+
+    clickedNo() {
+        this.setState({chooseCategory: 'no'});
     }
 
     render() {
@@ -76,10 +79,21 @@ class ClothesAdd extends Component {
             const itemsnew =  itemsJson.data_clothes.filter(data => {
                 return data.id_item === item;
             })
-            // console.log(itemsnew,'show first')
 
             return itemsnew
         })
+
+        let element;
+        if (this.state.chooseCategory === 'no') {
+         element =(
+            <>
+                <p>Ik zou nog even wachten tot je genoeg hebt gespaard!</p>
+                <img className="no-img" src={smiley} alt={smiley}/>
+                <Link className="no-btn btn btn-pink" to="/Overview">Terug naar overzicht</Link>
+            </>
+
+         )
+       }
 
 
         const newItemsList = newItems.map( data =>
@@ -111,7 +125,11 @@ class ClothesAdd extends Component {
                     {items}
                 </div>
 
-                <button onClick={this.toggleDetails.bind(this)} className="btn-pink btn">Toevoegen</button>
+                <div class="row">
+                    <div class="btn-col col col-md-10 col-lg-6">
+                        <button onClick={this.toggleDetails.bind(this)} className="btn-pink btn">Toevoegen</button>
+                        </div>
+                    </div>
                 </form>
             </div>
 
@@ -121,14 +139,17 @@ class ClothesAdd extends Component {
                 </div>
                 <div className="row option-block">
                     <div className="col">
+                        {element}
                         <p>Kost het bij elkaar minder dan {moneyToSpend} euro?</p>
-                    </div>
-                    <div className="col"><button className="btn-green btn">Ja</button></div>
-                    <div className="col"><button className="btn-red btn">Nee</button></div>
-                    <div className="col"><button className="btn-orange btn" onClick={this.toggleDetails.bind(this)}> Ik wil nog wat wijzigen</button></div>
 
+                        <button className="btn-green btn">Ja</button>
+                        <button className="btn btn-red" onClick={this.clickedNo.bind(this)}>Nee</button>
+                        <button className="btn-orange btn" onClick={this.toggleDetails.bind(this)}> Ik wil nog wat wijzigen</button>
+                    </div>
                 </div>
             </div>
+
+            <Footer/>
 
             </>
         )

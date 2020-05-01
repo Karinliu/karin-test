@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
+// import React, { useEffect} from 'react';
 
 function PinkItemList({ price, image_link, title }) {
     // Declare a new state variable, which we'll call "count"
