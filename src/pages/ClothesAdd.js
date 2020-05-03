@@ -107,6 +107,23 @@ class ClothesAdd extends Component {
         const moneyToSpend = myAccount.my_account.map(data =>
             data.total_money*0.8/4*0.4)
 
+
+        let myItems = [];
+        let newItemsListData = newItems.map( data =>{
+
+            data.forEach((data) =>{
+                // console.log(data.id_item)
+                
+                myItems.push({
+                    id_item: data.id_item,
+                    title: data.title,
+                    image_link: data.image_link,
+                    });
+                })
+            })
+
+        console.log(myItems, 'zijn')
+
         return (
              <>
             <Header text="Terug"
@@ -140,7 +157,13 @@ class ClothesAdd extends Component {
                         {element}
                         <p>Kost het bij elkaar minder dan {moneyToSpend} euro?</p>
 
-                        <button className="btn-green btn">Ja</button>
+                        <Link
+                            className="btn btn-green"
+                              to="/Overview"
+                            >
+                            Ja
+                            </Link>
+
                         <button className="btn btn-red" onClick={this.clickedNo.bind(this)}>Nee</button>
                         <button className="btn-orange btn" onClick={this.toggleDetails.bind(this)}> Ik wil nog wat wijzigen</button>
                     </div>

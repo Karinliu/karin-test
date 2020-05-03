@@ -218,6 +218,39 @@ body,
     margin: 1em auto;
     padding-top: 1em; }
 
+#root .overview-expenses-page {
+  background-color: #FDFCFF;
+  min-height: 91vh; }
+  #root .overview-expenses-page h2 {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0px;
+    font-size: 1.2em;
+    margin-top: 1.3em; }
+    #root .overview-expenses-page h2 span {
+      margin-right: 0.5em; }
+  #root .overview-expenses-page .item-overview {
+    background-color: #F2F2F2;
+    width: auto;
+    border-radius: 0.5em;
+    margin: 1.5em;
+    margin-bottom: 0;
+    display: flex;
+    padding: 1em;
+    flex: auto; }
+    #root .overview-expenses-page .item-overview span {
+      width: 1.5rem;
+      height: 1.5rem;
+      background-size: contain;
+      margin-right: 1em;
+      background-repeat: no-repeat;
+      background-position: center; }
+    #root .overview-expenses-page .item-overview p {
+      margin: 0;
+      text-align: left; }
+    #root .overview-expenses-page .item-overview .title {
+      flex-grow: 1; }
+
 #root .home-page .add-activity {
   margin: 1.5em;
   padding: 0; }
@@ -307,12 +340,28 @@ body,
         #root .home-page .carousel label h2 span img {
           height: 1.2em;
           vertical-align: initial; }
-    #root .home-page .carousel label p {
+    #root .home-page .carousel label .item-overview {
       background-color: #F2F2F2;
       width: auto;
-      padding: 0.5em;
       border-radius: 0.5em;
-      margin: 1.5em; }
+      margin: 1.5em;
+      display: flex;
+      padding: 1em; }
+      #root .home-page .carousel label .item-overview span {
+        width: 1.5rem;
+        height: 1.5rem;
+        background-size: contain;
+        margin-right: 1em;
+        background-repeat: no-repeat;
+        background-position: center; }
+      #root .home-page .carousel label .item-overview p {
+        margin: 0;
+        text-align: left; }
+      #root .home-page .carousel label .item-overview .title {
+        flex-grow: 1; }
+      #root .home-page .carousel label .item-overview .piggybank {
+        margin: 0 auto;
+        text-align: center; }
     #root .home-page .carousel label a {
       color: #DA106C;
       font-size: 1em;
@@ -561,9 +610,14 @@ body,
     color: #DA106C; }
   #root .pink-list .item-list {
     flex-wrap: nowrap;
-    overflow-x: scroll; }
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; }
+    #root .pink-list .item-list::-webkit-scrollbar {
+      display: none; }
     #root .pink-list .item-list .col {
-      display: block; }
+      display: block;
+      max-width: 12em; }
       #root .pink-list .item-list .col section {
         border: 1px solid white;
         background-color: white;
@@ -595,7 +649,6 @@ body,
       #root .pink-list .item-list .col .price-item {
         margin-top: 1em;
         width: max-content;
-        vertical-align: baseline;
         margin: 0.5em; }
       #root .pink-list .item-list .col button {
         color: #7E1EDA;
@@ -615,10 +668,12 @@ body,
             color: #fff;
             position: absolute; }
       #root .pink-list .item-list .col .remove-btn {
-        display: none; }
+        margin-top: 0.2em;
+        float: left; }
         #root .pink-list .item-list .col .remove-btn:hover:before, #root .pink-list .item-list .col .remove-btn:focus:before {
           content: "-"; }
       #root .pink-list .item-list .col .add-btn {
+        margin-top: 0.2em;
         float: right; }
         #root .pink-list .item-list .col .add-btn:hover:before, #root .pink-list .item-list .col .add-btn:focus:before {
           content: "+"; }

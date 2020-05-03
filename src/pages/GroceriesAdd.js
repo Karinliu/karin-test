@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
-import {Title, Header,PinkItemsList,TitleCategory,  HeaderMoney} from '../components/';
+import {Title, Header, PinkItemsList, PinkItemsList3, TitleCategory,  HeaderMoney} from '../components/';
 import {itemsJson} from '../assets/';
 import {myAccount} from '../assets/';
 
 class GroceriesAdd extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {value: 0};
+        this.buttonClicked = this.buttonClicked.bind(this);
+    }
+      
+    buttonClicked(event) {
+        this.setState({value: this.state.value+1});
+    }
+
     render() {
 
         const titleCategory = itemsJson.groceries_categories.map(data =>
@@ -11,32 +21,32 @@ class GroceriesAdd extends Component {
                     title={data.title}/>)
 
         const items_1 =  itemsJson.data_vegetables.map(data => 
-            <PinkItemsList 
+            <PinkItemsList3 
                     title={data.title}
                     price={data.price}
                     image_link={data.image_link}/>)
 
         const items_2 =  itemsJson.data_oil.map(data => 
-            <PinkItemsList 
+            <PinkItemsList3 
                     title={data.title}
                     price={data.price}
                     image_link={data.image_link}/>)
 
 
         const items_3 =  itemsJson.data_meat_fish.map(data => 
-            <PinkItemsList 
+            <PinkItemsList3 
                     title={data.title}
                     price={data.price}
                     image_link={data.image_link}/>)
 
         const items_4 =  itemsJson.data_grain.map(data => 
-            <PinkItemsList 
+            <PinkItemsList3 
                     title={data.title}
                     price={data.price}
                     image_link={data.image_link}/>)
 
         const items_5 =  itemsJson.data_drinks.map(data => 
-            <PinkItemsList 
+            <PinkItemsList3 
                     title={data.title}
                     price={data.price}
                     image_link={data.image_link}/>)

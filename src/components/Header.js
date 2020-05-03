@@ -11,7 +11,7 @@ class Header extends Component {
 			    		<Link className={this.props.text} to={this.props.textLink}>{this.props.text}</Link>
 			      	</li>	    	
 			      	<li>
-			    		<Link className="to-do" aria-label="Afvink lijst" to="/AfvinkLijst"></Link>
+			    		<Link className="to-do" aria-label="Nog Uitgeven" to="/NogUitgeven"></Link>
 			      	</li>			      	
 			      	<li>
 			    		<Link className="help" aria-label="Help" to="/Help"></Link>

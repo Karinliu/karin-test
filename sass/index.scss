@@ -5,7 +5,6 @@ $white: #fff;
 $whiteLight: rgba(255, 255, 255, 0.6);
 $black: #000;
 $lightGrey: #F2F2F2;
-$background-gray: #FDFCFF;
 $navigationBoxGray: #FCFCFC;
 $border: #707070;
 $borderNav: #DEE2E6;
@@ -42,7 +41,7 @@ body,
     }
 
     .background-gray {
-        background-color: $background-gray;
+        background-color: $backgroundGray;
         margin-top: 8.7em;
     }
 
@@ -343,6 +342,52 @@ body,
         }
     }
 
+    .overview-expenses-page {
+        background-color: $backgroundGray;
+        min-height: 91vh;
+
+        h2{
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 0px;
+            font-size: 1.2em;
+            margin-top: 1.3em;
+
+            span{
+                margin-right: 0.5em;
+            }
+        }
+
+        .item-overview {
+            background-color: $lightGrey;
+            width: auto;
+            border-radius: 0.5em;
+            margin: 1.5em;
+            margin-bottom: 0;
+            display: flex;
+            padding: 1em;
+            flex: auto;
+
+            span {
+                width: 1.5rem;
+                height: 1.5rem;
+                background-size: contain;
+                margin-right: 1em;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            p {
+                margin: 0;
+                text-align: left;
+            }
+
+            .title {
+                flex-grow: 1;
+            }
+        }
+    }
+
     .home-page {
         .add-activity {
             margin: 1.5em;
@@ -476,12 +521,36 @@ body,
                     }
                 }
 
-                p {
+                .item-overview {
                     background-color: $lightGrey;
                     width: auto;
-                    padding: 0.5em;
                     border-radius: 0.5em;
                     margin: 1.5em;
+                    display: flex;
+                    padding: 1em;
+
+                    span {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        background-size: contain;
+                        margin-right: 1em;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+
+                    p {
+                        margin: 0;
+                        text-align: left;
+                    }
+
+                    .title {
+                        flex-grow: 1;
+                    }
+
+                    .piggybank {
+                        margin: 0 auto;
+                        text-align: center;
+                    }
                 }
 
                 a {
@@ -765,24 +834,24 @@ body,
     }
 
     .piggybank-view-page {
-            height: 80vh;
-            background-image: url('../assets/images/jar.png');
-            background-size: auto 100%;
-            background-repeat: no-repeat;
-            background-position: center;
-            margin-top: 4.7em;
+        height: 80vh;
+        background-image: url('../assets/images/jar.png');
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 4.7em;
 
         .jar-money {
             margin-top: 7em;
 
-            .col{
+            .col {
                 text-align: center;
                 font-size: 2em;
                 max-width: 60vw;
                 margin: 0 auto;
                 margin-top: 2em;
 
-                span{
+                span {
                     color: $primaryColor;
                     display: block;
                 }
@@ -897,9 +966,16 @@ body,
         .item-list {
             flex-wrap: nowrap;
             overflow-x: scroll;
+             -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
 
             .col {
                 display: block;
+                max-width: 12em;
 
                 section {
                     border: 1px solid white;
@@ -942,7 +1018,6 @@ body,
                 .price-item {
                     margin-top: 1em;
                     width: max-content;
-                    vertical-align: baseline;
                     margin: 0.5em;
                 }
 
@@ -972,7 +1047,8 @@ body,
                 }
 
                 .remove-btn {
-                    display: none;
+                    margin-top: 0.2em;
+                    float: left;
 
                     &:hover,
                     &:focus {
@@ -980,10 +1056,10 @@ body,
                             content: "-";
                         }
                     }
-
                 }
 
                 .add-btn {
+                    margin-top: 0.2em;
                     float: right;
 
                     &:hover,
@@ -1108,11 +1184,11 @@ body,
                         background-size: 2em;
                         height: 4em;
                         width: 4em;
-                        color: transparent; 
+                        color: transparent;
                         box-shadow: 0 0.5em 1em 0 $shadow;
                     }
 
-                    button{
+                    button {
                         width: 4em;
                         height: 4em;
                         border-radius: 0.5em;
@@ -1126,15 +1202,15 @@ body,
                         box-shadow: 0 0.5em 1em 0 $shadow;
 
                         &:hover,
-                        &:focus{
+                        &:focus {
                             cursor: pointer;
                             background-color: $btnPinkHover;
                         }
                     }
 
                     &:hover,
-                    &:focus{
-                            background-color: $btnPinkHover;
+                    &:focus {
+                        background-color: $btnPinkHover;
                     }
                 }
             }

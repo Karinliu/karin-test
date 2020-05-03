@@ -18,5 +18,24 @@
     	"contact": "Whatsapp",
         "user_link": "whatsapp://send?abid=phonenumber&text=Hello%2C%20World!",
         "image_link": "https://icons.iconarchive.com/icons/dtafalonso/android-l/512/WhatsApp-icon.png"
+    }],
+    "all_expenses": [
+    {
+        "title": "Vaste lasten",
+        "total_price": "80.00",
+        "class": "fixed_charges"
+    },{
+        "title": "Vrije tijd",
+        "total_price": "15.00",
+        "class": "free_time"
+    },{
+        "title": "Boodschappen",
+        "total_price": "20.00",
+        "class": "groceries"
+    }],"extra_expenses": [
+    {
+        "title": "Boodschappen",
+        "total_price": "15.00",
+        "class": "groceries"
     }]
 }
