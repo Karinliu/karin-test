@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Header, PinkItemsList, PinkItemsList3, TitleCategory,  HeaderMoney} from '../components/';
+import {Title, Header, Footer, PinkItemsList3, TitleCategory,  HeaderMoney} from '../components/';
 import {itemsJson} from '../assets/';
 import {myAccount} from '../assets/';
 
@@ -22,6 +22,7 @@ class GroceriesAdd extends Component {
 
         const items_1 =  itemsJson.data_vegetables.map(data => 
             <PinkItemsList3 
+                    ref={(pinkItemsComponent) => {window.pinkItemsComponent = pinkItemsComponent}}
                     title={data.title}
                     price={data.price}
                     image_link={data.image_link}/>)
@@ -104,6 +105,8 @@ class GroceriesAdd extends Component {
                     <button className="btn btn-pink plus-icon">Toevoegen</button>
                 </div>
             </div></div>
+
+            <Footer />
 
             </>
         )

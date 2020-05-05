@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Footer, Header, GrayBlockItem, TitleCategory} from '../components/';
+import {Title, Footer, Header, GrayBlockItem} from '../components/';
 import {myAccount, checklist} from '../assets'
 
 class ExtraExpenses extends Component {

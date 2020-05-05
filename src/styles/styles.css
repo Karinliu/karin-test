@@ -585,11 +585,11 @@ body,
       display: block; }
     #root .clothes-page-two .option-block .no-btn + p {
       display: none; }
-      #root .clothes-page-two .option-block .no-btn + p + button {
+      #root .clothes-page-two .option-block .no-btn + p + a {
         display: none; }
-        #root .clothes-page-two .option-block .no-btn + p + button + button {
+        #root .clothes-page-two .option-block .no-btn + p + a + button {
           display: none; }
-          #root .clothes-page-two .option-block .no-btn + p + button + button + button {
+          #root .clothes-page-two .option-block .no-btn + p + a + button + button {
             display: none; }
 
 #root > .pink-list {

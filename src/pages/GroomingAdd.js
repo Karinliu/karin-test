@@ -142,7 +142,12 @@ class ClothesAdd extends Component {
                         {element}
                         <p>Kost het bij elkaar minder dan {moneyToSpend} euro?</p>
 
-                        <button className="btn-green btn">Ja</button>
+                        <Link
+                            className="btn btn-green"
+                              to="/Overview"
+                            >
+                            Ja
+                            </Link>
                         <button className="btn btn-red" onClick={this.clickedNo.bind(this)}>Nee</button>
                         <button className="btn-orange btn" onClick={this.toggleDetails.bind(this)}> Ik wil nog wat wijzigen</button>
                     </div>

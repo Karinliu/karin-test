@@ -46,7 +46,6 @@ class PinkItemsList3 extends Component {
         }
 
         if (this.state.price === e.target.value){
-          console.log("is the same price dude")
           this.setState({
           addClass: "d-none remove-btn"
         })

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Footer, Header,PinkItemsList2,TitleCategory,  HeaderMoney} from '../components/';
+import {Title, Header,PinkItemsList2,TitleCategory,  HeaderMoney} from '../components/';
 import {itemsJson, myAccount, smiley} from '../assets/';
 import { Link } from 'react-router-dom';
 
@@ -108,21 +108,21 @@ class ClothesAdd extends Component {
             data.total_money*0.8/4*0.4)
 
 
-        let myItems = [];
-        let newItemsListData = newItems.map( data =>{
+        // let myItems = [];
+        // let newItemsListData = newItems.map( data =>{
 
-            data.forEach((data) =>{
-                // console.log(data.id_item)
+        //     data.forEach((data) =>{
+        //         // console.log(data.id_item)
                 
-                myItems.push({
-                    id_item: data.id_item,
-                    title: data.title,
-                    image_link: data.image_link,
-                    });
-                })
-            })
+        //         myItems.push({
+        //             id_item: data.id_item,
+        //             title: data.title,
+        //             image_link: data.image_link,
+        //             });
+        //         })
+        //     })
 
-        console.log(myItems, 'zijn')
+        // console.log(myItems, 'zijn')
 
         return (
              <>

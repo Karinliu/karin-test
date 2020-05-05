@@ -50,7 +50,7 @@ class Overview extends Component {
                 <MoneyBlock
                     toSpend={moneyToSpend}/>
 
-                <div class="row carousel">
+                <div className="row carousel">
                     <div className="col slide" id="slide-1">
                         <label> 
                             {/*<input type="radio" id="slide" name="slide"/>*/}
@@ -68,8 +68,8 @@ class Overview extends Component {
                                 </ul>
                             </nav>
                         </label>
-                        <a href="#slide-3" class="carousel-prev">Go to last slide</a>
-                        <a href="#slide-2" class="carousel-next">Go to second slide</a>
+                        <a href="#slide-3" className="carousel-prev">Go to last slide</a>
+                        <a href="#slide-2" className="carousel-next">Go to second slide</a>
                     </div>
 
                     <div className="col slide" id="slide-2">
@@ -87,8 +87,8 @@ class Overview extends Component {
                                 </ul>
                             </nav>
                         </label>
-                         <a href="#slide-1" class="carousel-prev">Go to first slide</a>
-                            <a href="#slide-3" class="carousel-next">Go to third slide</a>
+                         <a href="#slide-1" className="carousel-prev">Go to first slide</a>
+                            <a href="#slide-3" className="carousel-next">Go to third slide</a>
                     </div>
 
                     <div className="col slide" id="slide-3">
@@ -112,8 +112,8 @@ class Overview extends Component {
                                 </ul>
                             </nav>
                         </label>
-                        <a href="#slide-2" class="carousel-prev">Go to second slide</a>
-                        <a href="#slide-1" class="carousel-next">Go to first slide</a>
+                        <a href="#slide-2" className="carousel-prev">Go to second slide</a>
+                        <a href="#slide-1" className="carousel-next">Go to first slide</a>
                     </div>
                 </div>
                 <div className="row">
