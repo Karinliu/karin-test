@@ -31,6 +31,28 @@ class PinkItemsList3 extends Component {
           price: price,
           addClass: "d-block remove-btn"
         })
+
+        // let moneyToSpend = this.props.moneyToSpend[0];
+
+        // console.log(moneyToSpend > (e.target.value * 2))
+
+        // console.log(moneyToSpend, "wat heb ik te besteden")
+        // console.log(e.target.value, "wat is de button vallue")
+
+        // if(moneyToSpend > (e.target.value * 1)){
+        //   this.setState({value: this.state.value+1});
+
+        //   this.setState({
+        //     disable: "not-disable-btn add-btn"
+        //   })
+
+        //   console.log("MONEYTOSPEND IS OKAY")
+        // }else{
+        //   console.log("MONEYTOSPEND IS NOT OKAY")
+        //   this.setState({
+        //       disable: "disabled-btn add-btn"
+        //     })
+        // }
       }
 
       buttonClickedRemove(e) {
@@ -75,7 +97,7 @@ class PinkItemsList3 extends Component {
                   </section>
                   {/*<p>total price {this.props.overallNumber}</p>*/}
                 <p className="overall-price">the price is  
-                {this.state.price}</p>
+                {this.props.totalValue}</p>
                 <p className="title-item">{this.props.title}</p>
                 <button value={this.props.price} className={this.state.addClass} onClick={this.buttonClickedRemove}>
                   -

@@ -11,6 +11,9 @@ body,
 #root .d-show {
   display: block; }
 
+#root .disabled {
+  color: red; }
+
 #root .container {
   margin-top: 3.2em; }
 
@@ -55,7 +58,8 @@ body,
   width: 100%;
   box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1); }
   #root .btn:hover, #root .btn:focus {
-    color: black; }
+    color: black;
+    cursor: pointer; }
 
 #root .btn-pink {
   background: #DA106C; }
