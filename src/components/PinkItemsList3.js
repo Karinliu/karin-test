@@ -6,6 +6,7 @@ class PinkItemsList3 extends Component {
         this.state = {
               value: 0,
               price: "0,00",
+              result: "",
               addClass: 'd-none remove-btn'
         };
         this.buttonClickedAdd = this.buttonClickedAdd.bind(this);
@@ -22,8 +23,11 @@ class PinkItemsList3 extends Component {
 
         this.setState({
           price: price,
-          addClass: "d-block remove-btn"
+          addClass: "d-block remove-btn",
+          result: [...this.state.result + price]
         })
+
+        console.log (this.state.result)
       }
 
       buttonClickedRemove(e) {
@@ -37,6 +41,7 @@ class PinkItemsList3 extends Component {
           // const price = ( 0.1 * 10 + 0.2 * 10 ) / 10
 
           price = parseFloat(price).toFixed(2);
+          this.props.sendData(price);
 
           this.setState({
             price: price
@@ -50,6 +55,13 @@ class PinkItemsList3 extends Component {
           addClass: "d-none remove-btn"
         })
         }
+      }
+
+      totalPrice(){
+        console.log(this.state.price)
+
+
+         // this.props.sendData(price);
       }
 
     render() {
