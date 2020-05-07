@@ -1,44 +1,82 @@
-import React, { useState} from 'react';
-// import React, { useEffect} from 'react';
+import React, { Component } from 'react'
 
-function PinkItemList({ price, image_link, title }) {
-    // Declare a new state variable, which we'll call "count"
-    const [count, setCount] = useState(0);
-    const [overallNumber, setOverallNumber] = useState(0);
+class PinkItemsList3 extends Component {
+  constructor(props) {
+        super(props);
+        this.state = {
+              value: 0,
+              price: "0,00",
+              result: "",
+              addClass: 'd-none remove-btn'
+        };
+        this.buttonClickedAdd = this.buttonClickedAdd.bind(this);
+        this.buttonClickedRemove = this.buttonClickedRemove.bind(this);
+      }
+      
+      buttonClickedAdd(e) {
+        this.setState({value: this.state.value+1});
 
-    const addOne = (e) => {
+        let price = (this.state.value + 1.00)* e.target.value
+        // const price = ( 0.1 * 10 + 0.2 * 10 ) / 10
 
-        setCount(count + 1)
-        setOverallNumber(count * price)
+        price = parseFloat(price).toFixed(2);
+        this.props.sendData(price);
+
+        this.setState({
+          price: price,
+          addClass: "d-block remove-btn"
+        })
+      }
+
+      buttonClickedRemove(e) {
+        console.log(this.state.price)
+        console.log(e.target.value)
+
+        if(this.state.value > "0"){
+          this.setState({value: this.state.value - 1});
+
+          let price = (this.state.value - 1.00)* e.target.value
+          // const price = ( 0.1 * 10 + 0.2 * 10 ) / 10
+
+          price = parseFloat(price).toFixed(2);
+          this.props.sendData(price);
+
+          this.setState({
+            price: price
+          })
+        }else {
+          return;
+        }
+
+        if (this.state.price === e.target.value){
+          this.setState({
+          addClass: "d-none remove-btn"
+        })
+        }
+      }
+
+    render() {
+
+        return ( 
+          <>
+              <div className="col">
+                  <section>
+                    <img src={this.props.image_link} alt={this.props.title}/>
+                  </section>
+                  {/*<p>total price {this.props.overallNumber}</p>*/}
+                <p className="overall-price">the price is  
+                {this.state.price}</p>
+                <p className="title-item">{this.props.title}</p>
+                <button value={this.props.price} className={this.state.addClass} onClick={this.buttonClickedRemove}>
+                  -
+                </button>
+                <p className="price-item">€ {this.props.price}</p>
+                <button value={this.props.price} className="add-btn" onClick={this.buttonClickedAdd}>
+                  {this.state.value}
+                </button>
+              </div>
+          </>
+        )
     }
-
-    const minOne = (e) => {
-        setCount(count - 1)
-        setOverallNumber(count * price)
-    }
-
-    // useEffect(() => {
-    //     addOne()
-    //   })
-
-    return (
-        <div className="col">
-        <section>
-          <img src={image_link} alt={title}/>
-        </section>
-        {/*<p>total price {overallNumber}</p>*/}
-      <p className="overall-price">the price is {overallNumber}</p>
-      <p className="title-item">{title}</p>
-      <button className="remove-btn" onClick={() => minOne()}>
-        {count}
-      </button>
-      <p className="price-item">€ {price}</p>
-      <button className="add-btn" onClick={() => addOne()}>
-        {count}
-      </button>
-    </div>
-    );
-
 }
-
-export default PinkItemList
+export default PinkItemsList3

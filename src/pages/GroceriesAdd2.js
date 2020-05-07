@@ -101,7 +101,7 @@ class GroceriesAdd extends Component {
 
 
         return (
-        	 <>
+             <>
             <Header text="Terug"
                     textLink ="/Boodschappen"
                     addClass="header2"/>

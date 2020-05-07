@@ -20,14 +20,12 @@ class PinkItemsList3 extends Component {
         // const price = ( 0.1 * 10 + 0.2 * 10 ) / 10
 
         price = parseFloat(price).toFixed(2);
+        this.props.sendData(price);
 
         this.setState({
           price: price,
-          addClass: "d-block remove-btn",
-          result: [...this.state.result + price]
+          addClass: "d-block remove-btn"
         })
-
-        console.log (this.state.result)
       }
 
       buttonClickedRemove(e) {
@@ -57,13 +55,6 @@ class PinkItemsList3 extends Component {
         }
       }
 
-      totalPrice(){
-        console.log(this.state.price)
-
-
-         // this.props.sendData(price);
-      }
-
     render() {
 
         return ( 
@@ -73,7 +64,8 @@ class PinkItemsList3 extends Component {
                     <img src={this.props.image_link} alt={this.props.title}/>
                   </section>
                   {/*<p>total price {this.props.overallNumber}</p>*/}
-                <p className="overall-price">the price is {this.state.price}</p>
+                <p className="overall-price">the price is  
+                {this.state.price}</p>
                 <p className="title-item">{this.props.title}</p>
                 <button value={this.props.price} className={this.state.addClass} onClick={this.buttonClickedRemove}>
                   -
