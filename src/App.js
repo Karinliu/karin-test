@@ -30,7 +30,6 @@ function App() {
           <Route path='/Tips' component={Tips}/>
           <Route path='/Verzorging' component={Grooming}/>
           <Route path='/VerzorgingToevoegen' component={GroomingAdd}/>
-          <Route path='/GroceriesAdd2' component={GroceriesAdd2}/>
           <Route path='/Chatten' component={Chat}/>
           <Route component={NotFound} />
         </Switch>
