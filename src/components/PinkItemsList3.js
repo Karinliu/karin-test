@@ -7,7 +7,8 @@ class PinkItemsList3 extends Component {
               value: 0,
               price: "0,00",
               result: "",
-              addClass: 'd-none remove-btn'
+              addClass: 'd-none remove-btn',
+
         };
         this.buttonClickedAdd = this.buttonClickedAdd.bind(this);
         this.buttonClickedRemove = this.buttonClickedRemove.bind(this);
@@ -20,7 +21,11 @@ class PinkItemsList3 extends Component {
         // const price = ( 0.1 * 10 + 0.2 * 10 ) / 10
 
         price = parseFloat(price).toFixed(2);
-        this.props.sendData(price);
+        
+        // this.props.addValue(e.target.value);
+
+        const priceAddValue = e.target.value;
+        this.props.dataAddValue(priceAddValue); 
 
         this.setState({
           price: price,
@@ -39,7 +44,12 @@ class PinkItemsList3 extends Component {
           // const price = ( 0.1 * 10 + 0.2 * 10 ) / 10
 
           price = parseFloat(price).toFixed(2);
-          this.props.sendData(price);
+          // this.props.sendData(e.target.value);
+
+          console.log(e.target.value)
+
+          const priceRemoveValue = e.target.value;
+          this.props.dataRemoveValue(priceRemoveValue); 
 
           this.setState({
             price: price
