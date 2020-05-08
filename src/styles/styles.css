@@ -66,6 +66,34 @@ body,
   #root .btn-pink:hover, #root .btn-pink:focus {
     background: rgba(222, 16, 105, 0.85); }
 
+#root .modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 200;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.6); }
+  #root .modal .popup-block {
+    height: 10em;
+    background-color: #fff;
+    margin: 1.5em auto;
+    display: block;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: 1px solid #DA106C;
+    margin: auto 2.5em;
+    border-radius: 1em;
+    box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1);
+    padding: 1.5em; }
+    #root .modal .popup-block button {
+      margin-top: 1.2em; }
+
 #root .btn-red {
   background: #FD9393; }
   #root .btn-red:hover, #root .btn-red:focus {
@@ -241,7 +269,11 @@ body,
     margin-bottom: 0;
     display: flex;
     padding: 1em;
-    flex: auto; }
+    flex: auto;
+    color: #DA106C; }
+    #root .overview-expenses-page .item-overview:hover, #root .overview-expenses-page .item-overview:focus {
+      text-decoration: none;
+      opacity: 0.7; }
     #root .overview-expenses-page .item-overview span {
       width: 1.5rem;
       height: 1.5rem;
@@ -365,7 +397,8 @@ body,
         flex-grow: 1; }
       #root .home-page .carousel label .item-overview .piggybank {
         margin: 0 auto;
-        text-align: center; }
+        text-align: center;
+        color: #DA106C; }
     #root .home-page .carousel label a {
       color: #DA106C;
       font-size: 1em;
@@ -551,49 +584,56 @@ body,
         color: #DA106C;
         display: block; }
 
-#root .clothes-page-two {
+#root .section-page-two {
   padding-top: 10em;
   background-color: rgba(222, 16, 105, 0.1); }
-  #root .clothes-page-two .col {
+  #root .section-page-two .col {
     margin: 0.5em 0;
     flex: auto; }
-    #root .clothes-page-two .col label {
+    #root .section-page-two .col label {
       background-color: rgba(255, 255, 255, 0.6);
       display: flex;
       padding: 1em; }
-      #root .clothes-page-two .col label input {
+      #root .section-page-two .col label input {
         margin-right: 1em; }
-      #root .clothes-page-two .col label span {
+      #root .section-page-two .col label span {
         display: none; }
-      #root .clothes-page-two .col label section {
+      #root .section-page-two .col label section {
         background-color: #fff;
         border-radius: 0.5em;
         padding: 0.5em;
         width: 5rem;
         display: block; }
-        #root .clothes-page-two .col label section img {
+        #root .section-page-two .col label section img {
           width: 100%;
           display: inline-block; }
-      #root .clothes-page-two .col label p {
+      #root .section-page-two .col label p {
         margin: auto 1em; }
-  #root .clothes-page-two .option-block {
+  #root .section-page-two .option-block-see-items {
+    padding: 1.5em;
+    background-color: #fff;
+    border-radius: 2em 2em 0 0;
+    padding-bottom: 4em;
+    background-color: #F2F2F2;
+    margin-bottom: -2em; }
+  #root .section-page-two .option-block {
     padding: 1.5em;
     background-color: #fff;
     border-radius: 2em 2em 0 0; }
-    #root .clothes-page-two .option-block p {
+    #root .section-page-two .option-block p {
       font-size: 1.2em;
       text-align: center; }
-    #root .clothes-page-two .option-block .no-img {
+    #root .section-page-two .option-block .no-img {
       margin: 1em auto;
       width: 50%;
       display: block; }
-    #root .clothes-page-two .option-block .no-btn + p {
+    #root .section-page-two .option-block .no-btn + p {
       display: none; }
-      #root .clothes-page-two .option-block .no-btn + p + a {
+      #root .section-page-two .option-block .no-btn + p + a {
         display: none; }
-        #root .clothes-page-two .option-block .no-btn + p + a + button {
+        #root .section-page-two .option-block .no-btn + p + a + button {
           display: none; }
-          #root .clothes-page-two .option-block .no-btn + p + a + button + button {
+          #root .section-page-two .option-block .no-btn + p + a + button + button {
             display: none; }
 
 #root > .pink-list {
@@ -729,6 +769,67 @@ body,
     background-size: auto;
     background-repeat: no-repeat;
     height: 20em; }
+
+#root .confirm-expenses-page {
+  background-color: #DA106C;
+  padding-bottom: 8em; }
+  #root .confirm-expenses-page .row:first-child {
+    padding: 1.5em 0;
+    background-image: url("../assets/images/hand.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 85% 85%; }
+  #root .confirm-expenses-page .row .confirm-header {
+    padding: 1em; }
+    #root .confirm-expenses-page .row .confirm-header p:first-child {
+      background: #fff;
+      border-radius: 0.5em;
+      text-align: center;
+      width: max-content;
+      margin: 0 auto;
+      padding: 0.3em 1em; }
+    #root .confirm-expenses-page .row .confirm-header .money {
+      font-size: 2.5em;
+      text-align: center;
+      color: #fff;
+      margin: 1em auto;
+      padding-top: 1em; }
+  #root .confirm-expenses-page .confirm-section-block {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 1.5em;
+    border-radius: 2em 2em 0 0;
+    box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1); }
+    #root .confirm-expenses-page .confirm-section-block form fieldset {
+      display: flex;
+      flex-direction: row; }
+      #root .confirm-expenses-page .confirm-section-block form fieldset legend {
+        width: 100%;
+        font-size: 1.2em;
+        text-align: center; }
+      #root .confirm-expenses-page .confirm-section-block form fieldset span {
+        font-size: 2em;
+        margin: 1em auto;
+        position: absolute;
+        margin-left: 0.5em;
+        color: #7d7d7a; }
+      #root .confirm-expenses-page .confirm-section-block form fieldset input {
+        width: 100%;
+        max-height: 1.4em;
+        margin: 1em auto;
+        font-size: 2em;
+        border: none;
+        border-bottom: 1px solid #000;
+        padding-left: 1.5em; }
+        #root .confirm-expenses-page .confirm-section-block form fieldset input:hover, #root .confirm-expenses-page .confirm-section-block form fieldset input:focus {
+          border-bottom: 1px solid #DA106C; }
 
 #root footer {
   position: fixed;

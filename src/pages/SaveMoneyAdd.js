@@ -12,7 +12,7 @@ class SaveMoneyAdd extends Component {
             <Header text="Terug"
                     textLink ="/Sparen"
                     addClass="header2"/>
-            <HeaderMoney toSpend="60,00" />
+            <HeaderMoney text="Deze week te besteden" toSpend="60,00" />
             <div className="container save-money-page background-gray">
                 <Title classes="header-title" text="Toevoegen"/> 
                 <nav className="row category">

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Header,PinkItemsList2,TitleCategory,  HeaderMoney} from '../components/';
+import {Title, Header,PinkItemsList2,TitleCategory, Footer, HeaderMoney} from '../components/';
 import {itemsJson, myAccount, smiley} from '../assets/';
 import { Link } from 'react-router-dom';
 
@@ -20,28 +20,7 @@ class ClothesAdd extends Component {
     }
 
     handleClick = (e) => {
-        if (e.target.checked === true) {
-            const listItem = e.target.value;
-            const items = [...this.state.items, listItem]
-            // const items = [listItem + ', '+this.state.items]
-
-            this.setState({
-                items: items
-            })
-        }
-        if (e.target.checked === false) {
-            const listItem = e.target.value;
-
-            const filteredItems = this.state.items.find(item => {
-                return item === listItem
-            })
-
-            this.setState({
-                items: this.state.items.filter(item => {
-                    return item !== filteredItems
-                })
-            });
-        }
+        console.log("ja")
     }
 
     toggleDetails(){
@@ -129,7 +108,7 @@ class ClothesAdd extends Component {
             <Header text="Terug"
                     textLink ="/Kleding"
                     addClass="header2"/>
-            <HeaderMoney toSpend={moneyToSpend} />
+            <HeaderMoney text="Deze week te besteden" toSpend={moneyToSpend} />
             <div className={boxClassSee.join('container pink-list clothes-page ')}>
                 <Title classes="header-title"/> 
                 
@@ -148,7 +127,7 @@ class ClothesAdd extends Component {
                 </form>
             </div>
 
-            <div className={boxClassHide.join('container clothes-page-two ')}>
+            <div className={boxClassHide.join('container section-page-two ')}>
                 <div className="row">
                     {newItemsList}
                 </div>
@@ -169,6 +148,7 @@ class ClothesAdd extends Component {
                     </div>
                 </div>
             </div>
+            <Footer/>
             </>
         )
     }

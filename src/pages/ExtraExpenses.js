@@ -31,6 +31,7 @@ class ExtraExpenses extends Component {
 
     render() {
         const extraExpensesItems = myAccount.extra_expenses.map(data =>
+                
                 <GrayBlockItem 
                     addclass = "item-overview col"
                     class = {data.class}

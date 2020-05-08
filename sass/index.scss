@@ -6,6 +6,7 @@ $whiteLight: rgba(255, 255, 255, 0.6);
 $black: #000;
 $lightGrey: #F2F2F2;
 $navigationBoxGray: #FCFCFC;
+$gray: rgb(125, 125, 122);
 $border: #707070;
 $borderNav: #DEE2E6;
 $mintGreen: #C1F0DD;
@@ -106,6 +107,39 @@ body,
         &:hover,
         &:focus {
             background: rgba(222, 16, 105, 0.85)
+        }
+    }
+
+    .modal{
+        position: fixed;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 200;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: $whiteLight;
+
+        .popup-block{
+            height: 10em;
+            background-color: $white;
+            margin: 1.5em auto;
+            display: block;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            border: 1px solid $primaryColor;
+            margin: auto 2.5em;
+            border-radius: 1em;
+            box-shadow: 0 0.5em 1em 0 $shadow;
+            padding: 1.5em;
+
+            button{
+                margin-top: 1.2em;
+            }
         }
     }
 
@@ -372,6 +406,14 @@ body,
             display: flex;
             padding: 1em;
             flex: auto;
+            color: $primaryColor;
+
+            &:hover,
+            &:focus{
+                text-decoration: none;
+                opacity: 0.7;
+            }
+
 
             span {
                 width: 1.5rem;
@@ -555,6 +597,7 @@ body,
                     .piggybank {
                         margin: 0 auto;
                         text-align: center;
+                        color: $primaryColor;
                     }
                 }
 
@@ -866,7 +909,7 @@ body,
 
     }
 
-    .clothes-page-two {
+    .section-page-two {
         padding-top: 10em;
         background-color: $primaryColorLight;
 
@@ -904,6 +947,16 @@ body,
                     margin: auto 1em;
                 }
             }
+        }
+
+        .option-block-see-items{
+            padding: 1.5em;
+            background-color: $white;
+            border-radius: 2em 2em 0 0;
+            padding-bottom: 4em;
+            background-color: $lightGrey;
+            margin-bottom: -2em;
+
         }
 
         .option-block {
@@ -1159,6 +1212,95 @@ body,
                 height: 20em;
             }
         }
+    }
+
+    .confirm-expenses-page{
+        background-color: $primaryColor;
+        padding-bottom: 8em;
+        .row{
+            &:first-child{
+                padding: 1.5em 0;
+                background-image: url('../assets/images/hand.png');
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-size: 85% 85%;
+            }
+
+            .confirm-header{
+                
+                padding: 1em;
+
+
+
+                p{
+                    &:first-child{
+                        background: $white;
+                        border-radius: 0.5em;
+                        text-align: center;
+                        width: max-content;
+                        margin: 0 auto;
+                        padding: 0.3em 1em;
+                    }
+                }
+
+                .money{
+                    font-size: 2.5em;
+                    text-align: center;
+                    color: $white;
+                    margin: 1em auto;
+                    padding-top: 1em;
+                }
+            }
+        }
+
+        .confirm-section-block{
+                position: absolute;
+                bottom: 0;
+                display: inline-block;
+                width: 100%;
+                left: 0;
+                margin: 0;
+                padding: 1.5em;
+                border-radius: 2em 2em 0 0;
+                box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1);
+                z-index: 2;
+                background: $white;
+                box-shadow: 0 0.5em 1em 0 $shadow;
+
+                form{
+                    fieldset{
+                        display: flex;
+                        flex-direction: row;
+                        legend{
+                            width: 100%;
+                            font-size: 1.2em;
+                            text-align: center;
+                        }
+                        span{
+                            font-size: 2em;
+                            margin: 1em auto;
+                            position: absolute;
+                            margin-left: 0.5em;
+                            color: $gray;
+                        }
+                        input{
+                            width: 100%;
+                            max-height: 1.4em;
+                            margin: 1em auto;
+                            font-size: 2em;
+                            border: none;
+                            border-bottom: 1px solid $black;
+                            padding-left: 1.5em;
+
+                            &:hover,
+                            &:focus{
+                                border-bottom: 1px solid $primaryColor;
+                            }
+
+                        }
+                    }
+                }
+            }
     }
 
     footer {

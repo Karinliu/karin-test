@@ -17,7 +17,7 @@ class Add extends Component {
             <Header text="Terug"
                     textLink ="/Overview"
                     addClass="header2"/>
-            <HeaderMoney toSpend={moneyToSpend} />
+            <HeaderMoney text="Deze week te besteden" toSpend={moneyToSpend} />
             <div className="container background-gray add-category-page">
                 <Title classes="header-title" text="Toevoegen"/> 
                 <nav className="row category">
@@ -28,7 +28,6 @@ class Add extends Component {
             </div>
 
             <Footer/>
-
             </>
         )
     }
