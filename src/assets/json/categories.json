@@ -57,5 +57,9 @@
         "title": "Geld uithalen",
         "class": "take_money",
          "text_link":"UithalenSpaarpot"
+    },{
+        "title": "Doelen zetten",
+        "class": "target",
+         "text_link":"DoelenZetten"
     }]
 }

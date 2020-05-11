@@ -66,6 +66,9 @@ body,
   #root .btn-pink:hover, #root .btn-pink:focus {
     background: rgba(222, 16, 105, 0.85); }
 
+#root .pink-background {
+  background-color: #DA106C; }
+
 #root .modal {
   position: fixed;
   left: 0;
@@ -167,7 +170,7 @@ body,
       #root header nav ul .Terug {
         background-image: url("../assets/images/terug.png"); }
       #root header nav ul .to-do {
-        background-image: url("../assets/images/to-do.png"); }
+        background-image: url("../assets/images/shopping_cart_white.png"); }
       #root header nav ul .help {
         background-image: url("../assets/images/help.png"); }
       #root header nav ul li {
@@ -253,6 +256,10 @@ body,
 #root .overview-expenses-page {
   background-color: #FDFCFF;
   min-height: 91vh; }
+  #root .overview-expenses-page a {
+    width: 100%; }
+    #root .overview-expenses-page a:hover, #root .overview-expenses-page a:focus {
+      text-decoration: none; }
   #root .overview-expenses-page h2 {
     text-align: center;
     margin: 0 auto;
@@ -261,6 +268,8 @@ body,
     margin-top: 1.3em; }
     #root .overview-expenses-page h2 span {
       margin-right: 0.5em; }
+      #root .overview-expenses-page h2 span img {
+        height: 1.5em; }
   #root .overview-expenses-page .item-overview {
     background-color: #F2F2F2;
     width: auto;
@@ -270,7 +279,7 @@ body,
     display: flex;
     padding: 1em;
     flex: auto;
-    color: #DA106C; }
+    color: #000; }
     #root .overview-expenses-page .item-overview:hover, #root .overview-expenses-page .item-overview:focus {
       text-decoration: none;
       opacity: 0.7; }
@@ -397,8 +406,7 @@ body,
         flex-grow: 1; }
       #root .home-page .carousel label .item-overview .piggybank {
         margin: 0 auto;
-        text-align: center;
-        color: #DA106C; }
+        text-align: center; }
     #root .home-page .carousel label a {
       color: #DA106C;
       font-size: 1em;
@@ -455,6 +463,9 @@ body,
 
 #root .see_money {
   background-image: url("../assets/images/purple_eye.png"); }
+
+#root .target {
+  background-image: url("../assets/images/purple_target.png"); }
 
 #root .add_save {
   background-image: url("../assets/images/purple_jar.png"); }
@@ -564,6 +575,9 @@ body,
 
 #root .save-money-page nav.category ul li a:hover .take_money, #root .save-money-page nav.category ul li a:focus .take_money {
   background-image: url("../assets/images/white_arrow_down.png"); }
+
+#root .save-money-page nav.category ul li a:hover .target, #root .save-money-page nav.category ul li a:focus .target {
+  background-image: url("../assets/images/white_target.png"); }
 
 #root .piggybank-view-page {
   height: 80vh;
@@ -829,7 +843,205 @@ body,
         border-bottom: 1px solid #000;
         padding-left: 1.5em; }
         #root .confirm-expenses-page .confirm-section-block form fieldset input:hover, #root .confirm-expenses-page .confirm-section-block form fieldset input:focus {
-          border-bottom: 1px solid #DA106C; }
+          border-bottom: 1px solid #DA106C;
+          box-shadow: 0 0 5px rgba(222, 16, 105, 0.1); }
+        #root .confirm-expenses-page .confirm-section-block form fieldset input:valid {
+          color: #7DC8BC; }
+        #root .confirm-expenses-page .confirm-section-block form fieldset input:invalid {
+          color: #FD9393; }
+    #root .confirm-expenses-page .confirm-section-block form:valid {
+      display: block; }
+    #root .confirm-expenses-page .confirm-section-block form:invalid button {
+      display: none !important; }
+  #root .confirm-expenses-page .modal h2 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #DA106C; }
+
+#root .goals-page {
+  padding-bottom: 10em; }
+  #root .goals-page .goals-header {
+    padding: 1.5em; }
+    #root .goals-page .goals-header img {
+      width: 60%;
+      margin: 0 auto;
+      display: block; }
+
+#root .goals-option-block {
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  height: 45vh;
+  border-radius: 2em 2em 0 0;
+  padding: 1.5em; }
+  #root .goals-option-block .option-block-title p {
+    text-align: center;
+    font-size: 1.2em; }
+
+#root .option-block-options {
+  background-color: rgba(222, 16, 105, 0.1);
+  padding: 1.5em;
+  margin-bottom: 1em; }
+  #root .option-block-options a span {
+    background-color: #fff;
+    width: 7rem;
+    height: 7rem;
+    display: inline-block;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    border-radius: 0.5em; }
+    #root .option-block-options a span:hover, #root .option-block-options a span:focus {
+      background-color: #7E1EDA; }
+  #root .option-block-options a .see_money:hover, #root .option-block-options a .see_money:focus {
+    background-image: url("../assets/images/white_eye.png"); }
+  #root .option-block-options a .add_target {
+    background-image: url("../assets/images/purple_add.png"); }
+    #root .option-block-options a .add_target:hover, #root .option-block-options a .add_target:focus {
+      background-image: url("../assets/images/white_add.png"); }
+  #root .option-block-options a p {
+    color: black;
+    margin-bottom: 0; }
+  #root .option-block-options a:hover, #root .option-block-options a:focus {
+    text-decoration: none; }
+
+#root .piggybank-add-page .btn-container-money {
+  position: absolute;
+  width: 100%;
+  margin-bottom: 1em;
+  bottom: 0; }
+
+#root .piggybank-add-page .modal h2 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #DA106C; }
+
+#root .piggybank-add-page .jar-money .col {
+  margin-top: 1em;
+  margin-bottom: 4em; }
+  #root .piggybank-add-page .jar-money .col .jar-lid {
+    height: 2em;
+    background-color: #FFD662;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 1em 1em 0em 0em; }
+  #root .piggybank-add-page .jar-money .col .jar-bowl {
+    background-color: #AFDFFA;
+    height: 13em;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 2em;
+    overflow: hidden; }
+  #root .piggybank-add-page .jar-money .col .coin .dollar {
+    background-color: #f7941e;
+    height: 2em;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    width: 2em;
+    font-size: 2em; }
+  #root .piggybank-add-page .jar-money .col .coin .dollar-one {
+    animation: mymove1 3s; }
+  #root .piggybank-add-page .jar-money .col .coin .dollar-two {
+    animation: mymove2 3s; }
+  #root .piggybank-add-page .jar-money .col .coin .dollar-three {
+    animation: mymove3 3s; }
+  #root .piggybank-add-page .jar-money .col .coin .dollar-four {
+    animation: mymove4 3s; }
+  #root .piggybank-add-page .jar-money .col .coin .dollar-five {
+    animation: mymove5 3s; }
+
+#root .piggybank-add-page .jar-money-title {
+  z-index: 10;
+  position: absolute;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-bottom: 1em; }
+  #root .piggybank-add-page .jar-money-title p {
+    font-size: 1.2em;
+    text-align: center; }
+
+#root .piggybank-add-page .jar-money-add {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  height: 17em;
+  border-radius: 2em 2em 0 0;
+  width: 100%;
+  padding: 1.5em;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: hidden; }
+  #root .piggybank-add-page .jar-money-add .money-items {
+    margin-top: 2em;
+    display: block;
+    min-width: 12em; }
+    #root .piggybank-add-page .jar-money-add .money-items section {
+      border: 1px solid #fff;
+      background-color: #fff;
+      display: block;
+      width: 10.5rem;
+      height: 6rem;
+      padding: .5em;
+      position: relative;
+      border-radius: 0.5em; }
+      #root .piggybank-add-page .jar-money-add .money-items section img {
+        margin: 1em auto;
+        display: inline-block;
+        max-height: 4rem;
+        max-width: 8rem;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        left: 0;
+        right: 0; }
+    #root .piggybank-add-page .jar-money-add .money-items .title-item {
+      display: inline-block;
+      vertical-align: text-top;
+      margin-top: 0.5em;
+      margin-bottom: 0;
+      width: 100%; }
+    #root .piggybank-add-page .jar-money-add .money-items .price-item {
+      width: max-content;
+      margin: 0.5em;
+      display: inline-block; }
+    #root .piggybank-add-page .jar-money-add .money-items button {
+      color: #7E1EDA;
+      border: 1px solid #7E1EDA;
+      border-radius: 50%;
+      background-color: transparent;
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1.5em;
+      vertical-align: bottom; }
+      #root .piggybank-add-page .jar-money-add .money-items button:hover, #root .piggybank-add-page .jar-money-add .money-items button:focus {
+        background: #7E1EDA;
+        color: transparent;
+        cursor: pointer; }
+        #root .piggybank-add-page .jar-money-add .money-items button:hover:before, #root .piggybank-add-page .jar-money-add .money-items button:hover:after, #root .piggybank-add-page .jar-money-add .money-items button:focus:before, #root .piggybank-add-page .jar-money-add .money-items button:focus:after {
+          color: #fff;
+          position: absolute; }
+    #root .piggybank-add-page .jar-money-add .money-items .remove-btn {
+      float: left; }
+      #root .piggybank-add-page .jar-money-add .money-items .remove-btn:hover:before, #root .piggybank-add-page .jar-money-add .money-items .remove-btn:focus:before {
+        content: "-"; }
+    #root .piggybank-add-page .jar-money-add .money-items .add-btn {
+      float: right; }
+      #root .piggybank-add-page .jar-money-add .money-items .add-btn:hover:before, #root .piggybank-add-page .jar-money-add .money-items .add-btn:focus:before {
+        content: "+"; }
 
 #root footer {
   position: fixed;
@@ -1001,3 +1213,33 @@ body,
 @media (min-width: 1281px) {
   body {
     background-color: white; } }
+
+@keyframes mymove1 {
+  from {
+    top: -2em; }
+  to {
+    top: 4.5em; } }
+
+@keyframes mymove2 {
+  from {
+    top: -6em; }
+  to {
+    top: 10em; } }
+
+@keyframes mymove3 {
+  from {
+    top: -10em; }
+  to {
+    top: 10em; } }
+
+@keyframes mymove4 {
+  from {
+    top: -14em; }
+  to {
+    top: 10em; } }
+
+@keyframes mymove5 {
+  from {
+    top: -18em; }
+  to {
+    top: 10em; } }

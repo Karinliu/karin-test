@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Title, Footer, Header, GrayBlockItem} from '../components/';
-import {myAccount, checklist} from '../assets'
+import {myAccount, shoppingcart} from '../assets'
+import { Link } from 'react-router-dom';
 
 class ExtraExpenses extends Component {
         // constructor(props) {
@@ -31,12 +32,13 @@ class ExtraExpenses extends Component {
 
     render() {
         const extraExpensesItems = myAccount.extra_expenses.map(data =>
-                
+                <Link to="/BevestigenUitgave">
                 <GrayBlockItem 
-                    addclass = "item-overview col"
+                    addClass="item-overview col"
                     class = {data.class}
                     title = {data.title} 
                     total_price = {data.total_price}/>
+                </Link>
         )   
 
         let data = this.props.location.myItems
@@ -63,9 +65,9 @@ class ExtraExpenses extends Component {
             <Header text="Terug"
                     textLink ="/Overview"/>
             <div className="container overview-expenses-page">
-              <Title classes="header-title" text="Nog uitgeven"/> 
+              <Title classes="header-title" text="Nog halen"/> 
                 <div className="row">
-                <h2><span aria-hidden="true"><img src={checklist} alt="checklist"/></span>Wat ga ik nog uitgeven</h2>
+                <h2><span aria-hidden="true"><img src={shoppingcart} alt="checklist"/></span>Wat ga ik nog halen</h2>
                 </div>
               <div className="row">
                 {extraExpensesItems}

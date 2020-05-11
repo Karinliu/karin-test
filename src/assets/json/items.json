@@ -274,6 +274,42 @@
         "title": "Overige",
         "id_item":"overige",
         "image_link": "https://pluspng.com/img-png/free-png-plus-sign-plus-icon-512.png"
+    }],
+    "data_price": [{
+        "price": "50.00",
+        "id_item": "50",
+        "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/50-Euro.svg/1200px-50-Euro.svg.png"
+    },{
+        "price": "20.00",
+        "id_item": "20",
+        "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/20-Euro.svg/1200px-20-Euro.svg.png"
+    },{
+        "price": "10.00",
+        "id_item": "10",
+        "image_link": "https://upload.wikimedia.org/wikipedia/commons/8/88/10_Euro.Recto.printcode_place.png"
+    },{
+        "price": "5.00",
+        "id_item": "5",
+        "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/5-Euro.svg/1200px-5-Euro.svg.png"
+    },{
+        "price": "2.00",
+        "id_item": "2",
+        "image_link": "https://www.munthuis.be/images/stories/sn/verdrag-van-rome/50-jaar-verdrag-Rome-Herdenkingseuro-achterzijde.png"
+    },{
+        "price": "1.00",
+        "id_item": "1",
+        "image_link": "https://www.sum.nl/wp-content/uploads/2020/02/images_A_Illustraties_euro-145386_1280.png"
+    },{
+        "price": "0.50",
+        "id_item": "0_50",
+        "image_link": "https://www.munthuis.be/images/stories/sn/verdrag-van-rome/50-jaar-verdrag-Rome-Herdenkingseuro-achterzijde.png"
+    },{
+        "price": "0.10",
+        "id_item": "0_10",
+        "image_link": "https://i.ya-webdesign.com/images/euro-coins-png-1.png"
+    },{
+        "price": "0.05",
+        "id_item": "0_10",
+        "image_link": "https://www.pngitem.com/pimgs/m/241-2413920_download-euro-5-cent-5-cent-png-transparent.png"
     }]
-
 }

@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import {Title, Footer, Header, GrayBlockItem} from '../components/';
 import {myAccount, calendar} from '../assets'
+import { Link } from 'react-router-dom';
 
 class AllExpenses extends Component {
     render() {
 
         const allExpensesItems = myAccount.all_expenses.map(data =>
-                <GrayBlockItem 
-                    addclass = "item-overview col"
+                    <GrayBlockItem 
+                    addClass = "item-overview col"
                     class = {data.class}
                     title = {data.title} 
                     total_price = {data.total_price}/>

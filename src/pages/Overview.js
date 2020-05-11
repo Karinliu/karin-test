@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Title, Header, MoneyBlock, GrayBlockItem} from '../components/';
 import { Link } from 'react-router-dom';
-import {piggybank, calendar, checklist} from '../assets'
+import {piggybank, calendar, shoppingcart} from '../assets'
 import {myAccount} from '../assets/';
 
 class Overview extends Component {
@@ -11,7 +11,7 @@ class Overview extends Component {
 
         const allExpensesFirstItem = myAccount.all_expenses.map(data =>
                 <GrayBlockItem 
-                    addclass = "item-overview"
+                    addClass = "item-overview"
                     class = {data.class}
                     title = {data.title} 
                     total_price = {data.total_price}/>
@@ -19,7 +19,7 @@ class Overview extends Component {
 
         const extraExpensesFirstItem = myAccount.extra_expenses.map(data =>
                 <GrayBlockItem 
-                    addclass = "item-overview"
+                    addClass = "item-overview"
                     class = {data.class}
                     title = {data.title} 
                     total_price = {data.total_price}/>
@@ -93,7 +93,7 @@ class Overview extends Component {
 
                     <div className="col slide" id="slide-3">
                         <label> 
-                            <h2><span aria-hidden="true"><img src={checklist} alt="checklist"/></span>Wat ga ik nog uitgeven</h2>
+                            <h2><span aria-hidden="true"><img src={shoppingcart} alt="shoppingcart"/></span>Dit ga ik nog halen</h2>
                             {extraExpensesFirstItem}
 
                             <Link
@@ -103,7 +103,7 @@ class Overview extends Component {
                               }}
                             >
 
-                            Ga naar overzicht wat ik nog ga uitgeven <span>></span></Link>
+                            Ga naar overzicht wat ik nog ga halen <span>></span></Link>
                             <nav className="carousel-dots">
                                 <ul>
                                     <li><a href="#slide-1" >Go to first slide</a></li>

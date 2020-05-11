@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Title, Header, Footer, PinkItemsList, TitleCategory,  HeaderMoney} from '../components/';
-import {itemsJson} from '../assets/';
-import {myAccount} from '../assets/';
+import {itemsJson, myAccount} from '../assets/';
 import { Link } from 'react-router-dom';
 
 class GroceriesAdd extends Component {

@@ -4,7 +4,7 @@ import {Title, Footer, Header} from '../components/';
 class ViewPiggyBank extends Component {
     render() {
 
-        const gespaard = "99000,00"
+        const gespaard = "00.00"
 
         return (
              <>

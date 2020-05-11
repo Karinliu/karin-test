@@ -4,7 +4,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import {Login, Mail, ConfirmExpenses, GroceriesAdd2, Grooming, GroomingAdd, Chat, Tips, Call, Overview, ViewPiggyBank, ExtraExpenses, SaveMoney, SaveMoneyAdd, FreeTime, FreeTimeAdd,  Clothes, ClothesAdd, AllExpenses, Help, Add, Groceries,GroceriesAdd, NotFound} from './pages';
+import {Login, AddGoals, Mail, Goals, ConfirmExpenses, PiggyBankAdd, GroceriesAdd2, Grooming, GroomingAdd, Chat, Tips, Call, Overview, ViewPiggyBank, ExtraExpenses, SaveMoney, SaveMoneyAdd, FreeTime, FreeTimeAdd,  Clothes, ClothesAdd, AllExpenses, Help, Add, Groceries,GroceriesAdd, NotFound} from './pages';
 
 function App() {
   return (
@@ -25,12 +25,15 @@ function App() {
           <Route path='/Sparen' component={SaveMoney}/>
           <Route path='/SparenToevoegen' component={SaveMoneyAdd}/>
           <Route path='/BekijkenSpaarpot' component={ViewPiggyBank}/>
+          <Route path='/ToevoegenSpaarpot' component={PiggyBankAdd}/>
           <Route path='/Mail' component={Mail}/>
           <Route path='/Bellen' component={Call}/>
           <Route path='/Tips' component={Tips}/>
           <Route path='/Verzorging' component={Grooming}/>
+          <Route path='/DoelenToevoegen' component={AddGoals}/>
           <Route path='/VerzorgingToevoegen' component={GroomingAdd}/>
           <Route path='/BevestigenUitgave' component={ConfirmExpenses}/>
+          <Route path='/DoelenZetten' component={Goals}/>
           <Route path='/Chatten' component={Chat}/>
           <Route component={NotFound} />
         </Switch>

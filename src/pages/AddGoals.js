@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, MoneyBlock, ChosenCategory, Modal2 , Footer} from '../components/';
+import { Header, MoneyBlock, ChosenCategory, Modal4 , Footer} from '../components/';
 import { categoriesJson, myAccount } from '../assets/';
 import { Link } from 'react-router-dom';
 
@@ -53,15 +53,15 @@ class ConfirmExpenses extends Component {
             <div className = "container confirm-expenses-page" >
                 <div className="row">
                         <div className="col col-md-10 col-lg-6 confirm-header">
-                        <p>Hoeveel kost het?</p>
+                        <p>Hoeveel wil ik sparen?</p>
                         <p className="money">€</p>
                         </div>
                     </div> 
                 <div className = "row confirm-section-block" >
                     <form onSubmit={this.submitHandler} method="post" action="/overview">
                             <fieldset>
-                                <legend className={boxClassSee.join('test ')}>Hoeveel heb ik uiteindelijk betaald voor al mijn boodschappen bij elkaar?</legend>
-                                <legend className={boxClassHide.join('test ')}>Klopt het dat ik dit heb uitgegeven aan boodschappen?</legend>
+                                <legend className={boxClassSee.join('test ')}>Hoeveel wil ik sparen?</legend>
+                                <legend className={boxClassHide.join('test ')}>Klopt het dat ik dit bedrag wil sparen?</legend>
                                 <span>€</span>
 
                                 <input 
@@ -89,7 +89,7 @@ class ConfirmExpenses extends Component {
                         <button className={boxClassHide.join('test btn btn-orange ')} onClick={this.toggleDetails.bind(this)}> Ik wil nog wat wijzigen</button>
                     </form> 
                 </div>
-                < Modal2 
+                < Modal4 
                 addClass={this.state.disable}
                 action={this.handler}/>
             </div>
