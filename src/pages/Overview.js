@@ -48,6 +48,7 @@ class Overview extends Component {
                 <Title classes="header-title" text="Overzicht"/> 
                 
                 <MoneyBlock
+                    timeDate ="maand"
                     toSpend={moneyToSpend}/>
 
                 <div className="row carousel">

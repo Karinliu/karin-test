@@ -22,6 +22,7 @@ class Clothes extends Component {
                     addClass=""/>
             <div className="container overview-page">
                 <MoneyBlock
+                    timeDate = "week"
                     toSpend={moneyToSpend}/>
 
                     {clickedPage}
