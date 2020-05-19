@@ -74,12 +74,12 @@ class GroceriesAdd extends Component {
 
             if (typeof price === "undefined"){
                 // console.log('oops')
-                return data.total_money*0.8/4*0.8
+                return data.total_money*0.8/4*0.6
             }else{
 
                 const lastClickedValue = this.state.lastClickedValue
             
-                const totalPrice = data.total_money*0.8/4*0.8
+                const totalPrice = data.total_money*0.8/4*0.6
                 if(price <= totalPrice){
                     let total = totalPrice - price
 
@@ -242,12 +242,6 @@ class GroceriesAdd extends Component {
                     </div>
                 </div>
             </div>
-
-
-
-
-            <Footer />
-
             </>
         )
     }

@@ -148,7 +148,6 @@ class ClothesAdd extends Component {
                     </div>
                 </div>
             </div>
-            <Footer/>
             </>
         )
     }

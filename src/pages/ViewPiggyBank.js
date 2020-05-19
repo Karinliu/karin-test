@@ -20,8 +20,6 @@ class ViewPiggyBank extends Component {
                 </div>
             </div>
 
-            <Footer/>  
-
             </>
         )
     }

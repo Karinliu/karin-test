@@ -22,8 +22,6 @@ class SaveMoneyAdd extends Component {
                 </nav>
             </div>
 
-            <Footer/>  
-
             </>
         )
     }

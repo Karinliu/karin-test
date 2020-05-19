@@ -27,8 +27,6 @@ class Help extends Component {
                 </nav>
             </div>
 
-            <Footer/>  
-
             </>
         )
     }

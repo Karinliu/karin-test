@@ -85,10 +85,6 @@ class ViewPiggyBank extends Component {
                 action={this.handler}/>
             </div>
 
-
-
-            <Footer/>  
-
             </>
         )
     }

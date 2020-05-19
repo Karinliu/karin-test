@@ -72,10 +72,6 @@ class Goals extends Component {
                 </div>
             </div>
 
-
-
-            <Footer/>  
-
             </>
         )
     }

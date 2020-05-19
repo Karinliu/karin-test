@@ -28,8 +28,6 @@ class AllExpenses extends Component {
               </div>
             </div>
 
-            <Footer/>
-
             </>
         )
     }

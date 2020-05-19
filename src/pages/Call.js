@@ -24,8 +24,6 @@ class Call extends Component {
                 </div>
             </div>
 
-            <Footer/>
-
             </>
         )
     }

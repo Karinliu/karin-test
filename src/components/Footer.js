@@ -59,9 +59,6 @@ class Footer extends Component {
             <footer className ={this.state.footerVisibility}>
 	    		<nav>
 		    		<ul>
-			    		<li>
-			    			<Link className="Home" to="/Overview">Home</Link>
-			    		</li>
 
 			      		<li className={this.state.is_visible}>
 			    			<button onClick={() => this.scrollToTop()}></button>

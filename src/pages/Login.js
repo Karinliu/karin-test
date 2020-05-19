@@ -14,33 +14,26 @@ class Login extends Component {
             			<img src={logo} alt="logo"/> 
             		</div>
             	</div>
-	            <Title text="Geld overzicht"/>
-            	<div className="row">
-            		<div className="col">
-            			<p>Login</p>
-            			<p>Register</p>
-            		</div>
-            	</div>
+	            <Title text="Jouw persoonlijke overzicht"/>
 	            <div className="row">
 	            	<form className="col" action="">
 						<fieldset>
 				            <label> 
-				    				Assigned location
 									<input 
 					               		type="text"
-					               		placeholder="Location"
+					               		placeholder="Gebruikersnaam"
 					               	/>
 							</label>  
 							<label> 
-				    				Assignee
 									<input 
-					               		type="text"
-					               		placeholder="Find user"
+					               		type="password"
+					               		placeholder="Wachtwoord"
 					               	/>
 							</label>      	
 						</fieldset>
 
 						<Link className="btn btn-pink" to={`/Overview`} >Login </Link>
+						<Link className="create-account" to={`/CreateUser`} ><i>Nog geen account? Registreer nu.</i></Link>
 						
 					</form>
 	            </div>

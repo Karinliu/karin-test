@@ -11,10 +11,10 @@ class MoneyBlock extends Component {
 			<>
            	<div className="row">
            	    <div className="col col-md-10 col-lg-6 money-block">
-           	        <p>Te besteden deze {this.props.timeDate}</p>
+           	        <p className={this.props.addClass}>Te besteden deze {this.props.timeDate}</p>
            	        <p className="money">€ {this.props.toSpend}</p>
-           	        <p>van de <span>€ {moneyToSpend}</span></p>
-           	    </div>
+           	        <p className={this.props.addClass}>van de <span>€ {moneyToSpend}</span></p>
+                </div>
      		</div>	
      		</>
       )

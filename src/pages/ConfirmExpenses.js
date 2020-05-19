@@ -93,9 +93,6 @@ class ConfirmExpenses extends Component {
                 addClass={this.state.disable}
                 action={this.handler}/>
             </div>
-
-
-            <Footer/>
             <
             />
         )

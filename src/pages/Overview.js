@@ -42,84 +42,70 @@ class Overview extends Component {
 
         return ( 
             <>
-            <Header text="Home"
-                    textLink ="/Overview"/>
+            <Header text=""
+                    textLink =""/>
             <div className = "container home-page" >
                 <Title classes="header-title" text="Overzicht"/> 
                 
-                <MoneyBlock
-                    timeDate ="maand"
-                    toSpend={moneyToSpend}/>
 
                 <div className="row carousel">
+
+                                    <div className="col slide" id="slide-2">
+                    <nav className="sub-header">
+                        <ul>
+                            <li><a href="#slide-1" >Spaarpot</a></li>
+                            <li><a href="#slide-2" className="selected">Inkomsten</a></li>
+                            <li><a href="#slide-3">Uitgaven</a></li>            
+                        </ul>
+                    </nav>
+                    <MoneyBlock
+                        timeDate ="maand"
+                        toSpend={moneyToSpend}/>
+                        <label className=""> 
+           
+                        <Link className="add-activity plus-icon btn-pink btn add-category" aria-label="Afvink lijst" to="/Toevoegen">Activiteit toevoegen</Link>
+     
+                        </label>
+                    </div>
+
+
                     <div className="col slide" id="slide-1">
+                    <nav className="sub-header">
+                        <ul>
+                            <li><a href="#slide-1" className="selected">Spaarpot</a></li>
+                            <li><a href="#slide-2">Inkomsten</a></li>
+                            <li><a href="#slide-3">Uitgaven</a></li>            
+                        </ul>
+                    </nav>
+                <MoneyBlock
+                    addClass="text-none"/>
+        
                         <label> 
                             {/*<input type="radio" id="slide" name="slide"/>*/}
-                            <h2><span aria-hidden="true"><img src={piggybank} alt="piggybank"/></span>Spaarpot</h2>
-                            <div className="item-overview">
-                            <p className="piggybank">Stop geld in je spaarpot! :)</p>
-                         </div>
+                            <h2><span aria-hidden="true"><img src={piggybank} alt="piggybank"/></span>Stop geld in je spaarpot!</h2>
 
-                            <Link to="/sparen">Ga naar mijn spaarpot <span>></span></Link>
-                            <nav className="carousel-dots">
-                                <ul>
-                                    <li><a className="selected" href="#slide-1" >Go to first slide</a></li>
-                                    <li><a href="#slide-2">Go to first slide</a></li>
-                                    <li><a href="#slide-3">Go to third slide</a></li>
-                                </ul>
-                            </nav>
+                            <Link className="add-activity btn-pink btn add-category" aria-label="Nog uitgeven" to="/sparen">Ga naar sparen</Link>
                         </label>
-                        <a href="#slide-3" className="carousel-prev">Go to last slide</a>
-                        <a href="#slide-2" className="carousel-next">Go to second slide</a>
                     </div>
 
-                    <div className="col slide" id="slide-2">
-                        <label> 
-                            {/*<input type="radio" id="slide" name="slide"/>*/}
-                            <h2><span aria-hidden="true"><img src={calendar} alt="calendar"/></span>Wat heb ik uitgegeven</h2>
-                            {allExpensesFirstItem}
 
-                            <Link to="/Uitgegeven">Ga naar overzicht wat al is uitgegeven <span>></span></Link>
-                            <nav className="carousel-dots">
-                                <ul>
-                                    <li><a href="#slide-1" >Go to first slide</a></li>
-                                    <li><a className="selected" href="#slide-2">Go to first slide</a></li>
-                                    <li><a href="#slide-3">Go to third slide</a></li>
-                                </ul>
-                            </nav>
-                        </label>
-                         <a href="#slide-1" className="carousel-prev">Go to first slide</a>
-                            <a href="#slide-3" className="carousel-next">Go to third slide</a>
-                    </div>
 
                     <div className="col slide" id="slide-3">
+                    <nav className="sub-header">
+                        <ul>
+                            <li><a href="#slide-1" >Spaarpot</a></li>
+                            <li><a href="#slide-2">Inkomsten</a></li>
+                            <li><a href="#slide-3" className="selected">Uitgaven</a></li>                    
+                        </ul>
+                    </nav>
+                    <MoneyBlock
+                    addClass="text-none"/>
                         <label> 
-                            <h2><span aria-hidden="true"><img src={shoppingcart} alt="shoppingcart"/></span>Dit ga ik nog halen</h2>
-                            {extraExpensesFirstItem}
+                            <Link className="calendar-icon add-activity btn-pink btn add-category" aria-label="Nog uitgeven" to="/Uitgegeven">Al uitgegeven</Link>             
 
-                            <Link
-                              to={{
-                                pathname: "/NogUitgeven",
-                                data: data // your data array of objects
-                              }}
-                            >
-
-                            Ga naar overzicht wat ik nog ga halen <span>></span></Link>
-                            <nav className="carousel-dots">
-                                <ul>
-                                    <li><a href="#slide-1" >Go to first slide</a></li>
-                                    <li><a href="#slide-2">Go to first slide</a></li>
-                                    <li><a className="selected" href="#slide-3">Go to third slide</a></li>
-                                </ul>
-                            </nav>
+                            <Link className="to-do add-activity btn-pink btn add-category" aria-label="Nog uitgeven" to="/NogUitgeven">Nog halen</Link>
                         </label>
-                        <a href="#slide-2" className="carousel-prev">Go to second slide</a>
-                        <a href="#slide-1" className="carousel-next">Go to first slide</a>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col col-md-10 col-lg-6 add-activity">
-                        <Link className="plus-icon btn-pink btn add-category" aria-label="Afvink lijst" to="/Toevoegen">Activiteit toevoegen</Link>
+
                     </div>
                 </div>
 

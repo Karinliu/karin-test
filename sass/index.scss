@@ -33,6 +33,16 @@ body,
         display: none;
     }
 
+    .text-none{
+        color: transparent;
+        font-size: auto;
+        background: transparent!important;
+
+        span{
+            text-decoration: none!important;
+        }
+    }
+
     .d-show {
         display: block;
     }
@@ -234,6 +244,23 @@ body,
                 }
             }
         }
+
+        .btn{
+            margin-bottom: 0.5em;
+        }
+
+        .create-account {
+
+        i {
+            color: $black;
+            text-decoration: underline;
+
+            &:hover,
+            &:focus {
+                color: $primaryColor;
+            }
+        }
+    }
     }
 
     header {
@@ -260,11 +287,11 @@ body,
                 }
 
                 .to-do {
-                    background-image: url('../assets/images/shopping_cart_white.png');
+                    background-image: url('../assets/images/to-do.png');
                 }
 
                 .help {
-                    background-image: url('../assets/images/help.png');
+                    background-image: url('../assets/images/support.png');
                 }
 
                 li {
@@ -316,7 +343,11 @@ body,
     }
 
     .to-spend {
-        background: white;
+        background: $mintGreen;
+        background-image: url('../assets/images/hand.png');
+        background-size: 4.5em;
+        background-position: left center;
+        background-repeat: no-repeat;
         width: 70%;
         left: 0;
         right: 0;
@@ -453,16 +484,87 @@ body,
     }
 
     .home-page {
+
+        .calendar-icon {
+        background-image: url('../assets/images/calendar_white.png');
+        background-repeat: no-repeat;
+        background-position: 1em;
+        background-size: 1.3em;
+
+        &:hover,
+        &:focus {
+            background-image: url('../assets/images/calendar_white.png');
+            background-repeat: no-repeat;
+            background-position: 1em;
+            background-size: 1.3em;
+            color: $white;
+        }
+    }
+
+    .to-do {
+        background-image: url('../assets/images/to-do.png');
+        background-repeat: no-repeat;
+        background-position: 1em;
+        background-size: 1em;
+
+        &:hover,
+        &:focus {
+            background-image: url('../assets/images/to-do.png');
+            background-repeat: no-repeat;
+            background-position: 1em;
+            background-size: 1em;
+            color: $white;
+        }
+    }
+
         .add-activity {
-            margin: 1.5em;
-            padding: 0;
+            // padding: 0;
+            color: white!important;
+        }
+
+        .sub-header{
+            ul{
+                display: flex;
+                flex-direction: row;
+                max-width: max-content;
+                padding: 0;
+                margin: 0 auto;
+
+                li{
+                    margin: 1em;
+                    padding: 0;
+                    margin-bottom: 0;
+                    list-style: none;
+
+                    a{
+                        font-size: 1rem;
+                        color: $black;
+
+                        &:hover,
+                        &:focus{
+                            border-bottom: 1px solid black;
+                            text-decoration: none;
+                            opacity: 0.8;
+                            padding-bottom: 0.2em;
+                            opacity: 0.7;
+                        }
+                    }
+
+                    .selected{
+                        color: $primaryColor;
+                        padding-bottom: 0.2em;
+                        border-bottom: 1px solid $primaryColor;
+                    }
+
+                }
+            }
         }
 
         .carousel {
             display: flex;
             flex-wrap: nowrap;
             flex-direction: row;
-            scroll-behavior: smooth;
+            // scroll-behavior: unset;
             overflow-x: hidden;
 
 
@@ -476,6 +578,10 @@ body,
                 margin: 1.5em;
                 width: auto;
                 margin-bottom: 1.5em;
+            }
+
+            hr{
+                background: $primaryColorLight;
             }
 
             .carousel-prev,
@@ -499,7 +605,7 @@ body,
             .carousel-prev,
             .carousel-next {
                 position: absolute;
-                top: 0;
+                // top: 0;
                 width: 4rem;
                 height: 3rem;
             }
@@ -894,7 +1000,7 @@ body,
                                 background-image: url('../assets/images/white_arrow_down.png');
                             }
 
-                            .target{
+                            .target {
                                 background-image: url('../assets/images/white_target.png');
                             }
                         }
@@ -1358,18 +1464,21 @@ body,
         }
     }
 
-    .goals-page{
+    .goals-page {
         padding-bottom: 10em;
-        .goals-header{
+
+        .goals-header {
             padding: 1.5em;
-            img{
+
+            img {
                 width: 60%;
                 margin: 0 auto;
                 display: block;
             }
         }
     }
-    .goals-option-block{
+
+    .goals-option-block {
         background-color: $white;
         position: absolute;
         bottom: 0;
@@ -1377,75 +1486,78 @@ body,
         border-radius: 2em 2em 0 0;
         padding: 1.5em;
 
-        .option-block-title{
-            p{
+        .option-block-title {
+            p {
                 text-align: center;
                 font-size: 1.2em
             }
         }
     }
-    .option-block-options{
-            background-color: $primaryColorLight;
-            padding: 1.5em;
-            margin-bottom: 1em;
 
-                a{
+    .option-block-options {
+        background-color: $primaryColorLight;
+        padding: 1.5em;
+        margin-bottom: 1em;
 
-                    span{
-                        background-color: $white;
-                        width: 7rem;
-                        height: 7rem;
-                        display: inline-block;
-                        background-size: 80%;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-color: $white;
-                        border-radius: 0.5em;
+        a {
 
-                    &:hover,
-                    &:focus{
-                        background-color: $secondaryColor;   
-                    }
+            span {
+                background-color: $white;
+                width: 7rem;
+                height: 7rem;
+                display: inline-block;
+                background-size: 80%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: $white;
+                border-radius: 0.5em;
+
+                &:hover,
+                &:focus {
+                    background-color: $secondaryColor;
                 }
+            }
 
-                .see_money {
-                    &:hover,
-                    &:focus{
-                        background-image: url('../assets/images/white_eye.png');    
-                    }
+            .see_money {
+
+                &:hover,
+                &:focus {
+                    background-image: url('../assets/images/white_eye.png');
                 }
+            }
 
-                .add_target {
-                    background-image: url('../assets/images/purple_add.png');  
-                    &:hover,
-                    &:focus{
-                        background-image: url('../assets/images/white_add.png');    
-                    }
+            .add_target {
+                background-image: url('../assets/images/purple_add.png');
+
+                &:hover,
+                &:focus {
+                    background-image: url('../assets/images/white_add.png');
                 }
+            }
 
-                    p{
-                        color: black;
-                        margin-bottom: 0;
-                    }
+            p {
+                color: black;
+                margin-bottom: 0;
+            }
 
-                    &:hover,
-                    &:focus{
-                        text-decoration: none;
-                        
-                    }
-                }
+            &:hover,
+            &:focus {
+                text-decoration: none;
+
+            }
         }
+    }
 
     .piggybank-add-page {
-        .btn-container-money{
+        .btn-container-money {
             position: absolute;
             width: 100%;
             margin-bottom: 1em;
             bottom: 0;
         }
 
-        .modal{
-            h2{
+        .modal {
+            h2 {
                 font-size: 1em;
                 font-weight: bold;
                 color: $primaryColor;
@@ -1474,8 +1586,8 @@ body,
                     overflow: hidden;
                 }
 
-                .coin{
-                    .dollar{
+                .coin {
+                    .dollar {
                         background-color: #f7941e;
                         height: 2em;
                         position: relative;
@@ -1489,20 +1601,24 @@ body,
                         font-size: 2em;
                     }
 
-                    .dollar-one{
-                        animation: mymove1 3s ;
+                    .dollar-one {
+                        animation: mymove1 3s;
                     }
-                    .dollar-two{
-                        animation: mymove2 3s ;
+
+                    .dollar-two {
+                        animation: mymove2 3s;
                     }
-                    .dollar-three{
-                        animation: mymove3 3s ;
+
+                    .dollar-three {
+                        animation: mymove3 3s;
                     }
-                    .dollar-four{
-                        animation: mymove4 3s ;
+
+                    .dollar-four {
+                        animation: mymove4 3s;
                     }
-                    .dollar-five{
-                        animation: mymove5 3s ;
+
+                    .dollar-five {
+                        animation: mymove5 3s;
                     }
 
 
@@ -1510,19 +1626,20 @@ body,
             }
         }
 
-        .jar-money-title{
+        .jar-money-title {
             z-index: 10;
             position: absolute;
             margin: 0 auto;
-                margin-bottom: 0px;
+            margin-bottom: 0px;
             text-align: center;
             left: 0;
             right: 0;
             margin-bottom: 1em;
-                p{
-                    font-size: 1.2em;
-                    text-align: center;
-                }
+
+            p {
+                font-size: 1.2em;
+                text-align: center;
+            }
         }
 
         .jar-money-add {
@@ -1542,7 +1659,7 @@ body,
             scrollbar-width: none;
             overflow-y: hidden;
 
-            
+
 
             .money-items {
                 margin-top: 2em;
@@ -1572,7 +1689,7 @@ body,
                     }
                 }
 
-                .title-item{
+                .title-item {
                     display: inline-block;
                     vertical-align: text-top;
                     margin-top: 0.5em;
@@ -1580,7 +1697,7 @@ body,
                     width: 100%;
                 }
 
-                .price-item{
+                .price-item {
                     width: max-content;
                     margin: 0.5em;
                     display: inline-block;
@@ -1851,7 +1968,9 @@ body,
 
         .home-page {
             .add-activity {
-                margin: 2em auto;
+                a{
+                    font-size: 1em;
+                }
             }
         }
 
@@ -1977,26 +2096,51 @@ body,
 
 
 @keyframes mymove1 {
-  from {top: -2em;}
-  to {top: 4.5em;}
+    from {
+        top: -2em;
+    }
+
+    to {
+        top: 4.5em;
+    }
 }
 
 @keyframes mymove2 {
-  from {top: -6em;}
-  to {top: 10em;}
+    from {
+        top: -6em;
+    }
+
+    to {
+        top: 10em;
+    }
 }
 
 @keyframes mymove3 {
-  from {top: -10em;}
-  to {top: 10em;}
+    from {
+        top: -10em;
+    }
+
+    to {
+        top: 10em;
+    }
 }
 
 @keyframes mymove4 {
-  from {top: -14em;}
-  to {top: 10em;}
+    from {
+        top: -14em;
+    }
+
+    to {
+        top: 10em;
+    }
 }
 
 @keyframes mymove5 {
-  from {top: -18em;}
-  to {top: 10em;}
+    from {
+        top: -18em;
+    }
+
+    to {
+        top: 10em;
+    }
 }

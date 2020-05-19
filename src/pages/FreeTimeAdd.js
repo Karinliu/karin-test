@@ -153,7 +153,6 @@ class FreeTimeAdd extends Component {
                     </div>
                 </div>
             </div>
-            <Footer />
             </>
         )
     }

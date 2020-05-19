@@ -23,9 +23,6 @@ class Chat extends Component {
                     {items}
                 </div>
             </div>
-
-            <Footer/>
-
             </>
         )
     }

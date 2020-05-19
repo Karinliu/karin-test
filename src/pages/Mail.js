@@ -22,8 +22,6 @@ class Mail extends Component {
               </div>
               </div>
             </div>
-
-            <Footer/>  
             </>
         )
     }

@@ -8,6 +8,13 @@ body,
 #root .d-none {
   display: none; }
 
+#root .text-none {
+  color: transparent;
+  font-size: auto;
+  background: transparent !important; }
+  #root .text-none span {
+    text-decoration: none !important; }
+
 #root .d-show {
   display: block; }
 
@@ -152,6 +159,13 @@ body,
         width: 100%; }
         #root .login-page form fieldset label input:hover, #root .login-page form fieldset label input:focus {
           border-bottom: 1px solid #DA106C; }
+  #root .login-page .btn {
+    margin-bottom: 0.5em; }
+  #root .login-page .create-account i {
+    color: #000;
+    text-decoration: underline; }
+    #root .login-page .create-account i:hover, #root .login-page .create-account i:focus {
+      color: #DA106C; }
 
 #root header {
   position: fixed;
@@ -170,9 +184,9 @@ body,
       #root header nav ul .Terug {
         background-image: url("../assets/images/terug.png"); }
       #root header nav ul .to-do {
-        background-image: url("../assets/images/shopping_cart_white.png"); }
+        background-image: url("../assets/images/to-do.png"); }
       #root header nav ul .help {
-        background-image: url("../assets/images/help.png"); }
+        background-image: url("../assets/images/support.png"); }
       #root header nav ul li {
         list-style: none;
         font-size: 1em;
@@ -203,7 +217,11 @@ body,
   margin-bottom: 2em; }
 
 #root .to-spend {
-  background: white;
+  background: #C1F0DD;
+  background-image: url("../assets/images/hand.png");
+  background-size: 4.5em;
+  background-position: left center;
+  background-repeat: no-repeat;
   width: 70%;
   left: 0;
   right: 0;
@@ -296,15 +314,62 @@ body,
     #root .overview-expenses-page .item-overview .title {
       flex-grow: 1; }
 
+#root .home-page .calendar-icon {
+  background-image: url("../assets/images/calendar_white.png");
+  background-repeat: no-repeat;
+  background-position: 1em;
+  background-size: 1.3em; }
+  #root .home-page .calendar-icon:hover, #root .home-page .calendar-icon:focus {
+    background-image: url("../assets/images/calendar_white.png");
+    background-repeat: no-repeat;
+    background-position: 1em;
+    background-size: 1.3em;
+    color: #fff; }
+
+#root .home-page .to-do {
+  background-image: url("../assets/images/to-do.png");
+  background-repeat: no-repeat;
+  background-position: 1em;
+  background-size: 1em; }
+  #root .home-page .to-do:hover, #root .home-page .to-do:focus {
+    background-image: url("../assets/images/to-do.png");
+    background-repeat: no-repeat;
+    background-position: 1em;
+    background-size: 1em;
+    color: #fff; }
+
 #root .home-page .add-activity {
-  margin: 1.5em;
-  padding: 0; }
+  color: white !important; }
+
+#root .home-page .sub-header ul {
+  display: flex;
+  flex-direction: row;
+  max-width: max-content;
+  padding: 0;
+  margin: 0 auto; }
+  #root .home-page .sub-header ul li {
+    margin: 1em;
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none; }
+    #root .home-page .sub-header ul li a {
+      font-size: 1rem;
+      color: #000; }
+      #root .home-page .sub-header ul li a:hover, #root .home-page .sub-header ul li a:focus {
+        border-bottom: 1px solid black;
+        text-decoration: none;
+        opacity: 0.8;
+        padding-bottom: 0.2em;
+        opacity: 0.7; }
+    #root .home-page .sub-header ul li .selected {
+      color: #DA106C;
+      padding-bottom: 0.2em;
+      border-bottom: 1px solid #DA106C; }
 
 #root .home-page .carousel {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  scroll-behavior: smooth;
   overflow-x: hidden; }
   #root .home-page .carousel a {
     font-size: 0; }
@@ -314,6 +379,8 @@ body,
     margin: 1.5em;
     width: auto;
     margin-bottom: 1.5em; }
+  #root .home-page .carousel hr {
+    background: rgba(222, 16, 105, 0.1); }
   #root .home-page .carousel .carousel-prev,
   #root .home-page .carousel .carousel-next {
     content: '';
@@ -332,7 +399,6 @@ body,
   #root .home-page .carousel .carousel-prev,
   #root .home-page .carousel .carousel-next {
     position: absolute;
-    top: 0;
     width: 4rem;
     height: 3rem; }
   #root .home-page .carousel .carousel-prev {
@@ -1155,8 +1221,8 @@ body,
     width: 10em; }
   #root .money-block {
     margin: 2em auto; }
-  #root .home-page .add-activity {
-    margin: 2em auto; }
+  #root .home-page .add-activity a {
+    font-size: 1em; }
   #root .add-category-page .header-title {
     margin-bottom: 0em; }
   #root nav.category ul {

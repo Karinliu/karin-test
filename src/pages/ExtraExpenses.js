@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Title, Footer, Header, GrayBlockItem} from '../components/';
-import {myAccount, shoppingcart} from '../assets'
+import {myAccount, todo} from '../assets'
 import { Link } from 'react-router-dom';
 
 class ExtraExpenses extends Component {
@@ -67,14 +67,12 @@ class ExtraExpenses extends Component {
             <div className="container overview-expenses-page">
               <Title classes="header-title" text="Nog halen"/> 
                 <div className="row">
-                <h2><span aria-hidden="true"><img src={shoppingcart} alt="checklist"/></span>Wat ga ik nog halen</h2>
+                <h2><span aria-hidden="true"><img src={todo} alt="checklist"/></span>Wat ga ik nog halen</h2>
                 </div>
               <div className="row">
                 {extraExpensesItems}
               </div>
             </div>
-
-            <Footer/>  
 
             </>      
 
