@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
 
 class MoneyListItems extends Component {
 	constructor(props) {
@@ -18,7 +17,7 @@ class MoneyListItems extends Component {
       buttonClickedAdd(e){
       	console.log(this.state.value)
 
-      	const priceAddValue = e.target.value;
+      	// const priceAddValue = e.target.value;
         this.props.addAnimation("coin d-block"); 
 
       	this.setState({

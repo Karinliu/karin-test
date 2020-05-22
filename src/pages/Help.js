@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Footer, Header, TemplateCategory} from '../components/';
+import {Title, Header, TemplateCategory} from '../components/';
 import {categoriesJson} from '../assets/';
 
 class Help extends Component {

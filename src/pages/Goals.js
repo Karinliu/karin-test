@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {Title, Footer, Header, MoneyListItems, HeaderMoney, Modal3} from '../components/';
-import {itemsJson, Target} from '../assets/';
+import {Title, Header} from '../components/';
+import {Target} from '../assets/';
 import { Link } from 'react-router-dom';
 
 
@@ -66,7 +66,7 @@ class Goals extends Component {
                         <Link to="/BekijkenSpaarpot">
                             <span className="see_money"> 
                             </span>
-                            <p>Bekijken</p>
+                            <p>Bekijken spaarpot</p>
                         </Link>
                     </div>
                 </div>

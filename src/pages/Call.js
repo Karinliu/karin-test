@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Title, Header, Footer, PinkLinkList, TitleCategory} from '../components/';
+import {Title, Header, PinkLinkList, TitleCategory} from '../components/';
 import {myAccount} from '../assets/';
 
 

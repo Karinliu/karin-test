@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import {myAccount} from '../assets/';
 
 class MoneyBlock extends Component {
 	render() {
@@ -8,8 +7,8 @@ class MoneyBlock extends Component {
     let date = today.getDate() + "/"+ parseInt(today.getMonth()+1) +"/"+ today.getFullYear();
     console.log(date);
 
-    const moneyToSpend = myAccount.my_account.map(data =>
-                data.total_money)
+    // const moneyToSpend = myAccount.my_account.map(data =>
+    //             data.total_money)
 
 		return(
 			<>

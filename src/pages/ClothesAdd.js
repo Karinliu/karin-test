@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Header, Footer, PinkItemsList2,TitleCategory, HeaderMoney, Modal6} from '../components/';
+import {Title, Header, PinkItemsList2,TitleCategory, HeaderMoney, Modal6} from '../components/';
 import {itemsJson, myAccount, smiley} from '../assets/';
 import { Link } from 'react-router-dom';
 

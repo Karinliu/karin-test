@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Header, MoneyBlock, ChosenCategory, Modal2 , Footer, PinkItemsList2, Modal5} from '../components/';
-import { itemsJson, myAccount } from '../assets/';
-import { Link } from 'react-router-dom';
+import { Header, Modal2} from '../components/';
 
 class AddConfirmExpenses extends Component {
     constructor(props) {
@@ -11,7 +9,6 @@ class AddConfirmExpenses extends Component {
             disableSec: "modal d-none",
             errorText: '',
             addClass: '',
-            disable: "modal d-none",
             chooseCategory: ''
         }
         this.handler = this.handler.bind(this);

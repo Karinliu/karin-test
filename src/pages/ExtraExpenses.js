@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Footer, Header, GrayBlockItem} from '../components/';
+import {Title, Header, GrayBlockItem} from '../components/';
 import {myAccount, todo} from '../assets'
 import { Link } from 'react-router-dom';
 

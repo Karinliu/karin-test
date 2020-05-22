@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Footer, Header} from '../components/';
+import {Title, Header} from '../components/';
 
 class ViewPiggyBank extends Component {
     render() {

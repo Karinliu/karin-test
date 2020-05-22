@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import {Title, Header, MoneyBlock, GrayBlockItem, ProgressBar} from '../components/';
+import {Title, Header, MoneyBlock, ProgressBar} from '../components/';
 import { Link } from 'react-router-dom';
-import {piggybank, calendar, todo} from '../assets'
-import {myAccount, categoriesJson} from '../assets/';
+import {myAccount} from '../assets/';
 
 class Overview extends Component {
     render() {
@@ -11,23 +10,6 @@ class Overview extends Component {
 
         const moneyToSpendWeek = myAccount.my_account.map(data =>
                 data.total_money/4-35)
-
-        const allExpensesFirstItem = myAccount.all_expenses.map(data =>
-                <GrayBlockItem 
-                    addClass = "item-overview"
-                    class = {data.class}
-                    title = {data.title} 
-                    total_price = {data.total_price}/>
-                )[0]   
-
-        const extraExpensesFirstItem = myAccount.extra_expenses.map(data =>
-                <GrayBlockItem 
-                    addClass = "item-overview"
-                    class = {data.class}
-                    title = {data.title} 
-                    total_price = {data.total_price}/>
-                )[0]    
-
 
         let data = this.props.location.myItems
 
@@ -42,11 +24,6 @@ class Overview extends Component {
                 console.log(data.id_item)
             })
         }
-
-
-        const boodschappenPrice = myAccount.settings_price.map(data =>
-                <p>€ {data.price}</p>
-            )
 
 
         let categoriesIncome = myAccount.data_category

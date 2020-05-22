@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Footer, Header, TemplateCategory, HeaderMoney} from '../components/';
+import {Title, Header, TemplateCategory, HeaderMoney} from '../components/';
 import {categoriesJson, myAccount} from '../assets/';
 
 class SaveMoneyAdd extends Component {

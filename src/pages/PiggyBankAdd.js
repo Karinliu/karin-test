@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Footer, Header, MoneyListItems, HeaderMoney, Modal3} from '../components/';
+import {Title, Header, MoneyListItems, Modal3} from '../components/';
 import {itemsJson} from '../assets/';
 
 class ViewPiggyBank extends Component {
