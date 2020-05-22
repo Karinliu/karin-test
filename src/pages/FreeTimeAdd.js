@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Header, Footer, PinkItemsList2,TitleCategory, HeaderMoney} from '../components/';
+import {Title, Header, Footer, PinkItemsList2,TitleCategory, HeaderMoney, Modal6} from '../components/';
 import {itemsJson, myAccount, smiley} from '../assets/';
 import { Link } from 'react-router-dom';
 
@@ -9,8 +9,16 @@ class FreeTimeAdd extends Component {
         this.state = {
             addClass: '',
             items: [],
+            disable: "modal d-none",
             chooseCategory: ''
         }
+        this.handler = this.handler.bind(this);
+    }
+
+    handler() {
+        this.setState({
+              disable: "modal d-block"
+          });
     }
 
     submitHandler(e) {
@@ -146,16 +154,14 @@ class FreeTimeAdd extends Component {
                         {element}
                         <p>Kost het bij elkaar minder dan {moneyToSpend} euro?</p>
 
-                        <Link
-                            className="btn btn-green"
-                              to="/Overview"
-                            >
-                            Ja
-                            </Link>
+                        <button className="btn btn-green" onClick={this.handler}>Ja</button>
                         <button className="btn btn-red" onClick={this.clickedNo.bind(this)}>Nee</button>
                         <button className="btn-orange btn" onClick={this.toggleDetails.bind(this)}> Ik wil nog wat wijzigen</button>
                     </div>
                 </div>
+                < Modal6 
+                    addClass={this.state.disable}
+                    action={this.handler}/>
             </div>
             </>
         )

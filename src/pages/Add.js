@@ -16,7 +16,7 @@ class Add extends Component {
               })
 
         const moneyToSpend = myAccount.my_account.map(data =>
-        data.total_money/4-15)
+        data.total_money/4-35)
 
         return (
         	 <>
@@ -24,9 +24,8 @@ class Add extends Component {
                     textLink ="/Overview"
                     addClass="header2"/>
             <HeaderMoney 
-                textFirst="Deze"
+                textFirst="Nodig voor deze"
                 textDate="week"
-                textEnd="te besteden"
                 toSpend={moneyToSpend} />
             <div className="container background-gray add-category-page">
                 <Title classes="header-title" text="Toevoegen"/> 
@@ -36,8 +35,6 @@ class Add extends Component {
                     </ul>
                 </nav>
             </div>
-
-            <Footer/>
             </>
         )
     }

@@ -10,7 +10,7 @@
         "when": "per week"
     },{
         "title": "Vaste lasten",
-        "price": "60.00",
+        "price": "140.00",
         "when": "per maand"
     },{
         "title": "Overige kosten",
@@ -25,8 +25,8 @@
         "title": "Boodschappen",
         "class": "groceries",
         "text_link":"Boodschappen",
-        "price": "60.00",
-        "price_to_spend": "60.00",
+        "price": "40.00",
+        "price_to_spend": "40.00",
         "percentage": "0%"
     },{
         "title": "Kleding",
@@ -61,7 +61,7 @@
         "class": "fixed_charges",
         "text_link":"VasteLasten",
         "price": "0",
-        "price_to_spend": "15.00",
+        "price_to_spend": "35.00",
         "percentage": "100%"
     }],
     "phone_numbers": [

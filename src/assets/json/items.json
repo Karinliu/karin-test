@@ -41,12 +41,12 @@
          "title": "Paprika per stuk",
          "price": "0.99",
          "id_item":"paprika",
-         "image_link": "https://www.stickpng.com/assets/images/585ea783cb11b227491c3538.png"
+         "image_link": "https://i.dlpng.com/static/png/6914592_preview.png"
   },{
          "title": "Sla",
          "price": "1.09",
          "id_item":"sla",
-         "image_link": "https://www.stickpng.com/assets/images/585ea50dcb11b227491c3526.png"
+         "image_link": "https://www.limburgsmaaktnaarmeer.be/site/data/images/product/sla.png"
   },{
          "title": "Tomaten 500 gram",
          "price": "1.29",
@@ -97,7 +97,7 @@
         "title": "Yoghurt 1 kilo",
         "price": "1.69",
         "id_item":"yoghurt",
-        "image_link": "https://lh3.googleusercontent.com/proxy/OJoVsZFU4nl-fS_oQERLIZVRZ5EgLOoFmX1buRh5OzGBKnaSUbv6SIY9W_SiNbBsbzj2Gu8YTPOBblf4co1FLdQFPS20HM-r6ckmmSRwaoSqDOFLY0bCHB9MjwM"
+        "image_link": "https://lh3.googleusercontent.com/proxy/ZTeHKCjTPbPeFLFyg4jaNb7HauW6JbK2bS9uWPqvSfGMYOlGgPmQcyRzXnNcf-t2qJAx6Gu9YhV6k3sbYCvTdq1vhidApba6z53iYDbvNDo1aXr_LzhPlLz8WhOIRkgkLQJ-iQ"
     },{
         "title": "Mayonaise",
         "price": "2.39",
@@ -138,7 +138,7 @@
         "title": "Eieren 10 stuks",
         "price": "1.63",
         "id_item":"egg",
-        "image_link": "https://www.stickpng.com/assets/images/580b57fbd9996e24bc43c104.png"
+        "image_link": "https://www.freepnglogos.com/uploads/egg-png/download-egg-png-transparent-image-and-clipart-33.png"
     }],
   "data_grain": [{
         "title": "Brood",
@@ -149,7 +149,7 @@
         "title": "Noten 200 gram",
         "price": "2.39",
         "id_item":"nuts",
-        "image_link": "https://i.dlpng.com/static/png/6790328_preview.png"
+        "image_link": "https://pngimage.net/wp-content/uploads/2018/06/mixed-nuts-png-5.png"
     }],
     "data_drinks": [{
         "title": "Melk 1,5 Liter",
@@ -175,12 +175,12 @@
         "title": "Bier",
         "price": "5.99",
         "id_item":"beer",
-        "image_link": "https://static.ah.nl/image-optimization/static/product/AHI_43545239353733333134_2_200x200_JPG.JPG?options=399,q85"
+        "image_link": "https://cdn.pixabay.com/photo/2018/08/21/21/49/beer-3622237_1280.png"
     },{
         "title": "Limonade",
         "price": "5.99",
         "id_item":"lemonade",
-        "image_link": "https://static.ah.nl/image-optimization/static/product/AHI_43545239353733333134_2_200x200_JPG.JPG?options=399,q85"
+        "image_link": "https://pngimg.com/uploads/lemonade/lemonade_PNG16955.png"
     },{
         "title": "Wijn",
         "price": "5.99",
@@ -224,7 +224,7 @@
     },{
         "title": "Nagels",
         "id_item":"nails",
-        "image_link": "https://lh3.googleusercontent.com/proxy/vTH7Vki_dTfwOCxbfGQIFaaCkDLoWze-UJtJ8SMWEP4bZ6_eDeEdq585y3ehxlTzIhRiCKR42TORWbJwxmSjqAgZvmbOZAg35KlPcXccC_HJi1HlbL9yrfqIarJS1CgW"
+        "image_link": "https://i.pinimg.com/originals/79/c2/dc/79c2dce0696e90336743226c13be60b0.png"
     },{
         "title": "Spa/Sauna",
         "id_item":"spa",
@@ -232,7 +232,7 @@
     },{
         "title": "Schoonheidssalon",
         "id_item":"pants",
-        "image_link": "https://lh3.googleusercontent.com/proxy/IpvtvjhDS5mwh7Wm4s0IXrd_uHJF-6aTznlmTubLW-VhQ3LeEQF0NtmsSbdqPfbOf0YeANKRcNbQHo5fqgCS6MNFAOHXiuy5iMsp"
+        "image_link": "https://img.pngio.com/relaxation-png-hd-transparent-relaxation-hdpng-images-pluspng-relaxation-png-1600_900.jpg"
     },{
         "title": "Zonnebank",
         "id_item":"shirts",
@@ -257,7 +257,7 @@
     },{
         "title": "Pretpark",
         "id_item":"theme_park",
-        "image_link": "https://lh3.googleusercontent.com/proxy/D5LP9QrDuPiFg-hFGaa4hhFVyZCSMF_QqCVFQ0Y6TGNnscpg9T1EdFVe21i4Zj_g5qMJpJI4therNgGjt-wlTonKLOr9jJN9y7pBOprGmX00gbHiRiAQ6UkOdSav6mYs"
+        "image_link": "https://img.freepik.com/vrije-vector/pretpark-samenstelling_1284-17965.jpg?size=626&ext=jpg"
     },{
         "title": "Bowlen",
         "id_item":"bowling",

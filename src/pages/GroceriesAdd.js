@@ -1,20 +1,29 @@
 import React, { Component } from 'react';
-import {Title, Header, Footer, PinkItemsList, TitleCategory,  HeaderMoney} from '../components/';
+import {Title, Header, Footer, PinkItemsList, TitleCategory, Modal7, HeaderMoney} from '../components/';
 import {itemsJson, myAccount} from '../assets/';
 import { Link } from 'react-router-dom';
 
 class GroceriesAdd extends Component {
     constructor(props) {
-        super(props);
+    super(props);
         this.state = {
             price: '0',
             value: 0,
             lastClickedValue: 0,
             chooseCategory: '',
-            checked: '',
+            checked: '', 
+            disable: "modal d-none"
+
         }
+        this.handler = this.handler.bind(this);
         this.state = {value: 0};
         this.buttonClicked = this.buttonClicked.bind(this);
+    }
+
+    handler() {
+        this.setState({
+              disable: "modal d-block"
+          });
     }
 
     addTotalPrice = (val) => {
@@ -74,14 +83,14 @@ class GroceriesAdd extends Component {
 
             if (typeof price === "undefined"){
                 console.log(data.price, "oops")
-                return data.total_money/4-15-70-5
+                return data.total_money/4-35-70-5
             }else{
 
                 const lastClickedValue = this.state.lastClickedValue
                 
                 console.log(data.price, "oops")
 
-                const totalPrice = data.total_money/4-15-70-5
+                const totalPrice = data.total_money/4-35-70-5
                 if(price <= totalPrice){
                     let total = totalPrice - price
 
@@ -242,11 +251,16 @@ class GroceriesAdd extends Component {
                     <div className="col">
                         <p>Wil ik al deze items gaan halen?</p>
 
-                        <Link className="btn btn-green" to="/Overview"> Ja </Link>
+                        <button className="btn btn-green" onClick={this.handler}>Ja</button>
                         <Link className="btn btn-red" to="/Overview">Nee</Link>
                         <button className="btn-orange btn" onClick={this.toggleDetails.bind(this)}> Ik wil nog wat wijzigen</button>
                     </div>
                 </div>
+
+                < Modal7
+                    modalClass={this.state.disable}
+                    action={this.handlerModal}
+                />
             </div>
             </>
         )

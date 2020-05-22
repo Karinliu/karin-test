@@ -13,7 +13,7 @@ class Groceries extends Component {
                 )[0]
 
         const moneyToSpend = myAccount.my_account.map(data =>
-            data.total_money/4-15-70-5)
+            data.total_money/4-35-70-5)
 
         return (
              <>

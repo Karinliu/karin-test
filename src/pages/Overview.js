@@ -10,7 +10,7 @@ class Overview extends Component {
                 data.total_money)
 
         const moneyToSpendWeek = myAccount.my_account.map(data =>
-                data.total_money/4-15)
+                data.total_money/4-35)
 
         const allExpensesFirstItem = myAccount.all_expenses.map(data =>
                 <GrayBlockItem 

@@ -173,7 +173,7 @@ body,
   width: 100%;
   z-index: 10; }
   #root header nav {
-    padding: 0 1em; }
+    padding: 0 1.5em; }
     #root header nav ul {
       display: flex;
       flex-direction: row;
@@ -391,6 +391,8 @@ body,
   overflow: hidden; }
   #root .home-page .carousel .slide {
     height: auto; }
+    #root .home-page .carousel .slide .money-block {
+      margin: 1.5em 2.5em; }
   #root .home-page .carousel a {
     font-size: 0; }
   #root .home-page .carousel a.add-category {
@@ -460,19 +462,19 @@ body,
   #root .home-page .carousel .title-income {
     margin-bottom: 1.5em; }
   #root .home-page .carousel .overview-progressbar-items .item-overview {
-    background-color: #F2F2F2;
+    background-color: rgba(222, 16, 105, 0.1);
     width: auto;
     height: auto;
     border-radius: 0.5em;
     margin: 0.5em 1.5em; }
     #root .home-page .carousel .overview-progressbar-items .item-overview .procentbar {
-      background: rgba(222, 16, 105, 0.1);
+      background: #F2F2F2;
       opacity: 0.8;
       position: absolute;
       height: 100%;
       width: 50%;
       border-radius: 0.5em;
-      left: 0; }
+      right: 0; }
     #root .home-page .carousel .overview-progressbar-items .item-overview .price-bar {
       margin: 0.5em 0;
       z-index: 1; }
@@ -762,6 +764,17 @@ body,
 #root .section-page-two {
   padding-top: 10em;
   background-color: rgba(222, 16, 105, 0.1); }
+  #root .section-page-two .groceries-modal {
+    position: absolute;
+    top: -15em; }
+  #root .section-page-two .modal h2 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #DA106C; }
+  #root .section-page-two .modal .groceries-modal {
+    position: absolute;
+    top: 0;
+    bottom: 0; }
   #root .section-page-two .col {
     margin: 0.5em 0;
     flex: auto; }
@@ -770,7 +783,8 @@ body,
       display: flex;
       padding: 1em; }
       #root .section-page-two .col label input {
-        margin-right: 1em; }
+        margin-right: 1em;
+        opacity: 0; }
       #root .section-page-two .col label span {
         display: none; }
       #root .section-page-two .col label section {
@@ -961,6 +975,8 @@ body,
     display: flex; }
     #root .confirm-show-pink-list .items label span {
       display: none; }
+    #root .confirm-show-pink-list .items label input {
+      opacity: 0; }
     #root .confirm-show-pink-list .items label section {
       background: #fff;
       border-radius: 0.5em;

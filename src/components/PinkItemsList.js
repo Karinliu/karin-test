@@ -118,8 +118,6 @@ class PinkItemsList extends Component {
                     <img src={this.props.image_link} alt={this.props.title}/>
                   </section>
                   {/*<p>total price {this.props.overallNumber}</p>*/}
-                <p className="overall-price">the price is  
-                {this.props.totalValue}</p>
                 <p className="title-item">{this.props.title}</p>
                 <button value={this.props.price} className={this.state.addClass} onClick={this.buttonClickedRemove}>
                   -
