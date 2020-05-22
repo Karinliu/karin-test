@@ -304,12 +304,16 @@
         "id_item": "0_50",
         "image_link": "https://www.munthuis.be/images/stories/sn/verdrag-van-rome/50-jaar-verdrag-Rome-Herdenkingseuro-achterzijde.png"
     },{
+        "price": "0.20",
+        "id_item": "0_20",
+        "image_link": "https://www.pngmart.com/files/3/Euro-Coin-PNG-Transparent-Image.png"
+    },{
         "price": "0.10",
         "id_item": "0_10",
         "image_link": "https://i.ya-webdesign.com/images/euro-coins-png-1.png"
     },{
         "price": "0.05",
         "id_item": "0_10",
-        "image_link": "https://www.pngitem.com/pimgs/m/241-2413920_download-euro-5-cent-5-cent-png-transparent.png"
+        "image_link": "https://i.dlpng.com/static/png/5283902-download-euro-5-cent-5-euro-in-rupees-png-image-with-no-cent-png-574_581_preview.png"
     }]
 }
