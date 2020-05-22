@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import {Title, Header,PinkItemsList2,TitleCategory, Footer, HeaderMoney} from '../components/';
+import {Title, Header, Footer, PinkItemsList2,TitleCategory, HeaderMoney} from '../components/';
 import {itemsJson, myAccount, smiley} from '../assets/';
 import { Link } from 'react-router-dom';
 
-class ClothesAdd extends Component {
+class FreeTimeAdd extends Component {
     constructor(props) {
     super(props);
         this.state = {
@@ -20,7 +20,28 @@ class ClothesAdd extends Component {
     }
 
     handleClick = (e) => {
-        console.log("ja")
+        if (e.target.checked === true) {
+            const listItem = e.target.value;
+            const items = [...this.state.items, listItem]
+            // const items = [listItem + ', '+this.state.items]
+
+            this.setState({
+                items: items
+            })
+        }
+        if (e.target.checked === false) {
+            const listItem = e.target.value;
+
+            const filteredItems = this.state.items.find(item => {
+                return item === listItem
+            })
+
+            this.setState({
+                items: this.state.items.filter(item => {
+                    return item !== filteredItems
+                })
+            });
+        }
     }
 
     toggleDetails(){
@@ -83,36 +104,25 @@ class ClothesAdd extends Component {
 
             />)
 
+    
+
         const moneyToSpend = myAccount.my_account.map(data =>
-            data.total_money*0.8/4*0.4)
-
-
-        // let myItems = [];
-        // let newItemsListData = newItems.map( data =>{
-
-        //     data.forEach((data) =>{
-        //         // console.log(data.id_item)
-                
-        //         myItems.push({
-        //             id_item: data.id_item,
-        //             title: data.title,
-        //             image_link: data.image_link,
-        //             });
-        //         })
-        //     })
-
-        // console.log(myItems, 'zijn')
+            data.total_money/4-15-60-14-5)
 
         return (
              <>
             <Header text="Terug"
                     textLink ="/Kleding"
                     addClass="header2"/>
-            <HeaderMoney text="Deze week te besteden" toSpend={moneyToSpend} />
+            <HeaderMoney 
+                textFirst="Deze" 
+                textDate="week"
+                textEnd="te besteden"
+                toSpend={moneyToSpend} />
             <div className={boxClassSee.join('container pink-list clothes-page ')}>
                 <Title classes="header-title"/> 
                 
-                <TitleCategory title="Deze kledingstuk wil ik gaan halen"/>
+                <TitleCategory title="Deze kledingstukken wil ik gaan halen"/>
 
                 <form onSubmit={this.submitHandler} method="post" action="/">
                 <div className="row item-list">
@@ -142,7 +152,6 @@ class ClothesAdd extends Component {
                             >
                             Ja
                             </Link>
-
                         <button className="btn btn-red" onClick={this.clickedNo.bind(this)}>Nee</button>
                         <button className="btn-orange btn" onClick={this.toggleDetails.bind(this)}> Ik wil nog wat wijzigen</button>
                     </div>
@@ -153,4 +162,4 @@ class ClothesAdd extends Component {
     }
 }
 
-export default ClothesAdd
+export default FreeTimeAdd

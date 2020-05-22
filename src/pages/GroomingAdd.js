@@ -107,14 +107,18 @@ class ClothesAdd extends Component {
     
 
         const moneyToSpend = myAccount.my_account.map(data =>
-            data.total_money*0.8/4*0.4)
+            data.total_money/4-15-60-14-5)
 
         return (
              <>
             <Header text="Terug"
                     textLink ="/Kleding"
                     addClass="header2"/>
-            <HeaderMoney text="Deze week te besteden" toSpend={moneyToSpend} />
+            <HeaderMoney 
+                textFirst="Deze" 
+                textDate="week"
+                textEnd="te besteden"
+                toSpend={moneyToSpend} />
             <div className={boxClassSee.join('container pink-list clothes-page ')}>
                 <Title classes="header-title"/> 
                 

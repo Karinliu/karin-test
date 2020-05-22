@@ -187,6 +187,8 @@ body,
         background-image: url("../assets/images/to-do.png"); }
       #root header nav ul .help {
         background-image: url("../assets/images/support.png"); }
+      #root header nav ul .settings {
+        background-image: url("../assets/images/settings.png"); }
       #root header nav ul li {
         list-style: none;
         font-size: 1em;
@@ -239,6 +241,9 @@ body,
       text-align: center;
       margin: 0;
       padding: 0; }
+      #root .to-spend div p span {
+        font-weight: bold;
+        color: #DA106C; }
       #root .to-spend div p:last-child {
         font-size: 1.3em; }
 
@@ -252,8 +257,10 @@ body,
   background-position: left 1em;
   background-size: 85% 70%; }
   #root .money-block p span {
-    text-decoration: line-through;
-    text-decoration-color: red; }
+    text-decoration-color: red;
+    color: #DA106C; }
+  #root .money-block p .boldText {
+    font-weight: bold; }
   #root .money-block p:first-child {
     background: white;
     border-radius: 0.5em;
@@ -263,7 +270,8 @@ body,
     padding: 0.3em 1em; }
   #root .money-block p:last-child {
     margin: 0 auto;
-    width: 80%; }
+    width: 80%;
+    text-align: center; }
   #root .money-block .money {
     font-size: 2.5em;
     text-align: center;
@@ -274,6 +282,14 @@ body,
 #root .overview-expenses-page {
   background-color: #FDFCFF;
   min-height: 91vh; }
+  #root .overview-expenses-page .btn-row .col {
+    margin: 1em 1.5em;
+    padding: 0; }
+    #root .overview-expenses-page .btn-row .col p {
+      margin-top: 2em;
+      text-align: center; }
+    #root .overview-expenses-page .btn-row .col button {
+      margin: 0; }
   #root .overview-expenses-page a {
     width: 100%; }
     #root .overview-expenses-page a:hover, #root .overview-expenses-page a:focus {
@@ -370,7 +386,11 @@ body,
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  max-height: 90vh;
+  overflow: hidden; }
+  #root .home-page .carousel .slide {
+    height: auto; }
   #root .home-page .carousel a {
     font-size: 0; }
   #root .home-page .carousel a.add-category {
@@ -433,10 +453,63 @@ body,
   #root .home-page .carousel .slide {
     flex: 0 0 100%;
     padding: 0; }
+  #root .home-page .carousel #slide-3 {
+    height: auto;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+  #root .home-page .carousel .title-income {
+    margin-bottom: 1.5em; }
+  #root .home-page .carousel .overview-progressbar-items .item-overview {
+    background-color: #F2F2F2;
+    width: auto;
+    height: auto;
+    border-radius: 0.5em;
+    margin: 0.5em 1.5em; }
+    #root .home-page .carousel .overview-progressbar-items .item-overview .procentbar {
+      background: rgba(222, 16, 105, 0.1);
+      opacity: 0.8;
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      border-radius: 0.5em;
+      left: 0; }
+    #root .home-page .carousel .overview-progressbar-items .item-overview .price-bar {
+      margin: 0.5em 0;
+      z-index: 1; }
+      #root .home-page .carousel .overview-progressbar-items .item-overview .price-bar p {
+        margin: 0; }
+      #root .home-page .carousel .overview-progressbar-items .item-overview .price-bar span {
+        font-size: 0.8rem; }
+    #root .home-page .carousel .overview-progressbar-items .item-overview .title {
+      flex-grow: 1; }
+    #root .home-page .carousel .overview-progressbar-items .item-overview .piggybank {
+      margin: 0 auto;
+      text-align: center; }
+    #root .home-page .carousel .overview-progressbar-items .item-overview .procentbar-text {
+      display: flex;
+      flex-direction: row; }
+      #root .home-page .carousel .overview-progressbar-items .item-overview .procentbar-text .categorie-title {
+        flex-grow: 1;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        margin: auto 0;
+        z-index: 1; }
+        #root .home-page .carousel .overview-progressbar-items .item-overview .procentbar-text .categorie-title p {
+          margin: auto 1em;
+          margin-left: 2em;
+          margin-top: 0.2em; }
+        #root .home-page .carousel .overview-progressbar-items .item-overview .procentbar-text .categorie-title span {
+          width: 1.5rem;
+          height: 1.5rem;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute; }
   #root .home-page .carousel label {
     width: 100%;
     padding: 1.5em 0;
-    background-color: #FDFCFF;
+    background-color: #FBFBFB;
     margin-bottom: 0; }
     #root .home-page .carousel label > * {
       display: block;
@@ -451,28 +524,41 @@ body,
         #root .home-page .carousel label h2 span img {
           height: 1.2em;
           vertical-align: initial; }
-    #root .home-page .carousel label .item-overview {
-      background-color: #F2F2F2;
-      width: auto;
-      border-radius: 0.5em;
-      margin: 1.5em;
+    #root .home-page .carousel label .home-label-nav ul {
       display: flex;
-      padding: 1em; }
-      #root .home-page .carousel label .item-overview span {
-        width: 1.5rem;
-        height: 1.5rem;
-        background-size: contain;
-        margin-right: 1em;
-        background-repeat: no-repeat;
-        background-position: center; }
-      #root .home-page .carousel label .item-overview p {
-        margin: 0;
-        text-align: left; }
-      #root .home-page .carousel label .item-overview .title {
-        flex-grow: 1; }
-      #root .home-page .carousel label .item-overview .piggybank {
-        margin: 0 auto;
-        text-align: center; }
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0 1.5em;
+      width: 100%; }
+      #root .home-page .carousel label .home-label-nav ul li {
+        list-style: none;
+        width: 40%;
+        height: auto;
+        margin: auto;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em; }
+        #root .home-page .carousel label .home-label-nav ul li a span {
+          height: 3em;
+          display: block;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: auto 70%;
+          border: 1px solid #DEE2E6;
+          border-radius: 0.3em;
+          background-color: #fff; }
+        #root .home-page .carousel label .home-label-nav ul li a:hover, #root .home-page .carousel label .home-label-nav ul li a:focus {
+          opacity: 1; }
+          #root .home-page .carousel label .home-label-nav ul li a:hover span, #root .home-page .carousel label .home-label-nav ul li a:focus span {
+            background-color: #7E1EDA; }
+          #root .home-page .carousel label .home-label-nav ul li a:hover .settings, #root .home-page .carousel label .home-label-nav ul li a:focus .settings {
+            background-image: url("../assets/images/white_settings.png"); }
+          #root .home-page .carousel label .home-label-nav ul li a:hover .support, #root .home-page .carousel label .home-label-nav ul li a:focus .support {
+            background-image: url("../assets/images/white_support.png"); }
+          #root .home-page .carousel label .home-label-nav ul li a:hover .save_money, #root .home-page .carousel label .home-label-nav ul li a:focus .save_money {
+            background-image: url("../assets/images/white_sparen.png"); }
+          #root .home-page .carousel label .home-label-nav ul li a:hover .transaction, #root .home-page .carousel label .home-label-nav ul li a:focus .transaction {
+            background-image: url("../assets/images/white_transaction.png"); }
     #root .home-page .carousel label a {
       color: #DA106C;
       font-size: 1em;
@@ -541,6 +627,15 @@ body,
 
 #root .grooming {
   background-image: url("../assets/images/purple_grooming.png"); }
+
+#root .support {
+  background-image: url("../assets/images/purple_support.png"); }
+
+#root .transaction {
+  background-image: url("../assets/images/purple_transaction.png"); }
+
+#root .settings {
+  background-image: url("../assets/images/purple_settings.png"); }
 
 #root nav.category ul {
   padding: 0;
@@ -850,6 +945,42 @@ body,
     background-repeat: no-repeat;
     height: 20em; }
 
+#root .confirm-show-pink-list {
+  margin-top: 3.5em;
+  height: 80vh;
+  background: rgba(222, 16, 105, 0.1); }
+  #root .confirm-show-pink-list .modal h2 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #DA106C; }
+  #root .confirm-show-pink-list .items .col {
+    background: rgba(255, 255, 255, 0.6);
+    margin: 1.5em 0;
+    padding: 1em; }
+  #root .confirm-show-pink-list .items label {
+    display: flex; }
+    #root .confirm-show-pink-list .items label span {
+      display: none; }
+    #root .confirm-show-pink-list .items label section {
+      background: #fff;
+      border-radius: 0.5em;
+      width: 5em;
+      display: block;
+      margin-left: 1em; }
+      #root .confirm-show-pink-list .items label section img {
+        width: 100%;
+        display: inline-block; }
+    #root .confirm-show-pink-list .items label p {
+      margin: auto 1em; }
+  #root .confirm-show-pink-list .option-buttons {
+    background: #fff;
+    border-radius: 1em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35vh;
+    padding-top: 1em; }
+
 #root .confirm-expenses-page {
   background-color: #DA106C;
   padding-bottom: 8em; }
@@ -900,6 +1031,11 @@ body,
         position: absolute;
         margin-left: 0.5em;
         color: #7d7d7a; }
+      #root .confirm-expenses-page .confirm-section-block form fieldset select {
+        width: 100%;
+        margin: 1em 0; }
+      #root .confirm-expenses-page .confirm-section-block form fieldset .custom-select {
+        border: 1px solid #DA106C; }
       #root .confirm-expenses-page .confirm-section-block form fieldset input {
         width: 100%;
         max-height: 1.4em;
@@ -912,9 +1048,14 @@ body,
           border-bottom: 1px solid #DA106C;
           box-shadow: 0 0 5px rgba(222, 16, 105, 0.1); }
         #root .confirm-expenses-page .confirm-section-block form fieldset input:valid {
-          color: #7DC8BC; }
+          color: green; }
         #root .confirm-expenses-page .confirm-section-block form fieldset input:invalid {
-          color: #FD9393; }
+          color: red; }
+    #root .confirm-expenses-page .confirm-section-block form .image-send input {
+      font-size: 1rem;
+      border: none; }
+    #root .confirm-expenses-page .confirm-section-block form .image-send:hover, #root .confirm-expenses-page .confirm-section-block form .image-send:focus {
+      border: none; }
     #root .confirm-expenses-page .confirm-section-block form:valid {
       display: block; }
     #root .confirm-expenses-page .confirm-section-block form:invalid button {
@@ -1108,6 +1249,17 @@ body,
       float: right; }
       #root .piggybank-add-page .jar-money-add .money-items .add-btn:hover:before, #root .piggybank-add-page .jar-money-add .money-items .add-btn:focus:before {
         content: "+"; }
+
+#root .settings-page table,
+#root .settings-page th,
+#root .settings-page td {
+  border: 1px solid #DA106C;
+  background: #fff;
+  width: auto;
+  padding: 0.5em; }
+
+#root .settings-page table {
+  margin-bottom: 1em; }
 
 #root footer {
   position: fixed;

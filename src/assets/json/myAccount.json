@@ -1,7 +1,68 @@
 {
     "my_account": [
     {
-        "total_money": "400"
+        "total_money": "600"
+    }],
+    "settings_price": [
+    {
+        "title": "Boodschappen",
+        "price": "60.00",
+        "when": "per week"
+    },{
+        "title": "Vaste lasten",
+        "price": "60.00",
+        "when": "per maand"
+    },{
+        "title": "Overige kosten",
+        "price": "70.00",
+        "when": "per week"
+    },{
+        "title": "Sparen",
+        "price": "5.00",
+        "when": "per week"
+    }],
+    "data_category": [{
+        "title": "Boodschappen",
+        "class": "groceries",
+        "text_link":"Boodschappen",
+        "price": "60.00",
+        "price_to_spend": "60.00",
+        "percentage": "0%"
+    },{
+        "title": "Kleding",
+        "class": "clothes",
+        "text_link":"Kleding",
+        "price": "56.00",
+        "price_to_spend": "70.00",
+        "percentage": "20%"
+    },{
+        "title": "Vrije tijd",
+        "class": "free_time",
+        "text_link":"VrijeTijd",
+        "price": "56.00",
+        "price_to_spend": "70.00",
+        "percentage": "20%"
+    },{
+        "title": "Sparen",
+        "class": "save_money",
+        "text_link":"Sparen",
+        "price": "0.00",
+        "price_to_spend": "5.00",
+        "percentage": "100%"
+    },{
+        "title": "Verzorging",
+        "class": "grooming",
+        "text_link":"Verzorging",
+        "price": "56.00",
+        "price_to_spend": "70.00",
+        "percentage": "20%"
+    },{
+        "title": "Vaste lasten",
+        "class": "fixed_charges",
+        "text_link":"VasteLasten",
+        "price": "0",
+        "price_to_spend": "15.00",
+        "percentage": "100%"
     }],
     "phone_numbers": [
     {
@@ -35,7 +96,7 @@
     }],"extra_expenses": [
     {
         "title": "Boodschappen",
-        "total_price": "15.00",
+        "total_price": "2.00",
         "class": "groceries"
     }]
 }

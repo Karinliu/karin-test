@@ -4,6 +4,10 @@ import {myAccount} from '../assets/';
 class MoneyBlock extends Component {
 	render() {
 
+    let today = new Date();
+    let date = today.getDate() + "/"+ parseInt(today.getMonth()+1) +"/"+ today.getFullYear();
+    console.log(date);
+
     const moneyToSpend = myAccount.my_account.map(data =>
                 data.total_money)
 
@@ -11,9 +15,9 @@ class MoneyBlock extends Component {
 			<>
            	<div className="row">
            	    <div className="col col-md-10 col-lg-6 money-block">
-           	        <p className={this.props.addClass}>Te besteden deze {this.props.timeDate}</p>
+           	        <p className={this.props.addClass}>{this.props.timeDate} <span className="boldText">{this.props.boldText}</span></p>
            	        <p className="money">€ {this.props.toSpend}</p>
-           	        <p className={this.props.addClass}>van de <span>€ {moneyToSpend}</span></p>
+           	        <p> Datum van vandaag: <span>{date}</span></p>
                 </div>
      		</div>	
      		</>

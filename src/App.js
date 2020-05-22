@@ -4,7 +4,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import {Login, AddGoals, Mail, Goals, ConfirmExpenses, PiggyBankAdd, GroceriesAdd2, Grooming, GroomingAdd, Chat, Tips, Call, Overview, ViewPiggyBank, ExtraExpenses, SaveMoney, SaveMoneyAdd, FreeTime, FreeTimeAdd,  Clothes, ClothesAdd, AllExpenses, Help, Add, Groceries,GroceriesAdd, NotFound} from './pages';
+import {Login, AddGoals, Mail, Goals, Settings, ConfirmExpenses,AddConfirmExpenses, PiggyBankAdd, GroceriesAdd2, Grooming, GroomingAdd, Chat, Tips, Call, Overview, ViewPiggyBank, ExtraExpenses, SaveMoney, SaveMoneyAdd, FreeTime, FreeTimeAdd,  Clothes, ClothesAdd, AllExpenses, Help, Add, Groceries,GroceriesAdd, NotFound} from './pages';
 
 function App() {
   return (
@@ -35,6 +35,8 @@ function App() {
           <Route path='/BevestigenUitgave' component={ConfirmExpenses}/>
           <Route path='/DoelenZetten' component={Goals}/>
           <Route path='/Chatten' component={Chat}/>
+          <Route path='/Instellingen' component={Settings}/>
+          <Route path='/ToevoegenBevestigenUitgave' component={AddConfirmExpenses}/>
           <Route component={NotFound} />
         </Switch>
     </Router>

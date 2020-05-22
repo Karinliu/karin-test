@@ -73,13 +73,15 @@ class GroceriesAdd extends Component {
             // console.log(data.total_money)
 
             if (typeof price === "undefined"){
-                // console.log('oops')
-                return data.total_money*0.8/4*0.6
+                console.log(data.price, "oops")
+                return data.total_money/4-15-70-5
             }else{
 
                 const lastClickedValue = this.state.lastClickedValue
-            
-                const totalPrice = data.total_money*0.8/4*0.6
+                
+                console.log(data.price, "oops")
+
+                const totalPrice = data.total_money/4-15-70-5
                 if(price <= totalPrice){
                     let total = totalPrice - price
 
@@ -180,7 +182,11 @@ class GroceriesAdd extends Component {
             <Header text="Terug"
                     textLink ="/Boodschappen"
                     addClass="header2"/>
-            <HeaderMoney text="Dit hou ik over voor boodschappen" toSpend={moneyToSpend} />
+            <HeaderMoney 
+            textFirst="Dit"
+            textDate="hou ik over"
+            textEnd="voor boodschappen"
+            toSpend={moneyToSpend} />
             <div className={boxClassSee.join('container pink-list ')}>
                 <Title classes="header-title"/> 
                 

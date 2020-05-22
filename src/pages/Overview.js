@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import {Title, Header, MoneyBlock, GrayBlockItem} from '../components/';
+import {Title, Header, MoneyBlock, GrayBlockItem, ProgressBar} from '../components/';
 import { Link } from 'react-router-dom';
-import {piggybank, calendar, shoppingcart} from '../assets'
-import {myAccount} from '../assets/';
+import {piggybank, calendar, todo} from '../assets'
+import {myAccount, categoriesJson} from '../assets/';
 
 class Overview extends Component {
     render() {
         const moneyToSpend = myAccount.my_account.map(data =>
-                data.total_money*0.8)
+                data.total_money)
+
+        const moneyToSpendWeek = myAccount.my_account.map(data =>
+                data.total_money/4-15)
 
         const allExpensesFirstItem = myAccount.all_expenses.map(data =>
                 <GrayBlockItem 
@@ -40,6 +43,22 @@ class Overview extends Component {
             })
         }
 
+
+        const boodschappenPrice = myAccount.settings_price.map(data =>
+                <p>€ {data.price}</p>
+            )
+
+
+        let categoriesIncome = myAccount.data_category
+              .map(function (data) {
+                return <ProgressBar 
+                image_purple={data.class} 
+                text={data.title}
+                toSpend={data.price}
+                percentage={data.percentage}
+                toSpendMaxPrice={data.price_to_spend}/>
+              })
+
         return ( 
             <>
             <Header text=""
@@ -53,38 +72,57 @@ class Overview extends Component {
                                     <div className="col slide" id="slide-2">
                     <nav className="sub-header">
                         <ul>
-                            <li><a href="#slide-1" >Spaarpot</a></li>
-                            <li><a href="#slide-2" className="selected">Inkomsten</a></li>
-                            <li><a href="#slide-3">Uitgaven</a></li>            
+                            <li><a href="#slide-1" >Gepland</a></li>
+                            <li><a href="#slide-2" className="selected">Mijn profiel</a></li>
+                            <li><a href="#slide-3">Uitgaven</a></li>                      
                         </ul>
                     </nav>
                     <MoneyBlock
-                        timeDate ="maand"
+                        timeDate ="Totaal op mijn"
+                        boldText="rekening"
                         toSpend={moneyToSpend}/>
-                        <label className=""> 
-           
-                        <Link className="add-activity plus-icon btn-pink btn add-category" aria-label="Afvink lijst" to="/Toevoegen">Activiteit toevoegen</Link>
-     
+
+                        <label>
+                            <nav className="home-label-nav">
+                                <ul>
+                                    <li>
+                                        <Link to="/sparen">
+                                        <span class="save_money"></span>
+                                        Spaarpot
+                                        </Link>
+
+                                    </li>
+
+                                    <li>
+                                        <Link to="/uitgegeven">
+                                        <span class="transaction"></span>
+                                        History transactie
+                                        </Link>
+
+                                    </li>
+                                </ul>
+                            </nav>
+
                         </label>
+                        
                     </div>
+                    
 
 
                     <div className="col slide" id="slide-1">
                     <nav className="sub-header">
                         <ul>
-                            <li><a href="#slide-1" className="selected">Spaarpot</a></li>
-                            <li><a href="#slide-2">Inkomsten</a></li>
-                            <li><a href="#slide-3">Uitgaven</a></li>            
+                            <li><a href="#slide-1" className="selected">Gepland</a></li>
+                            <li><a href="#slide-2">Mijn profiel</a></li>
+                            <li><a href="#slide-3">Uitgaven</a></li>                                   
                         </ul>
                     </nav>
                 <MoneyBlock
-                    addClass="text-none"/>
+                    timeDate="Gepland om te"
+                    boldText="halen"/>
         
                         <label> 
-                            {/*<input type="radio" id="slide" name="slide"/>*/}
-                            <h2><span aria-hidden="true"><img src={piggybank} alt="piggybank"/></span>Stop geld in je spaarpot!</h2>
-
-                            <Link className="add-activity btn-pink btn add-category" aria-label="Nog uitgeven" to="/sparen">Ga naar sparen</Link>
+                            <Link className="to-do add-activity btn-pink btn add-category" aria-label="Nog uitgeven" to="/NogUitgeven">Bekijk lijst</Link>   
                         </label>
                     </div>
 
@@ -93,21 +131,25 @@ class Overview extends Component {
                     <div className="col slide" id="slide-3">
                     <nav className="sub-header">
                         <ul>
-                            <li><a href="#slide-1" >Spaarpot</a></li>
-                            <li><a href="#slide-2">Inkomsten</a></li>
-                            <li><a href="#slide-3" className="selected">Uitgaven</a></li>                    
+                            <li><a href="#slide-1" >Gepland</a></li>
+                            <li><a href="#slide-2">Mijn profiel</a></li>
+                            <li><a href="#slide-3" className="selected">Uitgaven</a></li>                                      
                         </ul>
                     </nav>
                     <MoneyBlock
-                    addClass="text-none"/>
-                        <label> 
-                            <Link className="calendar-icon add-activity btn-pink btn add-category" aria-label="Nog uitgeven" to="/Uitgegeven">Al uitgegeven</Link>             
+                    timeDate="Nodig voor deze"
+                    boldText="week"
+                    toSpend={moneyToSpendWeek}/>
+                        <label className="overview-progressbar-items"> 
+                        <h2 className="title-income">Beschikbaar om uit te geven</h2>
 
-                            <Link className="to-do add-activity btn-pink btn add-category" aria-label="Nog uitgeven" to="/NogUitgeven">Nog halen</Link>
+                        {categoriesIncome}
+                         <Link className="add-activity plus-icon btn-pink btn add-category" aria-label="Afvink lijst" to="/Toevoegen">Uitgaven toevoegen</Link> 
                         </label>
-
+                       
+      
                     </div>
-                </div>
+                    </div>
 
                 </div>
             </>

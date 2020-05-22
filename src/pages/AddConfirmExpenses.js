@@ -3,7 +3,7 @@ import { Header, MoneyBlock, ChosenCategory, Modal2 , Footer, PinkItemsList2, Mo
 import { itemsJson, myAccount } from '../assets/';
 import { Link } from 'react-router-dom';
 
-class ConfirmExpenses extends Component {
+class AddConfirmExpenses extends Component {
     constructor(props) {
     super(props);
         this.state = {
@@ -79,27 +79,7 @@ class ConfirmExpenses extends Component {
                     textLink ="/NogUitgeven"
                     addClass=""/> 
 
-                    <div className={boxFirstClassSee.join('test container confirm-show-pink-list ')}>
-                    <div className="row items">
-                        <PinkItemsList2 
-                            id_item="brood"
-                            title="Brood"
-                            image_link="https://sgorun.nl/wp-content/uploads/2019/06/Natuurlijk-Brood-Natuurlijk-volkoren-brood-1-V-1000x720.png"/>
-                    </div>
-
-                    <div className="row option-buttons">
-                            <div class="col">
-                            <button className="btn btn-green" onClick={this.clickedYes.bind(this)}>Bevestig aankoop</button>
-                            <button onClick={this.handlerSec} className="btn btn-red">Verwijder aankoop</button>
-                            <Link className="btn btn-orange" to="/NogUitgeven">Ga terug naar overzicht mijn lijst</Link>
-                            </div>
-                    </div>
-                    < Modal5 
-                        addClass={this.state.disableSec}
-                        action={this.handlerSec}/>
-                    </div>
-
-            <div  className={boxFirstClassHide.join('test container confirm-expenses-page ')} >
+            <div  className="container confirm-expenses-page" >
                 <div className="row">
                         <div className="col col-md-10 col-lg-6 confirm-header">
                         <p>Hoeveel kost het?</p>
@@ -109,7 +89,20 @@ class ConfirmExpenses extends Component {
                 <div className = "row confirm-section-block" >
                     <form onSubmit={this.submitHandler} method="post" action="/overview">
                             <fieldset>
-                                <legend className={boxClassSee.join('test ')}>Welke uitgave hoort hierbij?</legend>
+                            <legend className={boxClassSee.join('test ')}>Welke categorie en uitgave hoort hierbij?</legend>
+                                <select className="custom-select" id="options-categories">
+                                    <option value="kies_categorie">Kies categorie</option>
+                                    <option value="1">Boodschappen</option>
+                                    <option value="2">Kleding</option>
+                                    <option value="3">Vrije tijd</option>
+                                    <option value="4">Sparen</option>
+                                    <option value="5">Verzorging</option>
+                                    <option value="6">Vaste lasten</option>
+                                    <option value="7">Overige</option>
+                                </select>
+
+                            </fieldset>
+                            <fieldset>
                                 <legend className={boxClassHide.join('test ')}>Klopt de datum en het uitgegeven bedrag?</legend>
                                 <select className="custom-select" id="options">
                                     <option value="0">Kies datum en het uitgegeven bedrag</option>
@@ -150,4 +143,4 @@ class ConfirmExpenses extends Component {
     }
 }
 
-export default ConfirmExpenses
+export default AddConfirmExpenses

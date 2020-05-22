@@ -12,7 +12,7 @@ class FreeTime extends Component {
                 )[2]
 
         const moneyToSpend = myAccount.my_account.map(data =>
-            data.total_money*0.8/4*0.4)
+            data.total_money/4-15-60-14-5)
 
         return (
              <>
@@ -21,7 +21,8 @@ class FreeTime extends Component {
                     addClass=""/>
             <div className="container overview-page">
                 <MoneyBlock
-                    timeDate = "week"
+                    timeDate="Nodig voor deze"
+                    boldText="week"
                     toSpend={moneyToSpend}
                     />
 

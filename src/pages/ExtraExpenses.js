@@ -72,6 +72,13 @@ class ExtraExpenses extends Component {
               <div className="row">
                 {extraExpensesItems}
               </div>
+
+              <div className="row btn-row">
+                <div className="col">
+                <p>Ik heb iets gekocht wat niet in mijn lijstje staat</p>
+                    <Link to="/ToevoegenBevestigenUitgave" className="plus-icon btn btn-pink">Nog toevoegen</Link>
+                </div>
+              </div>
             </div>
 
             </>      

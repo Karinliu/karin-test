@@ -33,13 +33,13 @@ body,
         display: none;
     }
 
-    .text-none{
+    .text-none {
         color: transparent;
         font-size: auto;
-        background: transparent!important;
+        background: transparent !important;
 
-        span{
-            text-decoration: none!important;
+        span {
+            text-decoration: none !important;
         }
     }
 
@@ -245,22 +245,22 @@ body,
             }
         }
 
-        .btn{
+        .btn {
             margin-bottom: 0.5em;
         }
 
         .create-account {
 
-        i {
-            color: $black;
-            text-decoration: underline;
+            i {
+                color: $black;
+                text-decoration: underline;
 
-            &:hover,
-            &:focus {
-                color: $primaryColor;
+                &:hover,
+                &:focus {
+                    color: $primaryColor;
+                }
             }
         }
-    }
     }
 
     header {
@@ -292,6 +292,10 @@ body,
 
                 .help {
                     background-image: url('../assets/images/support.png');
+                }
+
+                .settings {
+                    background-image: url('../assets/images/settings.png');
                 }
 
                 li {
@@ -368,6 +372,12 @@ body,
                 margin: 0;
                 padding: 0;
 
+                span{
+                    font-weight: bold;
+                    color: $primaryColor;
+                }
+            
+
                 &:last-child {
                     font-size: 1.3em;
                 }
@@ -388,8 +398,13 @@ body,
 
         p {
             span {
-                text-decoration: line-through;
+                // text-decoration: line-through;
                 text-decoration-color: red;
+                color: $primaryColor;
+            }
+
+            .boldText{
+                font-weight: bold;
             }
 
             &:first-child {
@@ -404,6 +419,7 @@ body,
             &:last-child {
                 margin: 0 auto;
                 width: 80%;
+                text-align: center;
             }
         }
 
@@ -419,6 +435,22 @@ body,
     .overview-expenses-page {
         background-color: $backgroundGray;
         min-height: 91vh;
+
+        .btn-row{
+            .col{
+                margin: 1em 1.5em;
+                padding: 0;
+
+                p{
+                    margin-top: 2em;
+                    text-align: center;
+                }
+
+                button{
+                    margin: 0;
+                }
+            }
+        }
 
         a {
             width: 100%;
@@ -486,62 +518,62 @@ body,
     .home-page {
 
         .calendar-icon {
-        background-image: url('../assets/images/calendar_white.png');
-        background-repeat: no-repeat;
-        background-position: 1em;
-        background-size: 1.3em;
-
-        &:hover,
-        &:focus {
             background-image: url('../assets/images/calendar_white.png');
             background-repeat: no-repeat;
             background-position: 1em;
             background-size: 1.3em;
-            color: $white;
+
+            &:hover,
+            &:focus {
+                background-image: url('../assets/images/calendar_white.png');
+                background-repeat: no-repeat;
+                background-position: 1em;
+                background-size: 1.3em;
+                color: $white;
+            }
         }
-    }
 
-    .to-do {
-        background-image: url('../assets/images/to-do.png');
-        background-repeat: no-repeat;
-        background-position: 1em;
-        background-size: 1em;
-
-        &:hover,
-        &:focus {
+        .to-do {
             background-image: url('../assets/images/to-do.png');
             background-repeat: no-repeat;
             background-position: 1em;
             background-size: 1em;
-            color: $white;
+
+            &:hover,
+            &:focus {
+                background-image: url('../assets/images/to-do.png');
+                background-repeat: no-repeat;
+                background-position: 1em;
+                background-size: 1em;
+                color: $white;
+            }
         }
-    }
 
         .add-activity {
             // padding: 0;
-            color: white!important;
+            color: white !important;
         }
 
-        .sub-header{
-            ul{
+        .sub-header {
+            ul {
                 display: flex;
                 flex-direction: row;
                 max-width: max-content;
                 padding: 0;
                 margin: 0 auto;
 
-                li{
+                li {
                     margin: 1em;
                     padding: 0;
                     margin-bottom: 0;
                     list-style: none;
 
-                    a{
+                    a {
                         font-size: 1rem;
                         color: $black;
 
                         &:hover,
-                        &:focus{
+                        &:focus {
                             border-bottom: 1px solid black;
                             text-decoration: none;
                             opacity: 0.8;
@@ -550,7 +582,7 @@ body,
                         }
                     }
 
-                    .selected{
+                    .selected {
                         color: $primaryColor;
                         padding-bottom: 0.2em;
                         border-bottom: 1px solid $primaryColor;
@@ -566,6 +598,12 @@ body,
             flex-direction: row;
             // scroll-behavior: unset;
             overflow-x: hidden;
+            max-height: 90vh;
+            overflow: hidden;
+
+            .slide{
+                height: auto;
+            }
 
 
             a {
@@ -580,7 +618,7 @@ body,
                 margin-bottom: 1.5em;
             }
 
-            hr{
+            hr {
                 background: $primaryColorLight;
             }
 
@@ -664,10 +702,101 @@ body,
                 padding: 0;
             }
 
+            #slide-3{
+                height: auto;
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+
+            .title-income {
+                margin-bottom: 1.5em;
+            }
+
+            .overview-progressbar-items {
+
+                .item-overview {
+                    background-color: $lightGrey;
+                    width: auto;
+                    height: auto;
+                    border-radius: 0.5em;
+                    margin: 0.5em 1.5em;
+
+                    .procentbar {
+                        background: $primaryColorLight;
+                        opacity: 0.8;
+                        position: absolute;
+                        height: 100%;
+                        width: 50%;
+                        border-radius: 0.5em;
+                        left: 0;
+
+                    }
+
+                    .price-bar {
+                        margin: 0.5em 0;
+                        z-index: 1;
+
+                        p {
+                            margin: 0;
+                        }
+
+                        span {
+                            // width: max-content;
+                            font-size: 0.8rem;
+                        }
+                    }
+
+                    .title {
+                        flex-grow: 1;
+                    }
+
+                    .piggybank {
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+
+                    .procentbar-text {
+                        display: flex;
+                        flex-direction: row;
+
+
+                        .categorie-title {
+                            flex-grow: 1;
+                            text-align: left;
+                            display: flex;
+                            flex-direction: row;
+                            margin: auto 0;
+                            z-index: 1;
+
+                            p {
+                                margin: auto 1em;
+                                margin-left: 2em;
+                                margin-top: 0.2em;
+                            }
+
+                            span {
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                background-size: contain;
+                                // margin-right: 1em;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                position: absolute;
+                                // margin-left: 1em;
+                                // left: 0;
+                            }
+                        }
+
+                    }
+
+                }
+
+            }
+
             label {
                 width: 100%;
                 padding: 1.5em 0;
-                background-color: $backgroundGray;
+                background-color: #FBFBFB;
                 margin-bottom: 0;
 
                 &>* {
@@ -691,37 +820,67 @@ body,
                     }
                 }
 
-                .item-overview {
-                    background-color: $lightGrey;
-                    width: auto;
-                    border-radius: 0.5em;
-                    margin: 1.5em;
-                    display: flex;
-                    padding: 1em;
-
-                    span {
-                        width: 1.5rem;
-                        height: 1.5rem;
-                        background-size: contain;
-                        margin-right: 1em;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                    }
-
-                    p {
+                .home-label-nav {
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
                         margin: 0;
-                        text-align: left;
-                    }
+                        padding: 0 1.5em;
+                        width: 100%;
 
-                    .title {
-                        flex-grow: 1;
-                    }
+                        li {
+                            list-style: none;
+                            width: 40%;
+                            height: auto;
+                            margin: auto;
+                            margin-top: 1.5em;
+                            margin-bottom: 1.5em;
 
-                    .piggybank {
-                        margin: 0 auto;
-                        text-align: center;
+                            a {
+                                span {
+                                    height: 3em;
+                                    display: block;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: auto 70%;
+                                    border: 1px solid #DEE2E6;
+                                    border-radius: 0.3em;
+                                    background-color: $white;
+
+                                }
+
+                                &:hover,
+                                &:focus {
+                                    opacity: 1;
+
+                                    span {
+                                        background-color: $secondaryColor;
+
+                                    }
+
+                                    .settings {
+                                        background-image: url('../assets/images/white_settings.png');
+                                    }
+
+                                    .support {
+                                        background-image: url('../assets/images/white_support.png');
+                                    }
+
+                                    .save_money {
+                                        background-image: url('../assets/images/white_sparen.png');
+                                    }
+
+                                    .transaction {
+                                            background-image: url('../assets/images/white_transaction.png');
+                                        }
+                                }
+                            }
+                        }
                     }
                 }
+
+
 
                 a {
                     color: $primaryColor;
@@ -819,6 +978,19 @@ body,
     .grooming {
         background-image: url('../assets/images/purple_grooming.png');
     }
+
+    .support {
+        background-image: url('../assets/images/purple_support.png');
+    }
+
+    .transaction {
+        background-image: url('../assets/images/purple_transaction.png');
+    }
+
+    .settings {
+        background-image: url('../assets/images/purple_settings.png');
+    }
+
 
     nav.category {
         ul {
@@ -1344,6 +1516,65 @@ body,
         }
     }
 
+    .confirm-show-pink-list{
+        margin-top: 3.5em;
+        height: 80vh;
+        background: $primaryColorLight;
+
+        .modal{
+            h2{
+                font-size: 1em;
+                font-weight: bold;
+                color: $primaryColor;
+            }
+        }
+
+        .items{
+
+            .col{
+                background: $whiteLight;
+                margin: 1.5em 0;
+                padding: 1em;
+            }
+
+            label{
+                display: flex;
+
+                span{
+                    display: none;
+                }
+
+                section{
+                    background: $white;
+                    border-radius: 0.5em;
+                    width: 5em;
+                    display: block;
+                    margin-left: 1em;
+
+                    img{
+                        width: 100%;
+                        display: inline-block;
+                    }
+                }
+
+                p{
+                    margin: auto 1em;
+                }
+            }
+
+        }
+
+        .option-buttons{
+            background: $white;
+            border-radius: 1em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 35vh;
+            padding-top: 1em;
+        }
+    }
+
     .confirm-expenses-page {
         background-color: $primaryColor;
         padding-bottom: 8em;
@@ -1417,6 +1648,15 @@ body,
                         color: $gray;
                     }
 
+                    select{
+                        width: 100%;
+                        margin: 1em 0;
+                    }
+
+                    .custom-select{
+                        border: 1px solid $primaryColor;
+                    }
+
                     input {
                         width: 100%;
                         max-height: 1.4em;
@@ -1433,13 +1673,27 @@ body,
                         }
 
                         &:valid {
-                            color: $green;
+                            color: green;
                         }
 
                         &:invalid {
-                            color: $red;
+                            color: red;
                         }
 
+                    }
+                }
+
+                
+
+                .image-send{
+                    input{
+                        font-size: 1rem;
+                        border: none;
+                    }
+
+                    &:hover,
+                    &:focus{
+                        border: none;
                     }
                 }
 
@@ -1752,6 +2006,22 @@ body,
         }
     }
 
+    .settings-page {
+
+        table,
+        th,
+        td {
+            border: 1px solid $primaryColor;
+            background: $white;
+            width: auto;
+            padding: 0.5em;
+        }
+
+        table {
+            margin-bottom: 1em;
+        }
+    }
+
     footer {
         position: fixed;
         bottom: 0;
@@ -1968,7 +2238,7 @@ body,
 
         .home-page {
             .add-activity {
-                a{
+                a {
                     font-size: 1em;
                 }
             }

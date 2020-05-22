@@ -5,7 +5,7 @@ class HeaderMoney extends Component {
     return(
     	<div className="container to-spend">
     		<div className="row">
-    			<p className="col">{this.props.text}</p>
+    			<p className="col">{this.props.textFirst} <span>{this.props.textDate}</span> {this.props.textEnd}</p>
     			<p className="col">€ {this.props.toSpend}</p>
     		</div>
     	</div>

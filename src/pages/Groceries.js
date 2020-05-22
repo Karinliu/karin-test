@@ -13,7 +13,7 @@ class Groceries extends Component {
                 )[0]
 
         const moneyToSpend = myAccount.my_account.map(data =>
-            data.total_money*0.8/4*0.6)
+            data.total_money/4-15-70-5)
 
         return (
              <>
@@ -22,7 +22,8 @@ class Groceries extends Component {
                     addClass=""/>
             <div className="container overview-page">
                 <MoneyBlock
-                    timeDate = "week"
+                    timeDate="Nodig voor deze"
+                    boldText="week"
                     toSpend={moneyToSpend}/>
 
                     {clickedPage}
