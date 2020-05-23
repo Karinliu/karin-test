@@ -49,7 +49,7 @@ class Overview extends Component {
                                     <div className="col slide" id="slide-2">
                     <nav className="sub-header">
                         <ul>
-                            <li><a href="#slide-1" >Gepland</a></li>
+                            <li><a href="#slide-1" >Mijn lijst</a></li>
                             <li><a href="#slide-2" className="selected">Mijn profiel</a></li>
                             <li><a href="#slide-3">Uitgaven</a></li>                      
                         </ul>
@@ -67,15 +67,6 @@ class Overview extends Component {
                                         <span class="save_money"></span>
                                         Spaarpot
                                         </Link>
-
-                                    </li>
-
-                                    <li>
-                                        <Link to="/uitgegeven">
-                                        <span class="transaction"></span>
-                                        History transactie
-                                        </Link>
-
                                     </li>
                                 </ul>
                             </nav>
@@ -89,7 +80,7 @@ class Overview extends Component {
                     <div className="col slide" id="slide-1">
                     <nav className="sub-header">
                         <ul>
-                            <li><a href="#slide-1" className="selected">Gepland</a></li>
+                            <li><a href="#slide-1" className="selected">Mijn lijst</a></li>
                             <li><a href="#slide-2">Mijn profiel</a></li>
                             <li><a href="#slide-3">Uitgaven</a></li>                                   
                         </ul>
@@ -108,7 +99,7 @@ class Overview extends Component {
                     <div className="col slide" id="slide-3">
                     <nav className="sub-header">
                         <ul>
-                            <li><a href="#slide-1" >Gepland</a></li>
+                            <li><a href="#slide-1" >Mijn lijst</a></li>
                             <li><a href="#slide-2">Mijn profiel</a></li>
                             <li><a href="#slide-3" className="selected">Uitgaven</a></li>                                      
                         </ul>
