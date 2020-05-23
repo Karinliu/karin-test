@@ -152,7 +152,7 @@ class FreeTimeAdd extends Component {
                 <div className="row option-block">
                     <div className="col">
                         {element}
-                        <p>Kost het bij elkaar minder dan {moneyToSpend} euro?</p>
+                        <p>Kost het bij elkaar <span>minder</span> dan {moneyToSpend} euro?</p>
 
 
                         <button className="btn btn-green" onClick={this.handler}>Ja</button>

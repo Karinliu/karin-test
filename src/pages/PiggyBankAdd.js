@@ -62,19 +62,13 @@ class ViewPiggyBank extends Component {
                         
                     </div>
                 </div>
-                <div className="row jar-money-title">
-                    <div className="col">
-                        <p>In spaarpot stoppen</p>
-                    </div>
-                </div>
-
 
                 <div className="row jar-money-add">
+                <div className="col jar-money-title">
+                        <p>In spaarpot stoppen</p>
+                    </div>
                     {items}
-                </div>
-
-                <div className="row btn-container-money">
-                    <div className="col">
+                    <div className="col btn-container-money">
                         <button 
                         className="btn btn-pink plus-icon"
                         onClick={this.handler}>Toevoegen</button>

@@ -5,6 +5,10 @@
     }],
     "settings_price": [
     {
+        "title": "Totaal te besteden - vaste lasten",
+        "price": "115.00",
+        "when": "per week"
+    },{
         "title": "Boodschappen",
         "price": "60.00",
         "when": "per week"

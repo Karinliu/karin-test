@@ -462,7 +462,7 @@ body,
   #root .home-page .carousel .title-income {
     margin-bottom: 1.5em; }
   #root .home-page .carousel .overview-progressbar-items .item-overview {
-    background-color: rgba(222, 16, 105, 0.1);
+    background-color: rgba(126, 16, 218, 0.1);
     width: auto;
     height: auto;
     border-radius: 0.5em;
@@ -812,6 +812,9 @@ body,
     #root .section-page-two .option-block p {
       font-size: 1.2em;
       text-align: center; }
+    #root .section-page-two .option-block span {
+      color: #DA106C;
+      font-weight: bold; }
     #root .section-page-two .option-block .no-img {
       margin: 1em auto;
       width: 50%;
@@ -1130,58 +1133,62 @@ body,
     text-decoration: none; }
 
 #root .piggybank-add-page .btn-container-money {
-  position: absolute;
+  position: fixed;
   width: 100%;
   margin-bottom: 1em;
-  bottom: 0; }
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 #root .piggybank-add-page .modal h2 {
   font-size: 1em;
   font-weight: bold;
   color: #DA106C; }
 
-#root .piggybank-add-page .jar-money .col {
-  margin-top: 1em;
-  margin-bottom: 4em; }
-  #root .piggybank-add-page .jar-money .col .jar-lid {
-    height: 2em;
-    background-color: #FFD662;
-    width: 30%;
-    margin: 0 auto;
-    border-radius: 1em 1em 0em 0em; }
-  #root .piggybank-add-page .jar-money .col .jar-bowl {
-    background-color: #AFDFFA;
-    height: 13em;
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 2em;
-    overflow: hidden; }
-  #root .piggybank-add-page .jar-money .col .coin .dollar {
-    background-color: #f7941e;
-    height: 2em;
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    border-radius: 50%;
-    margin: auto;
-    text-align: center;
-    width: 2em;
-    font-size: 2em; }
-  #root .piggybank-add-page .jar-money .col .coin .dollar-one {
-    animation: mymove1 3s; }
-  #root .piggybank-add-page .jar-money .col .coin .dollar-two {
-    animation: mymove2 3s; }
-  #root .piggybank-add-page .jar-money .col .coin .dollar-three {
-    animation: mymove3 3s; }
-  #root .piggybank-add-page .jar-money .col .coin .dollar-four {
-    animation: mymove4 3s; }
-  #root .piggybank-add-page .jar-money .col .coin .dollar-five {
-    animation: mymove5 3s; }
+#root .piggybank-add-page .jar-money {
+  padding-bottom: 6em; }
+  #root .piggybank-add-page .jar-money .col {
+    margin-top: 1em;
+    margin-bottom: 4em; }
+    #root .piggybank-add-page .jar-money .col .jar-lid {
+      height: 2em;
+      background-color: #FFD662;
+      width: 30%;
+      margin: 0 auto;
+      border-radius: 1em 1em 0em 0em; }
+    #root .piggybank-add-page .jar-money .col .jar-bowl {
+      background-color: #AFDFFA;
+      height: 13em;
+      width: 50%;
+      margin: 0 auto;
+      border-radius: 2em;
+      overflow: hidden; }
+    #root .piggybank-add-page .jar-money .col .coin .dollar {
+      background-color: #f7941e;
+      height: 2em;
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      border-radius: 50%;
+      margin: auto;
+      text-align: center;
+      width: 2em;
+      font-size: 2em; }
+    #root .piggybank-add-page .jar-money .col .coin .dollar-one {
+      animation: mymove1 3s; }
+    #root .piggybank-add-page .jar-money .col .coin .dollar-two {
+      animation: mymove2 3s; }
+    #root .piggybank-add-page .jar-money .col .coin .dollar-three {
+      animation: mymove3 3s; }
+    #root .piggybank-add-page .jar-money .col .coin .dollar-four {
+      animation: mymove4 3s; }
+    #root .piggybank-add-page .jar-money .col .coin .dollar-five {
+      animation: mymove5 3s; }
 
 #root .piggybank-add-page .jar-money-title {
   z-index: 10;
-  position: absolute;
+  position: fixed;
   margin: 0 auto;
   margin-bottom: 0px;
   text-align: center;
@@ -1272,7 +1279,8 @@ body,
   border: 1px solid #DA106C;
   background: #fff;
   width: auto;
-  padding: 0.5em; }
+  padding: 0.5em;
+  font-size: 0.95rem; }
 
 #root .settings-page table {
   margin-bottom: 1em; }
