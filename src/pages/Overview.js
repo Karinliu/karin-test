@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Title, Header, MoneyBlock, ProgressBar} from '../components/';
 import { Link } from 'react-router-dom';
-import {myAccount} from '../assets/';
+import {myAccount, piggybank} from '../assets/';
 
 class Overview extends Component {
     render() {
@@ -60,16 +60,9 @@ class Overview extends Component {
                         toSpend={moneyToSpend}/>
 
                         <label>
-                            <nav className="home-label-nav">
-                                <ul>
-                                    <li>
-                                        <Link to="/sparen">
-                                        <span class="save_money"></span>
-                                        Spaarpot
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </nav>
+                            <h2 className="title-overview"><span><img src={piggybank} alt="piggybank"/></span>Stop geld in je spaarpot! :)</h2>
+
+                            <Link className="add-activity btn-pink btn add-category" aria-label="Spaarpot" to="/Sparen">Ga naar spaarpot</Link> 
 
                         </label>
                         
