@@ -9,7 +9,9 @@ class PinkItemsList extends Component {
               price: "0,00",
               result: "",
               addClass: 'd-none remove-btn',
-              disable: "modal d-none"
+              disable: "modal d-none",
+              checked: false,
+              items: []
 
         };
         this.buttonClickedAdd = this.buttonClickedAdd.bind(this);
@@ -27,10 +29,17 @@ class PinkItemsList extends Component {
           let price = (this.state.value + 1.00)* e.target.value
         // const price = ( 0.1 * 10 + 0.2 * 10 ) / 10
 
+
+        console.log(this.handleClick)
+
         price = parseFloat(price).toFixed(2);
 
         const priceAddValue = e.target.value;
         this.props.dataAddValue(priceAddValue); 
+        console.log(e.target.name, "name name")
+
+        const targetName = e.target.name;
+        this.props.handleClickAdd(targetName); 
 
         this.setState({
           price: price,
@@ -39,7 +48,8 @@ class PinkItemsList extends Component {
 
 
           this.setState({
-            disable: "modal d-none"
+            disable: "modal d-none",
+            checked: true
           })
         }else{
           this.setState({value: this.state.value + 0});
@@ -81,12 +91,15 @@ class PinkItemsList extends Component {
           const priceRemoveValue = e.target.value;
           this.props.dataRemoveValue(priceRemoveValue); 
 
+          
+
           this.setState({
             price: price
           })
 
           this.setState({
-            disable: "modal d-none"
+            disable: "modal d-none",
+            checked: false
           })
         }else{
           this.setState({
@@ -117,13 +130,13 @@ class PinkItemsList extends Component {
                   <section>
                     <img src={this.props.image_link} alt={this.props.title}/>
                   </section>
-                  {/*<p>total price {this.props.overallNumber}</p>*/}
+                  
                 <p className="title-item">{this.props.title}</p>
                 <button value={this.props.price} className={this.state.addClass} onClick={this.buttonClickedRemove}>
                   -
                 </button>
                 <p className="price-item">€ {this.props.price}</p>
-                <button value={this.props.price} className="add-btn" onClick={this.buttonClickedAdd}>
+                <button name={this.props.title} value={this.props.price} className="add-btn" onClick={this.buttonClickedAdd}>
                   {this.state.value}
                 </button>
               </div>

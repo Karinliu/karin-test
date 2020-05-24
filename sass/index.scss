@@ -1223,7 +1223,7 @@ body,
 
         .groceries-modal{
             position: absolute;
-            top: -15em;
+            top: -100em;
         }
 
         .modal{
@@ -1237,6 +1237,7 @@ body,
                 position: absolute;
                 top: 0;
                 bottom: 0;
+
             }
         }
 
@@ -1279,12 +1280,16 @@ body,
 
         .option-block-see-items {
             padding: 1.5em;
-            background-color: $white;
             border-radius: 2em 2em 0 0;
             padding-bottom: 4em;
-            background-color: $lightGrey;
             margin-bottom: -2em;
+        }
 
+        .option-block-grocery{
+            position: sticky;
+            width: 100vw;
+            left: 0;
+            right: 0;
         }
 
         .option-block {
@@ -1329,7 +1334,64 @@ body,
 
     }
 
+    .section-page-two-grocery-one{
+        padding-bottom: 10em;
+        .groceries-see-items{
 
+            border-radius: 0;
+            padding: 0;
+            min-height: 30vh;
+            overflow-y: scroll;
+            max-height: 30vh;
+
+            .grocerie-item-list-item{
+                width: 100%;
+            }
+            .col{
+                display: flex;
+                padding: 1.5em;
+                background: $whiteLight;
+            }
+            section{
+                width: 5rem;
+                height: auto;
+                background: $white;
+                border-radius: 0.5em;
+                padding: 0.5em;
+                display: block;
+                margin: 0 1.5em;
+
+
+                img{
+                    width: 100%;
+                    display: inline-block;
+                }
+            }
+
+            .title-item{
+                margin: auto 0;
+            }
+            .price-item{
+                    display: none;
+                }
+
+                button{
+                    display: none;
+                }
+        }
+
+    }
+
+
+    .section-page-two-grocery-two{
+        bottom: 0;
+        position: absolute;
+        padding-top: 0;
+        background-color: transparent;
+        left: 0;
+        right: 0;
+
+    }
 
     &>.pink-list {
         margin-top: 10em;
@@ -2142,6 +2204,20 @@ body,
                 }
             }
         }
+
+        .pink-list{
+            .item-list{
+                .col{
+                    max-width: 10em;
+                }
+
+                .col button{
+                    width: 2rem;
+                    height: 2rem;
+                    font-size: 1em;
+                }
+            }
+        }
     }
 }
 
@@ -2149,6 +2225,7 @@ body,
     #root {
         .login-page {
             display: block;
+            height: 85vh;
 
             .logo {
                 img {

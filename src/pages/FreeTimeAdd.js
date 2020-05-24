@@ -10,7 +10,8 @@ class FreeTimeAdd extends Component {
             addClass: '',
             items: [],
             disable: "modal d-none",
-            chooseCategory: ''
+            chooseCategory: '',
+            addShow: ''
         }
         this.handler = this.handler.bind(this);
     }
@@ -57,7 +58,10 @@ class FreeTimeAdd extends Component {
     }
 
     clickedNo() {
-        this.setState({chooseCategory: 'no'});
+        this.setState({
+            chooseCategory: 'no',
+            addShow: !this.state.addShow
+        });
     }
 
     render() {
@@ -70,6 +74,17 @@ class FreeTimeAdd extends Component {
         }else{
             boxClassSee.push('d-block');
             boxClassHide.push('d-none');
+        }
+
+        let boxClassHide2 = ['d-none'];
+        let boxClassSee2 = ['d-block'];
+
+        if(this.state.addShow) {
+            boxClassSee2.push('d-none');
+            boxClassHide2.push('d-block');
+        }else{
+            boxClassSee2.push('d-block');
+            boxClassHide2.push('d-none');
         }
 
         const items =  itemsJson.data_free_time.map(data => 
@@ -154,9 +169,9 @@ class FreeTimeAdd extends Component {
                         {element}
                         <p>Kost het bij elkaar <span>minder</span> dan {moneyToSpend} euro?</p>
 
-                        <button className="btn btn-green" onClick={this.handler}>Ja</button>
-                        <button className="btn btn-red" onClick={this.clickedNo.bind(this)}>Nee</button>
-                        <button className="btn-orange btn" onClick={this.toggleDetails.bind(this)}> Ik wil nog wat wijzigen</button>
+                        <button className={boxClassSee2.join('test btn btn-green ')}  onClick={this.handler}>Ja</button>
+                        <button className={boxClassSee2.join('test btn btn-red ')} onClick={this.clickedNo.bind(this)}>Nee</button>
+                        <button className={boxClassSee2.join('test btn btn-orange ')} onClick={this.toggleDetails.bind(this)}> Ik wil nog wat wijzigen</button>
                     </div>
                 </div>
                 < Modal6 

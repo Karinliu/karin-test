@@ -9,15 +9,29 @@ class GroceriesAdd extends Component {
         this.state = {
             price: '0',
             value: 0,
+            items: [],
             lastClickedValue: 0,
             chooseCategory: '',
             checked: '', 
-            disable: "modal d-none"
+            disable: "modal d-none",
 
         }
         this.handler = this.handler.bind(this);
-        this.state = {value: 0};
+        
         this.buttonClicked = this.buttonClicked.bind(this);
+        // this.handleClick = this.handleClick.bind(this);
+        this.state = {value: 0,
+                    items: []};
+    }
+
+    handleClickAdd = (val) => {
+        console.log(val)
+
+        console.log(this.state.items)
+
+        this.setState({
+            items: [...this.state.items, val]
+        })
     }
 
     handler() {
@@ -61,16 +75,30 @@ class GroceriesAdd extends Component {
         this.setState({chooseCategory: 'no'});
     }
 
-    handleClick = (e) => {
-        console.log(e.target.checked)
-        if (e.target.checked === true) {
-            console.log("ja")
+    // handleClick = (e) => {
+    //     if (e.target.checked === true) {
+    //         const listItem = e.target.value;
+    //         const items = [...this.state.items, listItem]
+    //         // const items = [listItem + ', '+this.state.items]
 
-        }
-        if (e.target.checked === false) {
-            console.log("NEE")
-        }
-    }
+    //         this.setState({
+    //             items: items
+    //         })
+    //     }
+    //     if (e.target.checked === false) {
+    //         const listItem = e.target.value;
+
+    //         const filteredItems = this.state.items.find(item => {
+    //             return item === listItem
+    //         })
+
+    //         this.setState({
+    //             items: this.state.items.filter(item => {
+    //                 return item !== filteredItems
+    //             })
+    //         });
+    //     }
+    // }
 
     render() {
             let moneyToSpend = myAccount.my_account.map(data => {
@@ -113,6 +141,8 @@ class GroceriesAdd extends Component {
 
         })
 
+            console.log(this.state.items, "wat zijn items")
+
         const titleCategory = itemsJson.groceries_categories.map(data =>
                 <TitleCategory 
                     title={data.title}/>)
@@ -122,56 +152,172 @@ class GroceriesAdd extends Component {
                     title={data.title}
                     price={data.price}
                     image_link={data.image_link}
-                    handleClick = {this.handleClick}
+                    handleClickAdd = {this.handleClickAdd}
+                    handleClickRemove={this.handleClickRemove}
                     id_item = {data.id_item}
                     moneyToSpend = {moneyToSpend}
                     dataAddValue = {this.addTotalPrice}
                     dataRemoveValue = {this.removeTotalPrice}/>)
+
+        const newItems_1 = this.state.items.map(data=>{
+            const item = data;
+            console.log(data)
+
+            const itemsnew_1 =  itemsJson.data_vegetables.filter(data => {
+                return data.title === item;
+            })
+
+            return itemsnew_1
+        })
+
+        const newItemsList_1 = newItems_1.map( data => {
+                if(typeof data[0] !== "undefined"){
+                return <div className="grocerie-item-list-item">
+                <PinkItemsList
+                            title={data[0].title}
+                            image_link={data[0].image_link}
+                        />
+                    </div>
+            }
+        })
+
+
 
         const items_2 =  itemsJson.data_oil.map(data => 
             <PinkItemsList 
                     title={data.title}
                     price={data.price}
                     image_link={data.image_link}
-                    handleClick = {this.handleClick}
+                    handleClickAdd = {this.handleClickAdd}
+                    handleClickRemove={this.handleClickRemove}
                     id_item = {data.id_item}
                     moneyToSpend = {moneyToSpend}
                     dataAddValue = {this.addTotalPrice}
                     dataRemoveValue = {this.removeTotalPrice}/>)
 
+        const newItems_2 = this.state.items.map(data=>{
+            const item = data;
+            console.log(data)
+
+            const itemsnew_2 =  itemsJson.data_oil.filter(data => {
+                return data.title === item;
+            })
+
+            return itemsnew_2
+        })
+
+        const newItemsList_2 = newItems_2.map( data => {
+                if(typeof data[0] !== "undefined"){
+                return <div className="grocerie-item-list-item">
+                <PinkItemsList
+                            title={data[0].title}
+                            image_link={data[0].image_link}
+                        />
+                    </div>
+            }
+        })
 
         const items_3 =  itemsJson.data_meat_fish.map(data => 
             <PinkItemsList 
                     title={data.title}
                     price={data.price}
                     image_link={data.image_link}
-                    handleClick = {this.handleClick}
+                    handleClickAdd = {this.handleClickAdd}
+                    handleClickRemove={this.handleClickRemove}
                     id_item = {data.id_item}
                     moneyToSpend = {moneyToSpend}
                     dataAddValue = {this.addTotalPrice}
                     dataRemoveValue = {this.removeTotalPrice}/>)
+
+        const newItems_3 = this.state.items.map(data=>{
+            const item = data;
+            console.log(data)
+
+            const itemsnew_3 =  itemsJson.data_meat_fish.filter(data => {
+                return data.title === item;
+            })
+
+            return itemsnew_3
+        })
+
+        const newItemsList_3 = newItems_3.map( data => {
+                if(typeof data[0] !== "undefined"){
+                return <div className="grocerie-item-list-item">
+                <PinkItemsList
+                            title={data[0].title}
+                            image_link={data[0].image_link}
+                        />
+                    </div>
+            }
+        })
 
         const items_4 =  itemsJson.data_grain.map(data => 
             <PinkItemsList 
                     title={data.title}
                     price={data.price}
                     image_link={data.image_link}
-                    handleClick = {this.handleClick}
+                    handleClickAdd = {this.handleClickAdd}
+                    handleClickRemove={this.handleClickRemove}
                     id_item = {data.id_item}
                     moneyToSpend = {moneyToSpend}
                     dataAddValue = {this.addTotalPrice}
                     dataRemoveValue = {this.removeTotalPrice}/>)
+
+        const newItems_4 = this.state.items.map(data=>{
+            const item = data;
+            console.log(data)
+
+            const itemsnew_4 =  itemsJson.data_grain.filter(data => {
+                return data.title === item;
+            })
+
+            return itemsnew_4
+        })
+
+        const newItemsList_4 = newItems_4.map( data => {
+                if(typeof data[0] !== "undefined"){
+                return <div className="grocerie-item-list-item">
+                <PinkItemsList
+                            title={data[0].title}
+                            image_link={data[0].image_link}
+                        />
+                    </div>
+            }
+        })
 
         const items_5 =  itemsJson.data_drinks.map(data => 
             <PinkItemsList 
                     title={data.title}
                     price={data.price}
                     image_link={data.image_link}
-                    handleClick = {this.handleClick}
+                    handleClickAdd = {this.handleClickAdd}
+                    handleClickRemove={this.handleClickRemove}
                     id_item = {data.id_item}
                     moneyToSpend = {moneyToSpend}
                     dataAddValue = {this.addTotalPrice}
                     dataRemoveValue = {this.removeTotalPrice}/>) 
+
+        const newItems_5 = this.state.items.map(data=>{
+            const item = data;
+            console.log(data)
+
+            const itemsnew_5 =  itemsJson.data_drinks.filter(data => {
+                return data.title === item;
+            })
+
+            return itemsnew_5
+        })
+
+        const newItemsList_5 = newItems_5.map( data => {
+                if(typeof data[0] !== "undefined"){
+                return <div className="grocerie-item-list-item">
+                <PinkItemsList
+                            title={data[0].title}
+                            image_link={data[0].image_link}
+                        />
+                    </div>
+            }
+        })
 
 
         let boxClassHide = ['d-none'];
@@ -240,14 +386,18 @@ class GroceriesAdd extends Component {
                 </div>
             </div></div>
 
-
-            <div className={boxClassHide.join('container section-page-two ')}>
-                <div className="row option-block-see-items">
-                    <div className="col">
-                        <button className="btn-pink btn" onClick={this.toggleDetails.bind(this)}> Bekijk mijn gekozen items</button>
-                    </div>
+            <div className={boxClassHide.join('container section-page-two section-page-two-grocery-one ')}>
+            <div className="row option-block-see-items groceries-see-items">
+                        {newItemsList_1}
+                        {newItemsList_2}
+                        {newItemsList_3}
+                        {newItemsList_4}
+                        {newItemsList_5}
                 </div>
-                <div className="row option-block">
+            </div>
+
+            <div className={boxClassHide.join('container section-page-two section-page-two-grocery-two ')}>
+                <div className="row option-block option-block-grocery">
                     <div className="col">
                         <p>Wil ik al deze items gaan halen?</p>
 
