@@ -91,7 +91,8 @@ class PinkItemsList extends Component {
           const priceRemoveValue = e.target.value;
           this.props.dataRemoveValue(priceRemoveValue); 
 
-          
+          const targetName = e.target.name;
+          this.props.handleClickRemove(targetName); 
 
           this.setState({
             price: price
@@ -132,7 +133,7 @@ class PinkItemsList extends Component {
                   </section>
                   
                 <p className="title-item">{this.props.title}</p>
-                <button value={this.props.price} className={this.state.addClass} onClick={this.buttonClickedRemove}>
+                <button name={this.props.title}  value={this.props.price} className={this.state.addClass} onClick={this.buttonClickedRemove}>
                   -
                 </button>
                 <p className="price-item">€ {this.props.price}</p>

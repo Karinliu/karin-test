@@ -1503,8 +1503,7 @@ body,
                     margin-top: 0.2em;
                     float: left;
 
-                    &:hover,
-                    &:focus {
+                    &:hover{
                         &:before {
                             content: "-";
                         }
@@ -1515,10 +1514,16 @@ body,
                     margin-top: 0.2em;
                     float: right;
 
-                    &:hover,
-                    &:focus {
+                    &:hover {
                         &:before {
                             content: "+";
+                        }
+                    }
+
+                    &:focus {
+                        color: white;
+                        &:before {
+                            content: "";
                         }
                     }
                 }
@@ -2096,10 +2101,16 @@ body,
                 .add-btn {
                     float: right;
 
-                    &:hover,
-                    &:focus {
+                    &:hover {
                         &:before {
                             content: "+";
+                        }
+                    }
+
+                    &:focus {
+                        color: white;
+                        &:before {
+                            content: "";
                         }
                     }
                 }

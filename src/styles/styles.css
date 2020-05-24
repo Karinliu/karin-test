@@ -949,13 +949,17 @@ body,
       #root .pink-list .item-list .col .remove-btn {
         margin-top: 0.2em;
         float: left; }
-        #root .pink-list .item-list .col .remove-btn:hover:before, #root .pink-list .item-list .col .remove-btn:focus:before {
+        #root .pink-list .item-list .col .remove-btn:hover:before {
           content: "-"; }
       #root .pink-list .item-list .col .add-btn {
         margin-top: 0.2em;
         float: right; }
-        #root .pink-list .item-list .col .add-btn:hover:before, #root .pink-list .item-list .col .add-btn:focus:before {
+        #root .pink-list .item-list .col .add-btn:hover:before {
           content: "+"; }
+        #root .pink-list .item-list .col .add-btn:focus {
+          color: white; }
+          #root .pink-list .item-list .col .add-btn:focus:before {
+            content: ""; }
 
 #root .clothes-page .item-list {
   flex-wrap: wrap;
@@ -1313,8 +1317,12 @@ body,
         content: "-"; }
     #root .piggybank-add-page .jar-money-add .money-items .add-btn {
       float: right; }
-      #root .piggybank-add-page .jar-money-add .money-items .add-btn:hover:before, #root .piggybank-add-page .jar-money-add .money-items .add-btn:focus:before {
+      #root .piggybank-add-page .jar-money-add .money-items .add-btn:hover:before {
         content: "+"; }
+      #root .piggybank-add-page .jar-money-add .money-items .add-btn:focus {
+        color: white; }
+        #root .piggybank-add-page .jar-money-add .money-items .add-btn:focus:before {
+          content: ""; }
 
 #root .settings-page table,
 #root .settings-page th,

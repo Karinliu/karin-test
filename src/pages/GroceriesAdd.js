@@ -25,13 +25,32 @@ class GroceriesAdd extends Component {
     }
 
     handleClickAdd = (val) => {
-        console.log(val)
 
-        console.log(this.state.items)
+        const currentVal = val
 
         this.setState({
-            items: [...this.state.items, val]
+                items: [...this.state.items, val]
         })
+
+
+
+        
+    }
+ 
+    handleClickRemove = (val) =>{
+        // console.log(val, 'wat is de handleclickremove')
+
+        // console.log(this.state.items, "wat zijn de items")
+
+        // const currentVal = val
+
+        // this.setState({items: this.state.items.filter(function(data) { 
+        //     console.log(data, 'wat is de data')
+
+
+        //     return data !== currentVal
+        // })[0]});
+    
     }
 
     handler() {
@@ -49,8 +68,6 @@ class GroceriesAdd extends Component {
                 lastClickedValue: Number(val)
             }
           });
-
-        // console.log(val, "add total price")
     }
 
     removeTotalPrice = (val) => {
@@ -60,7 +77,6 @@ class GroceriesAdd extends Component {
                     lastClickedValue: Number(val)}
           });
 
-        // console.log(val, "remove total price")
     }
 
     buttonClicked(event) {
@@ -106,9 +122,6 @@ class GroceriesAdd extends Component {
 
             price = parseFloat(price).toFixed(2);
 
-            // console.log(price, "what is the price")
-            // console.log(data.total_money)
-
             if (typeof price === "undefined"){
                 console.log(data.price, "oops")
                 return data.total_money/4-35-70-5
@@ -124,7 +137,6 @@ class GroceriesAdd extends Component {
 
                     total = parseFloat(total).toFixed(2);
 
-                    // console.log(total, "total total total addclickedbla")
                     return total
                 }
                 else{
@@ -132,16 +144,12 @@ class GroceriesAdd extends Component {
 
                     total = parseFloat(total).toFixed(2);
 
-                    // console.log(total, "total total total remove")
-
                     alert('WOW STOP, LAATSTE ITEM KAN NIET GEHAALD WORDEN')
                     return total
                 }
             } 
 
         })
-
-            console.log(this.state.items, "wat zijn items")
 
         const titleCategory = itemsJson.groceries_categories.map(data =>
                 <TitleCategory 
@@ -161,7 +169,6 @@ class GroceriesAdd extends Component {
 
         const newItems_1 = this.state.items.map(data=>{
             const item = data;
-            console.log(data)
 
             const itemsnew_1 =  itemsJson.data_vegetables.filter(data => {
                 return data.title === item;
@@ -197,7 +204,6 @@ class GroceriesAdd extends Component {
 
         const newItems_2 = this.state.items.map(data=>{
             const item = data;
-            console.log(data)
 
             const itemsnew_2 =  itemsJson.data_oil.filter(data => {
                 return data.title === item;
@@ -231,7 +237,6 @@ class GroceriesAdd extends Component {
 
         const newItems_3 = this.state.items.map(data=>{
             const item = data;
-            console.log(data)
 
             const itemsnew_3 =  itemsJson.data_meat_fish.filter(data => {
                 return data.title === item;
@@ -265,7 +270,6 @@ class GroceriesAdd extends Component {
 
         const newItems_4 = this.state.items.map(data=>{
             const item = data;
-            console.log(data)
 
             const itemsnew_4 =  itemsJson.data_grain.filter(data => {
                 return data.title === item;
@@ -299,7 +303,6 @@ class GroceriesAdd extends Component {
 
         const newItems_5 = this.state.items.map(data=>{
             const item = data;
-            console.log(data)
 
             const itemsnew_5 =  itemsJson.data_drinks.filter(data => {
                 return data.title === item;
