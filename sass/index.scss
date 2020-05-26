@@ -1663,6 +1663,28 @@ body,
         }
     }
 
+    .tips-page {
+        margin-top: 4.5em;
+
+        .information-block{
+            background-color: $primaryColorLight;
+            margin-bottom: 1.5em;
+            .col{
+                padding: 1.5em;
+                h2{
+                    font-size: 1em;
+                    color: $primaryColor;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                }
+
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
     .confirm-show-pink-list{
         margin-top: 3.5em;
         height: 80vh;

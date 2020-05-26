@@ -1044,6 +1044,21 @@ body,
     background-repeat: no-repeat;
     height: 20em; }
 
+#root .tips-page {
+  margin-top: 4.5em; }
+  #root .tips-page .information-block {
+    background-color: rgba(222, 16, 105, 0.1);
+    margin-bottom: 1.5em; }
+    #root .tips-page .information-block .col {
+      padding: 1.5em; }
+      #root .tips-page .information-block .col h2 {
+        font-size: 1em;
+        color: #DA106C;
+        font-weight: bold;
+        margin-bottom: 0; }
+      #root .tips-page .information-block .col span {
+        font-weight: bold; }
+
 #root .confirm-show-pink-list {
   margin-top: 3.5em;
   height: 80vh;

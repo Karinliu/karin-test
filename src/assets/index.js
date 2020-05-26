@@ -6,6 +6,7 @@ export { default as calendar } from './images/calendar.png'
 export { default as logo } from './images/logo.png'
 export { default as smiley } from './images/smiley.png'
 export { default as Target } from './images/target_color.png'
+export { default as MoneyBlockScreenshot } from './images/moneyblock-screenshot.png'
 
 export { default as categoriesJson } from './json/categories'
 export { default as itemsJson } from './json/items'
