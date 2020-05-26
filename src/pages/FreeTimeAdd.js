@@ -112,6 +112,7 @@ class FreeTimeAdd extends Component {
             <>
                 <p>Ik zou nog even wachten tot je genoeg hebt gespaard!</p>
                 <img className="no-img" src={smiley} alt={smiley}/>
+                <Link className="no-btn btn btn-pink" to="/Sparen">Ga naar sparen</Link>
                 <Link className="no-btn btn btn-pink" to="/Overview">Terug naar overzicht</Link>
             </>
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {Title, Header, MoneyBlock, ProgressBar} from '../components/';
+import {Title, Header, MoneyBlock, ProgressBar, GrayBlockItem} from '../components/';
 import { Link } from 'react-router-dom';
-import {myAccount, piggybank} from '../assets/';
+import {myAccount, piggybank, todo} from '../assets/';
 
 class Overview extends Component {
     render() {
@@ -35,6 +35,34 @@ class Overview extends Component {
                 percentage={data.percentage}
                 toSpendMaxPrice={data.price_to_spend}/>
               })
+
+        const extraExpensesItems = myAccount.extra_expenses.map(data =>
+                <Link className="expend" to="/BevestigenUitgave">
+                <GrayBlockItem 
+                    addClass="item-overview col"
+                    class = {data.class}
+                    title = {data.title} 
+                    total_price = {data.total_price}/>
+                </Link>
+        )   
+
+        let data2 = this.props.location.myItems
+
+        if (typeof data2 === 'undefined') {
+          // color is undefined
+          console.log('oops')
+        }
+        else{
+            let data2 = this.props.location.myItems
+
+            const dataNew = data.map(data =>{
+                console.log(data.id_item)
+
+                return data.id_item
+            })
+
+            console.log(dataNew)
+        }
 
         return ( 
             <>
@@ -83,8 +111,12 @@ class Overview extends Component {
                     boldText="halen"/>
         
                         <label> 
-                            <Link className="to-do add-activity btn-pink btn add-category" aria-label="Nog uitgeven" to="/NogUitgeven">Bekijk lijst</Link>   
+                            <h2 className="title-overview"><span><img src={todo} alt="todo"/></span>Mijn gemaakte lijstjes!</h2>
+                            {extraExpensesItems}
+                              
                         </label>
+                        <p className="label-button-text">Ik heb iets gekocht wat niet in mijn lijstje staat</p>
+                        <Link className="plus-icon add-activity btn-pink btn add-category" aria-label="Nog uitgeven" to="/ToevoegenBevestigenUitgave">Nog toevoegen</Link> 
                     </div>
 
 

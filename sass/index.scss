@@ -1,6 +1,6 @@
 $primaryColor: #DA106C;
 $primaryColorLight: rgba(222, 16, 105, 0.1);
-$secondaryColorLight: rgba(126, 16, 218, 0.1);
+$secondaryColorLight: rgba(126, 16, 218, 0.3);
 $secondaryColor: #7E1EDA;
 $white: #fff;
 $whiteLight: rgba(255, 255, 255, 0.6);
@@ -624,6 +624,41 @@ body,
                 margin-bottom: 1.5em;
             }
 
+            .expend{
+                width: auto;
+                padding: 0 1.5em;
+                
+                .item-overview{
+                    background-color: $lightGrey;
+                    width: auto;
+                    border-radius: 0.5em;
+                    display: flex;
+                    padding: 0.8em 1em;
+                    flex: auto;
+                    color: $black;
+                    margin-top: 1.5em;
+
+                    span{
+                        width: 0.8em;
+                        height: 0.8em;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                        margin-right: 0em;
+                    }
+
+                    p{
+                        margin: 0;
+                        text-align: left;
+                        margin: auto;
+                    }
+
+                    .title{
+                        flex-grow: 1;
+                    }
+                }
+            }
+
             hr {
                 background: $primaryColorLight;
             }
@@ -706,6 +741,19 @@ body,
             .slide {
                 flex: 0 0 100%;
                 padding: 0;
+            }
+
+            #slide-1{
+                height: auto;
+                overflow-y: scroll;
+                overflow-x: hidden;
+
+                .label-button-text{
+                    margin-top: 1.5em;
+                    margin-bottom: -1em;
+                    text-align: center;
+                    font-style: italic;
+                }
             }
 
             #slide-3{
@@ -1466,6 +1514,7 @@ body,
                     margin-top: 0.5em;
                     margin-bottom: 0;
                     width: 100%;
+                    height: 3em;
                 }
 
                 .price-item {

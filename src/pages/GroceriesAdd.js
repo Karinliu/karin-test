@@ -322,6 +322,139 @@ class GroceriesAdd extends Component {
             }
         })
 
+        const items_6 =  itemsJson.data_huishoudelijk.map(data => 
+            <PinkItemsList 
+                    title={data.title}
+                    price={data.price}
+                    image_link={data.image_link}
+                    handleClickAdd = {this.handleClickAdd}
+                    handleClickRemove={this.handleClickRemove}
+                    id_item = {data.id_item}
+                    moneyToSpend = {moneyToSpend}
+                    dataAddValue = {this.addTotalPrice}
+                    dataRemoveValue = {this.removeTotalPrice}/>) 
+
+        const newItems_6 = this.state.items.map(data=>{
+            const item = data;
+
+            const itemsnew_6 =  itemsJson.data_huishoudelijk.filter(data => {
+                return data.title === item;
+            })
+
+            return itemsnew_6
+        })
+
+        const newItemsList_6 = newItems_6.map( data => {
+                if(typeof data[0] !== "undefined"){
+                return <div className="grocerie-item-list-item">
+                <PinkItemsList
+                            title={data[0].title}
+                            image_link={data[0].image_link}
+                        />
+                    </div>
+            }
+        })
+
+
+        const items_7 =  itemsJson.data_snacks.map(data => 
+            <PinkItemsList 
+                    title={data.title}
+                    price={data.price}
+                    image_link={data.image_link}
+                    handleClickAdd = {this.handleClickAdd}
+                    handleClickRemove={this.handleClickRemove}
+                    id_item = {data.id_item}
+                    moneyToSpend = {moneyToSpend}
+                    dataAddValue = {this.addTotalPrice}
+                    dataRemoveValue = {this.removeTotalPrice}/>) 
+
+        const newItems_7 = this.state.items.map(data=>{
+            const item = data;
+
+            const itemsnew_7 =  itemsJson.data_snacks.filter(data => {
+                return data.title === item;
+            })
+
+            return itemsnew_7
+        })
+
+        const newItemsList_7 = newItems_7.map( data => {
+                if(typeof data[0] !== "undefined"){
+                return <div className="grocerie-item-list-item">
+                <PinkItemsList
+                            title={data[0].title}
+                            image_link={data[0].image_link}
+                        />
+                    </div>
+            }
+        })
+
+        const items_8 =  itemsJson.data_beleg.map(data => 
+            <PinkItemsList 
+                    title={data.title}
+                    price={data.price}
+                    image_link={data.image_link}
+                    handleClickAdd = {this.handleClickAdd}
+                    handleClickRemove={this.handleClickRemove}
+                    id_item = {data.id_item}
+                    moneyToSpend = {moneyToSpend}
+                    dataAddValue = {this.addTotalPrice}
+                    dataRemoveValue = {this.removeTotalPrice}/>) 
+
+        const newItems_8 = this.state.items.map(data=>{
+            const item = data;
+
+            const itemsnew_8 =  itemsJson.data_beleg.filter(data => {
+                return data.title === item;
+            })
+
+            return itemsnew_8
+        })
+
+        const newItemsList_8 = newItems_8.map( data => {
+                if(typeof data[0] !== "undefined"){
+                return <div className="grocerie-item-list-item">
+                <PinkItemsList
+                            title={data[0].title}
+                            image_link={data[0].image_link}
+                        />
+                    </div>
+            }
+        })
+
+         const items_9 =  itemsJson.data_diepvries.map(data => 
+            <PinkItemsList 
+                    title={data.title}
+                    price={data.price}
+                    image_link={data.image_link}
+                    handleClickAdd = {this.handleClickAdd}
+                    handleClickRemove={this.handleClickRemove}
+                    id_item = {data.id_item}
+                    moneyToSpend = {moneyToSpend}
+                    dataAddValue = {this.addTotalPrice}
+                    dataRemoveValue = {this.removeTotalPrice}/>) 
+
+        const newItems_9 = this.state.items.map(data=>{
+            const item = data;
+
+            const itemsnew_9 =  itemsJson.data_diepvries.filter(data => {
+                return data.title === item;
+            })
+
+            return itemsnew_9
+        })
+
+        const newItemsList_9 = newItems_8.map( data => {
+                if(typeof data[0] !== "undefined"){
+                return <div className="grocerie-item-list-item">
+                <PinkItemsList
+                            title={data[0].title}
+                            image_link={data[0].image_link}
+                        />
+                    </div>
+            }
+        })
+
 
         let boxClassHide = ['d-none'];
         let boxClassSee = ['d-block'];
@@ -382,6 +515,35 @@ class GroceriesAdd extends Component {
                 </div>
             </div>
 
+            <div className={boxClassSee.join('container pink-list ')}>
+                {titleCategory[5]}
+                <div className="row item-list">
+                    {items_6}
+                </div>
+            </div>
+
+            <div className={boxClassSee.join('container pink-list ')}>
+                {titleCategory[6]}
+                <div className="row item-list">
+                    {items_7}
+                </div>
+            </div>
+
+
+            <div className={boxClassSee.join('container pink-list ')}>
+                {titleCategory[7]}
+                <div className="row item-list">
+                    {items_8}
+                </div>
+            </div>
+
+            <div className={boxClassSee.join('container pink-list ')}>
+                {titleCategory[8]}
+                <div className="row item-list">
+                    {items_9}
+                </div>
+            </div>
+
             <div className={boxClassSee.join('container btn-container ')}>
             <div className="row">
                 <div className="col col-md-10 col-lg-6">
@@ -396,6 +558,10 @@ class GroceriesAdd extends Component {
                         {newItemsList_3}
                         {newItemsList_4}
                         {newItemsList_5}
+                        {newItemsList_6}
+                        {newItemsList_7}
+                        {newItemsList_8}
+                        {newItemsList_9}
                 </div>
             </div>
 
