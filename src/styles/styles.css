@@ -503,7 +503,8 @@ body,
       display: inline-block;
       margin: auto;
       margin: 0 1.5em;
-      border-radius: 0.5em; }
+      border-radius: 0.5em;
+      position: relative; }
       #root .home-page .carousel #slide-2 .progress-bar .bar {
         height: 100%;
         transform: rotate(180deg);
@@ -512,6 +513,14 @@ body,
         #root .home-page .carousel #slide-2 .progress-bar .bar .percentage {
           border-radius: 0.5em 0.5em 0 0;
           background-color: #7E1EDA; }
+    #root .home-page .carousel #slide-2 .target-text {
+      position: absolute;
+      color: #000;
+      transform: rotate(-90deg);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1; }
     #root .home-page .carousel #slide-2 .piggy {
       height: 12em;
       width: 12em;
@@ -580,7 +589,8 @@ body,
           transform: rotate(50deg); }
     #root .home-page .carousel #slide-2 .money-jar-block {
       height: 15em;
-      margin: 1.5em auto; }
+      margin-top: 1.5em;
+      margin-bottom: -1em; }
       #root .home-page .carousel #slide-2 .money-jar-block .dop {
         height: 2em;
         background: #fed56b;
@@ -971,7 +981,7 @@ body,
       font-weight: bold; }
     #root .section-page-two .option-block .no-img {
       margin: 1em auto;
-      width: 50%;
+      width: 20%;
       display: block; }
     #root .section-page-two .option-block .no-btn + p {
       display: none; }
@@ -1360,7 +1370,7 @@ body,
     margin-bottom: 1.5em; }
   #root .saving-page .popup-block {
     position: absolute;
-    left: 100em; }
+    top: -100em; }
   #root .saving-page .modal .popup-block {
     position: absolute;
     left: 0;
@@ -1380,8 +1390,7 @@ body,
     background: white;
     padding-bottom: 2em;
     height: 82%;
-    width: 100%;
-    z-index: 11; }
+    width: 100%; }
     #root .saving-page .target-option-block input:valid {
       display: block; }
     #root .saving-page .target-option-block input:invalid button {
@@ -1414,7 +1423,6 @@ body,
         #root .saving-page .jar-money-add .money-items label input {
           opacity: 0;
           position: absolute;
-          z-index: 10;
           width: 100%;
           height: 70%; }
           #root .saving-page .jar-money-add .money-items label input:hover, #root .saving-page .jar-money-add .money-items label input:focus {
@@ -1448,7 +1456,16 @@ body,
     width: 2em;
     display: inline-block;
     margin: 0 1.3em;
-    border-radius: 0.5em; }
+    border-radius: 0.5em;
+    position: relative; }
+    #root .saving-page .progress-bar .target-text {
+      position: absolute;
+      color: #000;
+      transform: rotate(-90deg);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1; }
     #root .saving-page .progress-bar .bar {
       height: 100%;
       transform: rotate(180deg);

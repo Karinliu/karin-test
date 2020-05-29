@@ -92,9 +92,11 @@ class Overview extends Component {
 
                             <div className="money-jar-block">
                             <div className="progress-bar">
+                                <p className="target-text">Mijn doel</p>
                                 <div class="bar">
                                     <div className="percentage">
                                     </div>
+                                    
                                 </div>
                             </div>
                             <div className="piggy">
@@ -113,9 +115,8 @@ class Overview extends Component {
                             
                             </div>
 
-                            <Link className="add-activity btn-pink btn add-category" aria-label="Spaarpot" to="/Sparen">Ga naar spaarpot</Link> 
-
                         </label>
+                        <Link className="add-activity btn-pink btn add-category" aria-label="Spaarpot" to="/Sparen">Ga naar spaarpot</Link> 
                         
                     </div>
                     
@@ -160,10 +161,10 @@ class Overview extends Component {
                         <h2 className="title-income">Hoeveel heb ik om uit te geven</h2>
 
                         {categoriesIncome}
-                         <Link className="add-activity plus-icon btn-pink btn add-category" aria-label="Afvink lijst" to="/Toevoegen">Uitgaven toevoegen</Link> 
+                         
                         </label>
                        
-      
+                        <Link className="add-activity plus-icon btn-pink btn add-category" aria-label="Afvink lijst" to="/Toevoegen">Uitgaven toevoegen</Link> 
                     </div>
                     </div>
 

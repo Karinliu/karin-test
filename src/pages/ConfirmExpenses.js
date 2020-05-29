@@ -74,7 +74,7 @@ class ConfirmExpenses extends Component {
         return ( 
             <>
             <Header text="Terug"
-                    textLink ="/NogUitgeven"
+                    textLink ="/Overview"
                     addClass=""/> 
 
                     <div className={boxFirstClassSee.join('test container confirm-show-pink-list ')}>

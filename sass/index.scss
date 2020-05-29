@@ -775,6 +775,7 @@ body,
                     margin: auto;
                     margin: 0 1.5em;
                     border-radius: 0.5em;
+                    position: relative;
 
                     .bar {
                         height: 100%;
@@ -788,6 +789,16 @@ body,
                         }
                     }
                 }
+
+                     .target-text{
+                        position: absolute;
+                        color: $black;
+                        transform: rotate(-90deg);
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 1;
+                    }
 
                 .piggy {
                     height: 12em;
@@ -880,12 +891,9 @@ body,
                 }
 
                 .money-jar-block {
-                    // background-image: url('../assets/images/jar.png');
                     height: 15em;
-                    // background-size: contain;
-                    // background-repeat: no-repeat;
-                    // background-position: center;
-                    margin: 1.5em auto;
+                    margin-top: 1.5em;
+                    margin-bottom: -1em;
 
                     .dop {
                         height: 2em;
@@ -1529,7 +1537,7 @@ body,
 
             .no-img {
                 margin: 1em auto;
-                width: 50%;
+                width: 20%;
                 display: block;
             }
 
@@ -2178,7 +2186,7 @@ body,
 
         .popup-block{
             position: absolute;
-            left: 100em;
+            top: -100em;
         }
 
         .modal{
@@ -2207,10 +2215,9 @@ body,
             padding-bottom: 2em;
             height: 82%;
             width: 100%;
-            z-index: 11;
 
             input{
-                
+
                 &:valid {
                     display: block;
                 }
@@ -2256,7 +2263,6 @@ body,
                     input {
                         opacity: 0;
                         position: absolute;
-                        z-index: 10;
                         width: 100%;
                         height: 70%;
 
@@ -2312,6 +2318,17 @@ body,
             display: inline-block;
             margin: 0 1.3em;
             border-radius: 0.5em;
+            position: relative;
+
+            .target-text{
+                position: absolute;
+                color: $black;
+                transform: rotate(-90deg);
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+            }
 
             .bar {
                 height: 100%;

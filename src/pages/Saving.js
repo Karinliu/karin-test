@@ -142,7 +142,8 @@ class Saving extends Component {
                     addClass="header2"/>
             <HeaderMoney 
                     textFirst="Dit kan ik"
-                    textDate="sparen"
+                    textDate="in mijn spaarpot"
+                    textEnd="stoppen"
                     toSpend={moneyToSpend} />
             <div className="container saving-page">
                 <Title classes="header-title"/> 
@@ -156,6 +157,7 @@ class Saving extends Component {
                 <div className="row jar-money">
                     <div className="money-jar-block">
                             <div className="progress-bar">
+                                <p className="target-text">Mijn doel</p>
                                 <div class="bar">
                                     <div className="percentage">
                                     </div>
