@@ -9,7 +9,7 @@ class Add extends Component {
         let categories = categoriesJson.data_category
               .filter(function (data) {
                 console.log(data.title)
-                return data.title !== "Help" & data.title !== "Vaste lasten";
+                return data.title !== "Help" & data.title !== "Vaste lasten" & data.title !== "Sparen" ;
               })
               .map(function (data) {
                 return <TemplateCategory text_link={data.text_link} image_purple={data.class} text={data.title}/>
@@ -24,11 +24,11 @@ class Add extends Component {
                     textLink ="/Overview"
                     addClass="header2"/>
             <HeaderMoney 
-                textFirst="Nodig voor deze"
+                textFirst="Wat heb ik uit te geven voor deze"
                 textDate="week"
                 toSpend={moneyToSpend} />
             <div className="container background-gray add-category-page">
-                <Title classes="header-title" text="Toevoegen"/> 
+                <Title classes="header-title" text="Kies uitgave"/> 
                 <nav className="row category">
                     <ul className="col">
                         {categories}

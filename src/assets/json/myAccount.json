@@ -6,67 +6,67 @@
     "settings_price": [
     {
         "title": "Totaal te besteden - vaste lasten",
-        "price": "115.00",
+        "price": "115,-",
         "when": "per week"
     },{
         "title": "Boodschappen",
-        "price": "60.00",
+        "price": "60,-",
         "when": "per week"
     },{
         "title": "Vaste lasten",
-        "price": "140.00",
+        "price": "140,-",
         "when": "per maand"
     },{
         "title": "Overige kosten",
-        "price": "70.00",
+        "price": "70,-",
         "when": "per week"
     },{
         "title": "Sparen",
-        "price": "5.00",
+        "price": "5,-",
         "when": "per week"
     }],
     "data_category": [{
         "title": "Boodschappen",
         "class": "groceries",
         "text_link":"Boodschappen",
-        "price": "40.00",
-        "price_to_spend": "40.00",
+        "price": "40,-",
+        "price_to_spend": "40,-",
         "percentage": "0%"
     },{
         "title": "Kleding",
         "class": "clothes",
         "text_link":"Kleding",
-        "price": "56.00",
-        "price_to_spend": "70.00",
+        "price": "56,-",
+        "price_to_spend": "70,-",
         "percentage": "20%"
     },{
         "title": "Vrije tijd",
         "class": "free_time",
         "text_link":"VrijeTijd",
-        "price": "56.00",
-        "price_to_spend": "70.00",
+        "price": "56,-",
+        "price_to_spend": "70,-",
         "percentage": "20%"
     },{
         "title": "Sparen",
         "class": "save_money",
         "text_link":"Sparen",
-        "price": "0.00",
-        "price_to_spend": "5.00",
-        "percentage": "100%"
+        "price": "0,-",
+        "price_to_spend": "5,-",
+        "percentage": ",-%"
     },{
         "title": "Verzorging",
         "class": "grooming",
         "text_link":"Verzorging",
-        "price": "56.00",
-        "price_to_spend": "70.00",
+        "price": "56,-",
+        "price_to_spend": "70,-",
         "percentage": "20%"
     },{
         "title": "Vaste lasten",
         "class": "fixed_charges",
         "text_link":"VasteLasten",
         "price": "0",
-        "price_to_spend": "35.00",
-        "percentage": "100%"
+        "price_to_spend": "35,-",
+        "percentage": ",-%"
     }],
     "phone_numbers": [
     {
@@ -87,20 +87,20 @@
     "all_expenses": [
     {
         "title": "Vaste lasten",
-        "total_price": "80.00",
+        "total_price": "80,-",
         "class": "fixed_charges"
     },{
         "title": "Vrije tijd",
-        "total_price": "15.00",
+        "total_price": "15,-",
         "class": "free_time"
     },{
         "title": "Boodschappen",
-        "total_price": "20.00",
+        "total_price": "20,-",
         "class": "groceries"
     }],"extra_expenses": [
     {
         "title": "Boodschappen",
-        "total_price": "2.00",
-        "class": "groceries"
+        "total_price": "1,22",
+        "class": "groceries_white"
     }]
 }

@@ -31,10 +31,6 @@ class GroceriesAdd extends Component {
         this.setState({
                 items: [...this.state.items, val]
         })
-
-
-
-        
     }
  
     handleClickRemove = (val) =>{
@@ -444,7 +440,7 @@ class GroceriesAdd extends Component {
             return itemsnew_9
         })
 
-        const newItemsList_9 = newItems_8.map( data => {
+        const newItemsList_9 = newItems_9.map( data => {
                 if(typeof data[0] !== "undefined"){
                 return <div className="grocerie-item-list-item">
                 <PinkItemsList
@@ -478,7 +474,7 @@ class GroceriesAdd extends Component {
             textDate="hou ik over"
             textEnd="voor boodschappen"
             toSpend={moneyToSpend} />
-            <div className={boxClassSee.join('container pink-list ')}>
+            <div className={boxClassSee.join('container pink-list grocery-list ')}>
                 <Title classes="header-title"/> 
                 
                 {titleCategory[0]}
@@ -487,42 +483,42 @@ class GroceriesAdd extends Component {
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container pink-list ')}>
+            <div className={boxClassSee.join('container pink-list grocery-list ')}>
                 {titleCategory[1]}
                 <div className="row item-list">
                     {items_2}
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container pink-list ')}>                
+            <div className={boxClassSee.join('container pink-list grocery-list ')}>                
                 {titleCategory[2]}
                 <div className="row item-list">
                     {items_3}
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container pink-list ')}>
+            <div className={boxClassSee.join('container pink-list grocery-list ')}>
                 {titleCategory[3]}
                 <div className="row item-list">
                     {items_4}
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container pink-list ')}>
+            <div className={boxClassSee.join('container pink-list grocery-list ')}>
                 {titleCategory[4]}
                 <div className="row item-list">
                     {items_5}
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container pink-list ')}>
+            <div className={boxClassSee.join('container pink-list grocery-list ')}>
                 {titleCategory[5]}
                 <div className="row item-list">
                     {items_6}
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container pink-list ')}>
+            <div className={boxClassSee.join('container pink-list grocery-list ')}>
                 {titleCategory[6]}
                 <div className="row item-list">
                     {items_7}
@@ -530,14 +526,14 @@ class GroceriesAdd extends Component {
             </div>
 
 
-            <div className={boxClassSee.join('container pink-list ')}>
+            <div className={boxClassSee.join('container pink-list grocery-list ')}>
                 {titleCategory[7]}
                 <div className="row item-list">
                     {items_8}
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container pink-list ')}>
+            <div className={boxClassSee.join('container pink-list grocery-list ')}>
                 {titleCategory[8]}
                 <div className="row item-list">
                     {items_9}

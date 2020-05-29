@@ -17,7 +17,7 @@ class Help extends Component {
             <Header text="Terug"
                     textLink ="/Overview"/>
             <div className="container background-gray help-page">
-                    <Title classes="header-title" text="Help"/> 
+                    <Title classes="header-title" text="Support"/> 
                 <nav className="row category">
                     <ul className="col">
 

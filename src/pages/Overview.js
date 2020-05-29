@@ -77,18 +77,41 @@ class Overview extends Component {
                                     <div className="col slide" id="slide-2">
                     <nav className="sub-header">
                         <ul>
-                            <li><a href="#slide-1" >Mijn lijst</a></li>
+                            <li><a href="#slide-1" >Mijn lijsten</a></li>
                             <li><a href="#slide-2" className="selected">Mijn profiel</a></li>
                             <li><a href="#slide-3">Uitgaven</a></li>                      
                         </ul>
                     </nav>
                     <MoneyBlock
-                        timeDate ="Totaal op mijn"
-                        boldText="rekening"
+                        timeDate ="Hoeveel staat er op mijn "
+                        boldText="bank"
                         toSpend={moneyToSpend}/>
 
                         <label>
-                            <h2 className="title-overview"><span><img src={piggybank} alt="piggybank"/></span>Stop geld in je spaarpot! :)</h2>
+                            <h2 className="title-overview">Vul je spaarpot en maak hem vol!</h2>
+
+                            <div className="money-jar-block">
+                            <div className="progress-bar">
+                                <div class="bar">
+                                    <div className="percentage">
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="piggy">
+                                <div class="piggy-body">
+                                    <p>Totaal gespaard <br /> € 0,-</p>
+                                    <div className="leg-1"></div>
+                                    <div className="leg-2"></div>
+                                    <div className="nose"></div>
+                                    <div className="ear"></div>
+                                    <div className="tail"></div>
+                                    <div className="eye"></div>
+                                </div>
+                            
+
+                            </div>
+                            
+                            </div>
 
                             <Link className="add-activity btn-pink btn add-category" aria-label="Spaarpot" to="/Sparen">Ga naar spaarpot</Link> 
 
@@ -101,7 +124,7 @@ class Overview extends Component {
                     <div className="col slide" id="slide-1">
                     <nav className="sub-header">
                         <ul>
-                            <li><a href="#slide-1" className="selected">Mijn lijst</a></li>
+                            <li><a href="#slide-1" className="selected">Mijn lijsten</a></li>
                             <li><a href="#slide-2">Mijn profiel</a></li>
                             <li><a href="#slide-3">Uitgaven</a></li>                                   
                         </ul>
@@ -111,11 +134,11 @@ class Overview extends Component {
                     boldText="halen"/>
         
                         <label> 
-                            <h2 className="title-overview"><span><img src={todo} alt="todo"/></span>Mijn gemaakte lijstjes!</h2>
+                            <h2 className="title-overview"><span><img src={todo} alt="todo"/></span>Bekijk mijn gemaakte lijstjes!</h2>
                             {extraExpensesItems}
                               
                         </label>
-                        <p className="label-button-text">Ik heb iets gekocht wat niet in mijn lijstje staat</p>
+                        <p className="label-button-text">Ik heb iets gekocht wat niet in mijn lijstjes staat</p>
                         <Link className="plus-icon add-activity btn-pink btn add-category" aria-label="Nog uitgeven" to="/ToevoegenBevestigenUitgave">Nog toevoegen</Link> 
                     </div>
 
@@ -124,17 +147,17 @@ class Overview extends Component {
                     <div className="col slide" id="slide-3">
                     <nav className="sub-header">
                         <ul>
-                            <li><a href="#slide-1" >Mijn lijst</a></li>
+                            <li><a href="#slide-1" >Mijn lijsten</a></li>
                             <li><a href="#slide-2">Mijn profiel</a></li>
                             <li><a href="#slide-3" className="selected">Uitgaven</a></li>                                      
                         </ul>
                     </nav>
                     <MoneyBlock
-                    timeDate="Nodig voor deze"
+                    timeDate="Wat heb ik uit te geven voor deze"
                     boldText="week"
                     toSpend={moneyToSpendWeek}/>
                         <label className="overview-progressbar-items"> 
-                        <h2 className="title-income">Beschikbaar om uit te geven</h2>
+                        <h2 className="title-income">Hoeveel heb ik om uit te geven</h2>
 
                         {categoriesIncome}
                          <Link className="add-activity plus-icon btn-pink btn add-category" aria-label="Afvink lijst" to="/Toevoegen">Uitgaven toevoegen</Link> 

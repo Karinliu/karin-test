@@ -17,7 +17,7 @@ class SaveMoney extends Component {
         return (
              <>
             <Header text="Terug"
-                    textLink ="/Toevoegen"
+                    textLink ="/Overview"
                     addClass=""/>
             <div className="container overview-page">
                 <MoneyBlock

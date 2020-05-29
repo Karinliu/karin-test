@@ -20,13 +20,14 @@ $orange: #FFA474;
 $green: #7DC8BC;
 $backgroundGray: #FDFCFF;
 $btnPinkHover: #FBCFE2;
+$DisabledGray: #b3b1b1;
 
 html,
 body,
 #root {
     width: 100%;
     overflow-x: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Muli', Helvetica, sans-serif;
 }
 
 #root {
@@ -89,6 +90,10 @@ body,
         }
     }
 
+    .btn {
+        box-shadow: 0 0.5em 1em 0 $DisabledGray !important;
+    }
+
     h1 {
         font-size: 1.5em;
     }
@@ -137,7 +142,7 @@ body,
         background-color: $whiteLight;
 
         .popup-block {
-            height: 10em;
+            height: 14em;
             background-color: $white;
             margin: 1.5em auto;
             display: block;
@@ -362,6 +367,9 @@ body,
         position: fixed;
         z-index: 15;
         margin-top: 4em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        width: auto;
 
         div {
             display: block;
@@ -373,11 +381,10 @@ body,
                 margin: 0;
                 padding: 0;
 
-                span{
+                span {
                     font-weight: bold;
-                    color: $primaryColor;
                 }
-            
+
 
                 &:last-child {
                     font-size: 1.3em;
@@ -400,11 +407,9 @@ body,
         p {
             span {
                 // text-decoration: line-through;
-                text-decoration-color: red;
-                color: $primaryColor;
             }
 
-            .boldText{
+            .boldText {
                 font-weight: bold;
             }
 
@@ -437,17 +442,17 @@ body,
         background-color: $backgroundGray;
         min-height: 91vh;
 
-        .btn-row{
-            .col{
+        .btn-row {
+            .col {
                 margin: 1em 1.5em;
                 padding: 0;
 
-                p{
+                p {
                     margin-top: 2em;
                     text-align: center;
                 }
 
-                button{
+                button {
                     margin: 0;
                 }
             }
@@ -602,10 +607,10 @@ body,
             max-height: 90vh;
             overflow: hidden;
 
-            .slide{
+            .slide {
                 height: auto;
 
-                .money-block{
+                .money-block {
                     margin: 1.5em 2.5em;
                 }
 
@@ -624,36 +629,38 @@ body,
                 margin-bottom: 1.5em;
             }
 
-            .expend{
+            .expend {
                 width: auto;
-                padding: 0 1.5em;
-                
-                .item-overview{
-                    background-color: $lightGrey;
+                margin: 0 1.5em;
+                box-shadow: 0 0.5em 0.5em 0 $DisabledGray;
+                border-radius: 0.5em;
+                margin-top: 1.5em;
+                background-color: $primaryColor;
+
+                .item-overview {
                     width: auto;
                     border-radius: 0.5em;
                     display: flex;
                     padding: 0.8em 1em;
                     flex: auto;
-                    color: $black;
-                    margin-top: 1.5em;
+                    color: $white;
 
-                    span{
+                    span {
                         width: 0.8em;
                         height: 0.8em;
                         background-size: contain;
                         background-repeat: no-repeat;
                         background-position: left center;
-                        margin-right: 0em;
+                        margin-right: 0.2em;
                     }
 
-                    p{
+                    p {
                         margin: 0;
                         text-align: left;
                         margin: auto;
                     }
 
-                    .title{
+                    .title {
                         flex-grow: 1;
                     }
                 }
@@ -743,12 +750,12 @@ body,
                 padding: 0;
             }
 
-            #slide-1{
+            #slide-1 {
                 height: auto;
                 overflow-y: scroll;
                 overflow-x: hidden;
 
-                .label-button-text{
+                .label-button-text {
                     margin-top: 1.5em;
                     margin-bottom: -1em;
                     text-align: center;
@@ -756,7 +763,143 @@ body,
                 }
             }
 
-            #slide-3{
+            #slide-2 {
+                height: auto;
+                overflow-y: scroll;
+                overflow-x: hidden;
+
+                .progress-bar {
+                    height: 13em;
+                    width: 2em;
+                    display: inline-block;
+                    margin: auto;
+                    margin: 0 1.5em;
+                    border-radius: 0.5em;
+
+                    .bar {
+                        height: 100%;
+                        transform: rotate(180deg);
+                        background: $lightGrey;
+                        border-radius: 0.5em;
+
+                        .percentage {
+                            border-radius: 0.5em 0.5em 0 0;
+                            background-color: $secondaryColor;
+                        }
+                    }
+                }
+
+                .piggy {
+                    height: 12em;
+                    width: 12em;
+                    margin-right: 2em;
+                    display: inline-block;
+                    margin-left: 0.5em;
+
+
+                    .piggy-body {
+                        background: pink;
+                        border-radius: 100%;
+                        height: 80%;
+                        width: 100%;
+                        position: relative;
+                        margin-top: 20%;
+
+                        p {
+                            position: absolute;
+                            margin: 20%;
+                            width: 3em;
+
+                        }
+
+                        .leg-1 {
+                            background: pink;
+                            position: absolute;
+                            bottom: 0;
+                            height: 2em;
+                            width: 2em;
+                            left: 2em;
+                            border-radius: 0.2em;
+                        }
+
+                        .leg-2 {
+                            background: pink;
+                            position: absolute;
+                            bottom: 0;
+                            height: 2em;
+                            width: 2em;
+                            right: 2em;
+                            border-radius: 0.2em;
+                        }
+
+                        .ear {
+                            background: pink;
+                            position: absolute;
+                            top: -0.5em;
+                            height: 4em;
+                            width: 2em;
+                            right: 2em;
+                            border-radius: 1em 0.2em 0 2em;
+                        }
+
+                        .eye {
+                            background: #757575;
+                            position: absolute;
+                            top: 3em;
+                            height: 1em;
+                            width: 0.5em;
+                            right: 2em;
+                            border-radius: 100%;
+
+                        }
+
+                        .nose {
+                            background: pink;
+                            position: absolute;
+                            top: 4em;
+                            height: 3em;
+                            width: 2em;
+                            right: -.7em;
+                            border-radius: 0.5em;
+
+                        }
+
+                        .tail {
+                            background: pink;
+                            position: absolute;
+                            top: 4em;
+                            height: 4em;
+                            width: 0.5em;
+                            left: 0em;
+                            border-radius: 100%;
+                            transform: rotate(50deg);
+                        }
+
+                    }
+
+                }
+
+                .money-jar-block {
+                    // background-image: url('../assets/images/jar.png');
+                    height: 15em;
+                    // background-size: contain;
+                    // background-repeat: no-repeat;
+                    // background-position: center;
+                    margin: 1.5em auto;
+
+                    .dop {
+                        height: 2em;
+                        background: #fed56b;
+                        width: 6em;
+                        border-radius: 1em 1em 0 0;
+                        margin: auto;
+                    }
+
+
+                }
+            }
+
+            #slide-3 {
                 height: auto;
                 overflow-y: scroll;
                 overflow-x: hidden;
@@ -780,8 +923,9 @@ body,
                         opacity: 0.8;
                         position: absolute;
                         height: 100%;
-                        width: 50%;
-                        border-radius: 0.5em;
+                        // border-radius: 0.5em 0em 0em 0.5em;
+                        border-radius: 0em 0.5em 0.5em 0em;
+                        // left: 0;
                         right: 0;
 
                     }
@@ -789,6 +933,7 @@ body,
                     .price-bar {
                         margin: 0.5em 0;
                         z-index: 1;
+                        text-align: left;
 
                         p {
                             margin: 0;
@@ -926,8 +1071,8 @@ body,
                                     }
 
                                     .transaction {
-                                            background-image: url('../assets/images/white_transaction.png');
-                                        }
+                                        background-image: url('../assets/images/white_transaction.png');
+                                    }
                                 }
                             }
                         }
@@ -1046,6 +1191,31 @@ body,
     }
 
 
+    .groceries_white {
+        background-image: url('../assets/images/white_groceries.png');
+    }
+
+    .clothes_white {
+        background-image: url('../assets/images/white_clothes.png');
+    }
+
+    .free_time_white {
+        background-image: url('../assets/images/white_free_time.png');
+    }
+
+    .save_money_white {
+        background-image: url('../assets/images/white_sparen.png');
+    }
+
+    .fixed_charges_white {
+        background-image: url('../assets/images/white_vaste_lasten.png');
+    }
+
+    .grooming_white {
+        background-image: url('../assets/images/white_grooming.png');
+    }
+
+
     nav.category {
         ul {
             padding: 0;
@@ -1065,7 +1235,7 @@ body,
                     border-radius: 0.5em;
                     box-shadow: 0 0.5em 1em 0 $shadow;
                     font-size: 1.2em;
-                    color: black;
+                    color: $primaryColor;
 
                     span {
                         display: inline-block;
@@ -1200,6 +1370,10 @@ body,
             padding: 0;
             margin-top: 0;
         }
+
+        .money-date {
+            color: transparent;
+        }
     }
 
     .save-money-page {
@@ -1269,19 +1443,18 @@ body,
         padding-top: 10em;
         background-color: $primaryColorLight;
 
-        .groceries-modal{
+        .groceries-modal {
             position: absolute;
             top: -100em;
         }
 
-        .modal{
-            h2{
+        .modal {
+            h2 {
                 font-size: 1em;
                 font-weight: bold;
-                color: $primaryColor;
             }
 
-            .groceries-modal{
+            .groceries-modal {
                 position: absolute;
                 top: 0;
                 bottom: 0;
@@ -1333,7 +1506,7 @@ body,
             margin-bottom: -2em;
         }
 
-        .option-block-grocery{
+        .option-block-grocery {
             position: sticky;
             width: 100vw;
             left: 0;
@@ -1350,8 +1523,7 @@ body,
                 text-align: center;
             }
 
-            span{
-                color: $primaryColor;
+            span {
                 font-weight: bold;
             }
 
@@ -1382,9 +1554,19 @@ body,
 
     }
 
-    .section-page-two-grocery-one{
+    .grocery-list{
+        .modal{
+            .popup-block{
+                height: 10em;
+            }
+
+        }
+    }
+
+    .section-page-two-grocery-one {
         padding-bottom: 10em;
-        .groceries-see-items{
+
+        .groceries-see-items {
 
             border-radius: 0;
             padding: 0;
@@ -1392,15 +1574,17 @@ body,
             overflow-y: scroll;
             max-height: 30vh;
 
-            .grocerie-item-list-item{
+            .grocerie-item-list-item {
                 width: 100%;
             }
-            .col{
+
+            .col {
                 display: flex;
                 padding: 1.5em;
                 background: $whiteLight;
             }
-            section{
+
+            section {
                 width: 5rem;
                 height: auto;
                 background: $white;
@@ -1410,28 +1594,29 @@ body,
                 margin: 0 1.5em;
 
 
-                img{
+                img {
                     width: 100%;
                     display: inline-block;
                 }
             }
 
-            .title-item{
+            .title-item {
                 margin: auto 0;
             }
-            .price-item{
-                    display: none;
-                }
 
-                button{
-                    display: none;
-                }
+            .price-item {
+                display: none;
+            }
+
+            button {
+                display: none;
+            }
         }
 
     }
 
 
-    .section-page-two-grocery-two{
+    .section-page-two-grocery-two {
         bottom: 0;
         position: absolute;
         padding-top: 0;
@@ -1552,7 +1737,7 @@ body,
                     margin-top: 0.2em;
                     float: left;
 
-                    &:hover{
+                    &:hover {
                         &:before {
                             content: "-";
                         }
@@ -1565,12 +1750,14 @@ body,
 
                     &:hover {
                         &:before {
+                            line-height: initial;
                             content: "+";
                         }
                     }
 
                     &:focus {
                         color: white;
+
                         &:before {
                             content: "";
                         }
@@ -1666,78 +1853,80 @@ body,
     .tips-page {
         margin-top: 4.5em;
 
-        .information-block{
+        .information-block {
             background-color: $primaryColorLight;
             margin-bottom: 1.5em;
-            .col{
+
+            .col {
                 padding: 1.5em;
-                h2{
+
+                h2 {
                     font-size: 1em;
                     color: $primaryColor;
                     font-weight: bold;
                     margin-bottom: 0;
                 }
 
-                span{
+                span {
                     font-weight: bold;
                 }
             }
         }
     }
 
-    .confirm-show-pink-list{
+    .confirm-show-pink-list {
         margin-top: 3.5em;
         height: 80vh;
         background: $primaryColorLight;
 
-        .modal{
-            h2{
+        .modal {
+            h2 {
                 font-size: 1em;
                 font-weight: bold;
                 color: $primaryColor;
             }
         }
 
-        .items{
+        .items {
 
-            .col{
+            .col {
                 background: $whiteLight;
                 margin: 1.5em 0;
                 padding: 1em;
             }
 
-            label{
+            label {
                 display: flex;
 
-                span{
+                span {
                     display: none;
                 }
 
-                input{
+                input {
                     opacity: 0;
                 }
 
-                section{
+                section {
                     background: $white;
                     border-radius: 0.5em;
                     width: 5em;
                     display: block;
                     margin-left: 1em;
 
-                    img{
+                    img {
                         width: 100%;
                         display: inline-block;
                     }
                 }
 
-                p{
+                p {
                     margin: auto 1em;
                 }
             }
 
         }
 
-        .option-buttons{
+        .option-buttons {
             background: $white;
             border-radius: 1em;
             position: absolute;
@@ -1821,12 +2010,12 @@ body,
                         color: $gray;
                     }
 
-                    select{
+                    select {
                         width: 100%;
                         margin: 1em 0;
                     }
 
-                    .custom-select{
+                    .custom-select {
                         border: 1px solid $primaryColor;
                     }
 
@@ -1856,16 +2045,16 @@ body,
                     }
                 }
 
-                
 
-                .image-send{
-                    input{
+
+                .image-send {
+                    input {
                         font-size: 1rem;
                         border: none;
                     }
 
                     &:hover,
-                    &:focus{
+                    &:focus {
                         border: none;
                     }
                 }
@@ -1975,6 +2164,308 @@ body,
         }
     }
 
+    .pink-background-light{
+        min-height: 91vh;
+    }
+
+    .saving-page {
+        margin-top: 9.7em;
+        padding: 0;
+
+        .btn-block-row{
+            margin-bottom: 1.5em;
+        }
+
+        .popup-block{
+            position: absolute;
+            left: 100em;
+        }
+
+        .modal{
+            .popup-block{
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                height: 10em;
+            }
+
+            h2{
+                font-size: 1em;
+                font-weight: bold;
+                color: $primaryColor;
+            }
+        }
+
+        .target-option-block{
+            position: absolute;
+            bottom: -2em;
+            padding: 1.5em;
+            padding-bottom: 1.5em;
+            background: white;
+            padding-bottom: 2em;
+            height: 82%;
+            width: 100%;
+            z-index: 11;
+
+            input{
+                
+                &:valid {
+                    display: block;
+                }
+
+                &:invalid {
+                    button {
+                        display: none !important
+                    }
+                }
+            }
+        }
+
+        .jar-money-add {
+            background: $primaryColorLight;
+            display: flex;
+            flex-direction: row;
+            padding: 0 1.5em;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow-y: hidden;
+            padding: 1.5em;
+            padding-left: 2.5em;
+
+            .jar-money-title {
+                width: 100%;
+                position: absolute;
+                text-align: center;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+
+            .money-items {
+                padding: 0;
+                margin-top: 1.5em;
+                margin-right: 1.5em;
+
+                label {
+                    margin-top: 1em;
+
+                    input {
+                        opacity: 0;
+                        position: absolute;
+                        z-index: 10;
+                        width: 100%;
+                        height: 70%;
+
+                        &:hover,
+                        &:focus {
+                            cursor: pointer;
+                        }
+                    }
+
+                    section {
+                        display: block;
+                        width: 5rem;
+                        height: 3rem;
+                        padding: .5em;
+                        position: relative;
+                        border-radius: .5em;
+
+                        img {
+                            margin: auto;
+                            display: inline-block;
+                            max-height: 3rem;
+                            max-width: 5rem;
+                            top: 0;
+                            bottom: 0;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                        }
+
+                    }
+
+                    &:hover,
+                    &:focus {
+                        cursor: pointer;
+                    }
+
+                    .price-item {
+                            margin: 0;
+                            text-align: center;
+                        }
+                }
+            }
+        }
+
+        .jar-money{
+            padding: 1.5em 2.5em;
+
+        }
+
+        .progress-bar {
+            height: 13em;
+            width: 2em;
+            display: inline-block;
+            margin: 0 1.3em;
+            border-radius: 0.5em;
+
+            .bar {
+                height: 100%;
+                transform: rotate(180deg);
+                background: $lightGrey;
+                border-radius: 0.5em;
+
+                .percentage {
+                    border-radius: 0.5em 0.5em 0 0;
+                    background-color: $secondaryColor;
+                }
+            }
+        }
+
+        .money-jar-block{
+            overflow: hidden;
+        }
+
+        .coin {
+            position: absolute;
+            left: 0;
+            right: 0;
+            max-height: 8em;
+            overflow: hidden;
+            margin-top: -1em;
+                    .dollar {
+                        background-color: #f7941e;
+                        height: 2em;
+                        position: relative;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                        border-radius: 50%;
+                        margin: auto;
+                        text-align: center;
+                        width: 2em;
+                        font-size: 2em;
+                    }
+
+                    .dollar-one {
+                        animation: mymove1 3s;
+                    }
+
+                    .dollar-two {
+                        animation: mymove2 3s;
+                    }
+
+                    .dollar-three {
+                        animation: mymove3 3s;
+                    }
+
+                    .dollar-four {
+                        animation: mymove4 3s;
+                    }
+
+                    .dollar-five {
+                        animation: mymove5 3s;
+                    }
+
+
+                }
+
+        .piggy {
+                height: 12em;
+                width: 12em;
+                margin-right: 1.5em;
+                display: inline-block;
+                margin-left: 1em;
+
+
+            .piggy-body {
+                background: pink;
+                border-radius: 100%;
+                height: 80%;
+                width: 100%;
+                position: relative;
+                margin-top: 20%;
+
+                p {
+                    margin: 20%;
+                    position: absolute;
+                }
+
+                .leg-1 {
+                    background: pink;
+                    position: absolute;
+                    bottom: 0;
+                    height: 2em;
+                    width: 2em;
+                    left: 2em;
+                    border-radius: 0.2em;
+                }
+
+                .leg-2 {
+                    background: pink;
+                    position: absolute;
+                    bottom: 0;
+                    height: 2em;
+                    width: 2em;
+                    right: 2em;
+                    border-radius: 0.2em;
+                }
+
+                .ear {
+                    background: pink;
+                    position: absolute;
+                    top: -0.5em;
+                    height: 4em;
+                    width: 2em;
+                    right: 2em;
+                    border-radius: 1em 0.2em 0 2em;
+                }
+
+                .eye {
+                    background: #757575;
+                    position: absolute;
+                    top: 3em;
+                    height: 1em;
+                    width: 0.5em;
+                    right: 2em;
+                    border-radius: 100%;
+
+                }
+
+                .nose {
+                    background: pink;
+                    position: absolute;
+                    top: 4em;
+                    height: 3em;
+                    width: 2em;
+                    right: -.7em;
+                    border-radius: 0.5em;
+
+                }
+
+                .tail {
+                    background: pink;
+                    position: absolute;
+                    top: 4em;
+                    height: 4em;
+                    width: 0.5em;
+                    left: 0em;
+                    border-radius: 100%;
+                    transform: rotate(50deg);
+                }
+
+            }
+        }
+
+        .btn-container-money{
+            margin: 0 1.5em;
+        }
+    }
+
     .piggybank-add-page {
         .btn-container-money {
             position: fixed;
@@ -1996,6 +2487,7 @@ body,
 
         .jar-money {
             padding-bottom: 6em;
+
             .col {
                 margin-top: 1em;
                 margin-bottom: 4em;
@@ -2094,29 +2586,42 @@ body,
 
             .money-items {
                 margin-top: 2em;
-                display: block;
-                min-width: 12em;
+                // display: block;
+                // min-width: 12em;
+
+                label {
+                    input {
+                        opacity: 0;
+                        position: absolute;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        cursor: pointer;
+                    }
+                }
 
                 section {
                     border: 1px solid $white;
                     background-color: $white;
                     display: block;
-                    width: 10.5rem;
-                    height: 6rem;
+                    // width: 10.5rem;
+                    // height: 6rem;
                     padding: .5em;
                     position: relative;
                     border-radius: 0.5em;
 
                     img {
-                        margin: 1em auto;
-                        display: inline-block;
-                        max-height: 4rem;
-                        max-width: 8rem;
-                        top: 0;
-                        bottom: 0;
-                        position: absolute;
-                        left: 0;
-                        right: 0;
+                        // margin: 1em auto;
+                        // display: inline-block;
+                        // max-height: 4rem;
+                        // max-width: 8rem;
+                        // top: 0;
+                        // bottom: 0;
+                        // position: absolute;
+                        // left: 0;
+                        // right: 0;
+                        max-height: 2.5rem;
                     }
                 }
 
@@ -2180,6 +2685,7 @@ body,
 
                     &:focus {
                         color: white;
+
                         &:before {
                             content: "";
                         }
@@ -2198,7 +2704,12 @@ body,
             background: $white;
             width: auto;
             padding: 0.5em;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+
+        }
+
+        td {
+            color: $DisabledGray;
         }
 
         table {
@@ -2287,13 +2798,13 @@ body,
             }
         }
 
-        .pink-list{
-            .item-list{
-                .col{
+        .pink-list {
+            .item-list {
+                .col {
                     max-width: 10em;
                 }
 
-                .col button{
+                .col button {
                     width: 2rem;
                     height: 2rem;
                     font-size: 1em;
@@ -2570,7 +3081,7 @@ body,
     }
 
     to {
-        top: 4.5em;
+        top: 5em;
     }
 }
 
@@ -2580,7 +3091,7 @@ body,
     }
 
     to {
-        top: 10em;
+        top: 1em;
     }
 }
 
@@ -2590,7 +3101,7 @@ body,
     }
 
     to {
-        top: 10em;
+        top: 1em;
     }
 }
 
@@ -2600,7 +3111,7 @@ body,
     }
 
     to {
-        top: 10em;
+        top: 1em;
     }
 }
 
@@ -2610,6 +3121,6 @@ body,
     }
 
     to {
-        top: 10em;
+        top: 1em;
     }
 }

@@ -3,7 +3,7 @@ body,
 #root {
   width: 100%;
   overflow-x: hidden;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: 'Muli', Helvetica, sans-serif; }
 
 #root .d-none {
   display: none; }
@@ -50,6 +50,9 @@ body,
     border-top: 16em solid #DA106C;
     border-right: 85.5em solid transparent; }
 
+#root .btn {
+  box-shadow: 0 0.5em 1em 0 #b3b1b1 !important; }
+
 #root h1 {
   font-size: 1.5em; }
 
@@ -87,7 +90,7 @@ body,
   margin: auto;
   background-color: rgba(255, 255, 255, 0.6); }
   #root .modal .popup-block {
-    height: 10em;
+    height: 14em;
     background-color: #fff;
     margin: 1.5em auto;
     display: block;
@@ -232,7 +235,10 @@ body,
   box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   z-index: 15;
-  margin-top: 4em; }
+  margin-top: 4em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  width: auto; }
   #root .to-spend div {
     display: block;
     padding: 0.5em 1em; }
@@ -242,8 +248,7 @@ body,
       margin: 0;
       padding: 0; }
       #root .to-spend div p span {
-        font-weight: bold;
-        color: #DA106C; }
+        font-weight: bold; }
       #root .to-spend div p:last-child {
         font-size: 1.3em; }
 
@@ -256,9 +261,6 @@ body,
   background-repeat: no-repeat;
   background-position: left 1em;
   background-size: 85% 70%; }
-  #root .money-block p span {
-    text-decoration-color: red;
-    color: #DA106C; }
   #root .money-block p .boldText {
     font-weight: bold; }
   #root .money-block p:first-child {
@@ -403,23 +405,25 @@ body,
     margin-bottom: 1.5em; }
   #root .home-page .carousel .expend {
     width: auto;
-    padding: 0 1.5em; }
+    margin: 0 1.5em;
+    box-shadow: 0 0.5em 0.5em 0 #b3b1b1;
+    border-radius: 0.5em;
+    margin-top: 1.5em;
+    background-color: #DA106C; }
     #root .home-page .carousel .expend .item-overview {
-      background-color: #F2F2F2;
       width: auto;
       border-radius: 0.5em;
       display: flex;
       padding: 0.8em 1em;
       flex: auto;
-      color: #000;
-      margin-top: 1.5em; }
+      color: #fff; }
       #root .home-page .carousel .expend .item-overview span {
         width: 0.8em;
         height: 0.8em;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: left center;
-        margin-right: 0em; }
+        margin-right: 0.2em; }
       #root .home-page .carousel .expend .item-overview p {
         margin: 0;
         text-align: left;
@@ -489,6 +493,100 @@ body,
       margin-bottom: -1em;
       text-align: center;
       font-style: italic; }
+  #root .home-page .carousel #slide-2 {
+    height: auto;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+    #root .home-page .carousel #slide-2 .progress-bar {
+      height: 13em;
+      width: 2em;
+      display: inline-block;
+      margin: auto;
+      margin: 0 1.5em;
+      border-radius: 0.5em; }
+      #root .home-page .carousel #slide-2 .progress-bar .bar {
+        height: 100%;
+        transform: rotate(180deg);
+        background: #F2F2F2;
+        border-radius: 0.5em; }
+        #root .home-page .carousel #slide-2 .progress-bar .bar .percentage {
+          border-radius: 0.5em 0.5em 0 0;
+          background-color: #7E1EDA; }
+    #root .home-page .carousel #slide-2 .piggy {
+      height: 12em;
+      width: 12em;
+      margin-right: 2em;
+      display: inline-block;
+      margin-left: 0.5em; }
+      #root .home-page .carousel #slide-2 .piggy .piggy-body {
+        background: pink;
+        border-radius: 100%;
+        height: 80%;
+        width: 100%;
+        position: relative;
+        margin-top: 20%; }
+        #root .home-page .carousel #slide-2 .piggy .piggy-body p {
+          position: absolute;
+          margin: 20%;
+          width: 3em; }
+        #root .home-page .carousel #slide-2 .piggy .piggy-body .leg-1 {
+          background: pink;
+          position: absolute;
+          bottom: 0;
+          height: 2em;
+          width: 2em;
+          left: 2em;
+          border-radius: 0.2em; }
+        #root .home-page .carousel #slide-2 .piggy .piggy-body .leg-2 {
+          background: pink;
+          position: absolute;
+          bottom: 0;
+          height: 2em;
+          width: 2em;
+          right: 2em;
+          border-radius: 0.2em; }
+        #root .home-page .carousel #slide-2 .piggy .piggy-body .ear {
+          background: pink;
+          position: absolute;
+          top: -0.5em;
+          height: 4em;
+          width: 2em;
+          right: 2em;
+          border-radius: 1em 0.2em 0 2em; }
+        #root .home-page .carousel #slide-2 .piggy .piggy-body .eye {
+          background: #757575;
+          position: absolute;
+          top: 3em;
+          height: 1em;
+          width: 0.5em;
+          right: 2em;
+          border-radius: 100%; }
+        #root .home-page .carousel #slide-2 .piggy .piggy-body .nose {
+          background: pink;
+          position: absolute;
+          top: 4em;
+          height: 3em;
+          width: 2em;
+          right: -.7em;
+          border-radius: 0.5em; }
+        #root .home-page .carousel #slide-2 .piggy .piggy-body .tail {
+          background: pink;
+          position: absolute;
+          top: 4em;
+          height: 4em;
+          width: 0.5em;
+          left: 0em;
+          border-radius: 100%;
+          transform: rotate(50deg); }
+    #root .home-page .carousel #slide-2 .money-jar-block {
+      height: 15em;
+      margin: 1.5em auto; }
+      #root .home-page .carousel #slide-2 .money-jar-block .dop {
+        height: 2em;
+        background: #fed56b;
+        width: 6em;
+        border-radius: 1em 1em 0 0;
+        margin: auto; }
   #root .home-page .carousel #slide-3 {
     height: auto;
     overflow-y: scroll;
@@ -506,12 +604,12 @@ body,
       opacity: 0.8;
       position: absolute;
       height: 100%;
-      width: 50%;
-      border-radius: 0.5em;
+      border-radius: 0em 0.5em 0.5em 0em;
       right: 0; }
     #root .home-page .carousel .overview-progressbar-items .item-overview .price-bar {
       margin: 0.5em 0;
-      z-index: 1; }
+      z-index: 1;
+      text-align: left; }
       #root .home-page .carousel .overview-progressbar-items .item-overview .price-bar p {
         margin: 0; }
       #root .home-page .carousel .overview-progressbar-items .item-overview .price-bar span {
@@ -673,6 +771,24 @@ body,
 #root .settings {
   background-image: url("../assets/images/purple_settings.png"); }
 
+#root .groceries_white {
+  background-image: url("../assets/images/white_groceries.png"); }
+
+#root .clothes_white {
+  background-image: url("../assets/images/white_clothes.png"); }
+
+#root .free_time_white {
+  background-image: url("../assets/images/white_free_time.png"); }
+
+#root .save_money_white {
+  background-image: url("../assets/images/white_sparen.png"); }
+
+#root .fixed_charges_white {
+  background-image: url("../assets/images/white_vaste_lasten.png"); }
+
+#root .grooming_white {
+  background-image: url("../assets/images/white_grooming.png"); }
+
 #root nav.category ul {
   padding: 0;
   margin: 1.5em; }
@@ -689,7 +805,7 @@ body,
       border-radius: 0.5em;
       box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1);
       font-size: 1.2em;
-      color: black; }
+      color: #DA106C; }
       #root nav.category ul li a span {
         display: inline-block;
         width: 5rem;
@@ -761,6 +877,9 @@ body,
   padding: 0;
   margin-top: 0; }
 
+#root .overview-page .money-date {
+  color: transparent; }
+
 #root .save-money-page nav.category ul li a span {
   background-size: 70% auto; }
 
@@ -803,8 +922,7 @@ body,
     top: -100em; }
   #root .section-page-two .modal h2 {
     font-size: 1em;
-    font-weight: bold;
-    color: #DA106C; }
+    font-weight: bold; }
   #root .section-page-two .modal .groceries-modal {
     position: absolute;
     top: 0;
@@ -850,7 +968,6 @@ body,
       font-size: 1.2em;
       text-align: center; }
     #root .section-page-two .option-block span {
-      color: #DA106C;
       font-weight: bold; }
     #root .section-page-two .option-block .no-img {
       margin: 1em auto;
@@ -864,6 +981,9 @@ body,
           display: none; }
           #root .section-page-two .option-block .no-btn + p + a + button + button {
             display: none; }
+
+#root .grocery-list .modal .popup-block {
+  height: 10em; }
 
 #root .section-page-two-grocery-one {
   padding-bottom: 10em; }
@@ -990,6 +1110,7 @@ body,
         margin-top: 0.2em;
         float: right; }
         #root .pink-list .item-list .col .add-btn:hover:before {
+          line-height: initial;
           content: "+"; }
         #root .pink-list .item-list .col .add-btn:focus {
           color: white; }
@@ -1229,6 +1350,212 @@ body,
   #root .option-block-options a:hover, #root .option-block-options a:focus {
     text-decoration: none; }
 
+#root .pink-background-light {
+  min-height: 91vh; }
+
+#root .saving-page {
+  margin-top: 9.7em;
+  padding: 0; }
+  #root .saving-page .btn-block-row {
+    margin-bottom: 1.5em; }
+  #root .saving-page .popup-block {
+    position: absolute;
+    left: 100em; }
+  #root .saving-page .modal .popup-block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 10em; }
+  #root .saving-page .modal h2 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #DA106C; }
+  #root .saving-page .target-option-block {
+    position: absolute;
+    bottom: -2em;
+    padding: 1.5em;
+    padding-bottom: 1.5em;
+    background: white;
+    padding-bottom: 2em;
+    height: 82%;
+    width: 100%;
+    z-index: 11; }
+    #root .saving-page .target-option-block input:valid {
+      display: block; }
+    #root .saving-page .target-option-block input:invalid button {
+      display: none !important; }
+  #root .saving-page .jar-money-add {
+    background: rgba(222, 16, 105, 0.1);
+    display: flex;
+    flex-direction: row;
+    padding: 0 1.5em;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    padding: 1.5em;
+    padding-left: 2.5em; }
+    #root .saving-page .jar-money-add .jar-money-title {
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+    #root .saving-page .jar-money-add .money-items {
+      padding: 0;
+      margin-top: 1.5em;
+      margin-right: 1.5em; }
+      #root .saving-page .jar-money-add .money-items label {
+        margin-top: 1em; }
+        #root .saving-page .jar-money-add .money-items label input {
+          opacity: 0;
+          position: absolute;
+          z-index: 10;
+          width: 100%;
+          height: 70%; }
+          #root .saving-page .jar-money-add .money-items label input:hover, #root .saving-page .jar-money-add .money-items label input:focus {
+            cursor: pointer; }
+        #root .saving-page .jar-money-add .money-items label section {
+          display: block;
+          width: 5rem;
+          height: 3rem;
+          padding: .5em;
+          position: relative;
+          border-radius: .5em; }
+          #root .saving-page .jar-money-add .money-items label section img {
+            margin: auto;
+            display: inline-block;
+            max-height: 3rem;
+            max-width: 5rem;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            left: 0;
+            right: 0; }
+        #root .saving-page .jar-money-add .money-items label:hover, #root .saving-page .jar-money-add .money-items label:focus {
+          cursor: pointer; }
+        #root .saving-page .jar-money-add .money-items label .price-item {
+          margin: 0;
+          text-align: center; }
+  #root .saving-page .jar-money {
+    padding: 1.5em 2.5em; }
+  #root .saving-page .progress-bar {
+    height: 13em;
+    width: 2em;
+    display: inline-block;
+    margin: 0 1.3em;
+    border-radius: 0.5em; }
+    #root .saving-page .progress-bar .bar {
+      height: 100%;
+      transform: rotate(180deg);
+      background: #F2F2F2;
+      border-radius: 0.5em; }
+      #root .saving-page .progress-bar .bar .percentage {
+        border-radius: 0.5em 0.5em 0 0;
+        background-color: #7E1EDA; }
+  #root .saving-page .money-jar-block {
+    overflow: hidden; }
+  #root .saving-page .coin {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-height: 8em;
+    overflow: hidden;
+    margin-top: -1em; }
+    #root .saving-page .coin .dollar {
+      background-color: #f7941e;
+      height: 2em;
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      border-radius: 50%;
+      margin: auto;
+      text-align: center;
+      width: 2em;
+      font-size: 2em; }
+    #root .saving-page .coin .dollar-one {
+      animation: mymove1 3s; }
+    #root .saving-page .coin .dollar-two {
+      animation: mymove2 3s; }
+    #root .saving-page .coin .dollar-three {
+      animation: mymove3 3s; }
+    #root .saving-page .coin .dollar-four {
+      animation: mymove4 3s; }
+    #root .saving-page .coin .dollar-five {
+      animation: mymove5 3s; }
+  #root .saving-page .piggy {
+    height: 12em;
+    width: 12em;
+    margin-right: 1.5em;
+    display: inline-block;
+    margin-left: 1em; }
+    #root .saving-page .piggy .piggy-body {
+      background: pink;
+      border-radius: 100%;
+      height: 80%;
+      width: 100%;
+      position: relative;
+      margin-top: 20%; }
+      #root .saving-page .piggy .piggy-body p {
+        margin: 20%;
+        position: absolute; }
+      #root .saving-page .piggy .piggy-body .leg-1 {
+        background: pink;
+        position: absolute;
+        bottom: 0;
+        height: 2em;
+        width: 2em;
+        left: 2em;
+        border-radius: 0.2em; }
+      #root .saving-page .piggy .piggy-body .leg-2 {
+        background: pink;
+        position: absolute;
+        bottom: 0;
+        height: 2em;
+        width: 2em;
+        right: 2em;
+        border-radius: 0.2em; }
+      #root .saving-page .piggy .piggy-body .ear {
+        background: pink;
+        position: absolute;
+        top: -0.5em;
+        height: 4em;
+        width: 2em;
+        right: 2em;
+        border-radius: 1em 0.2em 0 2em; }
+      #root .saving-page .piggy .piggy-body .eye {
+        background: #757575;
+        position: absolute;
+        top: 3em;
+        height: 1em;
+        width: 0.5em;
+        right: 2em;
+        border-radius: 100%; }
+      #root .saving-page .piggy .piggy-body .nose {
+        background: pink;
+        position: absolute;
+        top: 4em;
+        height: 3em;
+        width: 2em;
+        right: -.7em;
+        border-radius: 0.5em; }
+      #root .saving-page .piggy .piggy-body .tail {
+        background: pink;
+        position: absolute;
+        top: 4em;
+        height: 4em;
+        width: 0.5em;
+        left: 0em;
+        border-radius: 100%;
+        transform: rotate(50deg); }
+  #root .saving-page .btn-container-money {
+    margin: 0 1.5em; }
+
 #root .piggybank-add-page .btn-container-money {
   position: fixed;
   width: 100%;
@@ -1313,28 +1640,21 @@ body,
   scrollbar-width: none;
   overflow-y: hidden; }
   #root .piggybank-add-page .jar-money-add .money-items {
-    margin-top: 2em;
-    display: block;
-    min-width: 12em; }
+    margin-top: 2em; }
+    #root .piggybank-add-page .jar-money-add .money-items label input {
+      opacity: 0;
+      position: absolute; }
+    #root .piggybank-add-page .jar-money-add .money-items label:hover, #root .piggybank-add-page .jar-money-add .money-items label:focus {
+      cursor: pointer; }
     #root .piggybank-add-page .jar-money-add .money-items section {
       border: 1px solid #fff;
       background-color: #fff;
       display: block;
-      width: 10.5rem;
-      height: 6rem;
       padding: .5em;
       position: relative;
       border-radius: 0.5em; }
       #root .piggybank-add-page .jar-money-add .money-items section img {
-        margin: 1em auto;
-        display: inline-block;
-        max-height: 4rem;
-        max-width: 8rem;
-        top: 0;
-        bottom: 0;
-        position: absolute;
-        left: 0;
-        right: 0; }
+        max-height: 2.5rem; }
     #root .piggybank-add-page .jar-money-add .money-items .title-item {
       display: inline-block;
       vertical-align: text-top;
@@ -1381,7 +1701,10 @@ body,
   background: #fff;
   width: auto;
   padding: 0.5em;
-  font-size: 0.95rem; }
+  font-size: 0.9rem; }
+
+#root .settings-page td {
+  color: #b3b1b1; }
 
 #root .settings-page table {
   margin-bottom: 1em; }
@@ -1568,28 +1891,28 @@ body,
   from {
     top: -2em; }
   to {
-    top: 4.5em; } }
+    top: 5em; } }
 
 @keyframes mymove2 {
   from {
     top: -6em; }
   to {
-    top: 10em; } }
+    top: 1em; } }
 
 @keyframes mymove3 {
   from {
     top: -10em; }
   to {
-    top: 10em; } }
+    top: 1em; } }
 
 @keyframes mymove4 {
   from {
     top: -14em; }
   to {
-    top: 10em; } }
+    top: 1em; } }
 
 @keyframes mymove5 {
   from {
     top: -18em; }
   to {
-    top: 10em; } }
+    top: 1em; } }
