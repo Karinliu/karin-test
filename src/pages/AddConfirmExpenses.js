@@ -73,7 +73,7 @@ class AddConfirmExpenses extends Component {
         return ( 
             <>
             <Header text="Terug"
-                    textLink ="/NogUitgeven"
+                    textLink ="/Overview"
                     addClass=""/> 
 
             <div  className="container confirm-expenses-page" >

@@ -756,10 +756,11 @@ body,
                 overflow-x: hidden;
 
                 .label-button-text {
-                    margin-top: 1.5em;
-                    margin-bottom: -1em;
                     text-align: center;
                     font-style: italic;
+                    margin: 1.5em;
+                    margin-bottom: 1.5em;
+                    margin-bottom: -1em;
                 }
             }
 
@@ -790,15 +791,15 @@ body,
                     }
                 }
 
-                     .target-text{
-                        position: absolute;
-                        color: $black;
-                        transform: rotate(-90deg);
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        z-index: 1;
-                    }
+                .target-text {
+                    position: absolute;
+                    color: $black;
+                    transform: rotate(-90deg);
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 1;
+                }
 
                 .piggy {
                     height: 12em;
@@ -1562,9 +1563,9 @@ body,
 
     }
 
-    .grocery-list{
-        .modal{
-            .popup-block{
+    .grocery-list {
+        .modal {
+            .popup-block {
                 height: 10em;
             }
 
@@ -2172,7 +2173,7 @@ body,
         }
     }
 
-    .pink-background-light{
+    .pink-background-light {
         min-height: 91vh;
     }
 
@@ -2180,17 +2181,17 @@ body,
         margin-top: 9.7em;
         padding: 0;
 
-        .btn-block-row{
+        .btn-block-row {
             margin-bottom: 1.5em;
         }
 
-        .popup-block{
-            position: absolute;
+        .popup-block {
+            position: fixed;
             top: -100em;
         }
 
-        .modal{
-            .popup-block{
+        .modal {
+            .popup-block {
                 position: absolute;
                 left: 0;
                 right: 0;
@@ -2199,14 +2200,14 @@ body,
                 height: 10em;
             }
 
-            h2{
+            h2 {
                 font-size: 1em;
                 font-weight: bold;
                 color: $primaryColor;
             }
         }
 
-        .target-option-block{
+        .target-option-block {
             position: absolute;
             bottom: -2em;
             padding: 1.5em;
@@ -2216,7 +2217,7 @@ body,
             height: 82%;
             width: 100%;
 
-            input{
+            input {
 
                 &:valid {
                     display: block;
@@ -2234,14 +2235,12 @@ body,
             background: $primaryColorLight;
             display: flex;
             flex-direction: row;
-            padding: 0 1.5em;
             flex-wrap: nowrap;
             overflow-x: scroll;
             -ms-overflow-style: none;
             scrollbar-width: none;
             overflow-y: hidden;
             padding: 1.5em;
-            padding-left: 2.5em;
 
             .jar-money-title {
                 width: 100%;
@@ -2253,12 +2252,10 @@ body,
             }
 
             .money-items {
-                padding: 0;
-                margin-top: 1.5em;
-                margin-right: 1.5em;
+                // padding: 1.5em;
 
                 label {
-                    margin-top: 1em;
+                    margin-top: 2.5em;
 
                     input {
                         opacity: 0;
@@ -2300,14 +2297,14 @@ body,
                     }
 
                     .price-item {
-                            margin: 0;
-                            text-align: center;
-                        }
+                        margin: 0;
+                        text-align: center;
+                    }
                 }
             }
         }
 
-        .jar-money{
+        .jar-money {
             padding: 1.5em 2.5em;
 
         }
@@ -2320,7 +2317,7 @@ body,
             border-radius: 0.5em;
             position: relative;
 
-            .target-text{
+            .target-text {
                 position: absolute;
                 color: $black;
                 transform: rotate(-90deg);
@@ -2343,7 +2340,7 @@ body,
             }
         }
 
-        .money-jar-block{
+        .money-jar-block {
             overflow: hidden;
         }
 
@@ -2354,49 +2351,50 @@ body,
             max-height: 8em;
             overflow: hidden;
             margin-top: -1em;
-                    .dollar {
-                        background-color: #f7941e;
-                        height: 2em;
-                        position: relative;
-                        left: 0;
-                        right: 0;
-                        margin: 0 auto;
-                        border-radius: 50%;
-                        margin: auto;
-                        text-align: center;
-                        width: 2em;
-                        font-size: 2em;
-                    }
 
-                    .dollar-one {
-                        animation: mymove1 3s;
-                    }
+            .dollar {
+                background-color: #f7941e;
+                height: 2em;
+                position: relative;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                border-radius: 50%;
+                margin: auto;
+                text-align: center;
+                width: 2em;
+                font-size: 2em;
+            }
 
-                    .dollar-two {
-                        animation: mymove2 3s;
-                    }
+            .dollar-one {
+                animation: mymove1 3s;
+            }
 
-                    .dollar-three {
-                        animation: mymove3 3s;
-                    }
+            .dollar-two {
+                animation: mymove2 3s;
+            }
 
-                    .dollar-four {
-                        animation: mymove4 3s;
-                    }
+            .dollar-three {
+                animation: mymove3 3s;
+            }
 
-                    .dollar-five {
-                        animation: mymove5 3s;
-                    }
+            .dollar-four {
+                animation: mymove4 3s;
+            }
+
+            .dollar-five {
+                animation: mymove5 3s;
+            }
 
 
-                }
+        }
 
         .piggy {
-                height: 12em;
-                width: 12em;
-                margin-right: 1.5em;
-                display: inline-block;
-                margin-left: 1em;
+            height: 12em;
+            width: 12em;
+            margin-right: 1.5em;
+            display: inline-block;
+            margin-left: 1em;
 
 
             .piggy-body {
@@ -2478,7 +2476,7 @@ body,
             }
         }
 
-        .btn-container-money{
+        .btn-container-money {
             margin: 0 1.5em;
         }
     }
@@ -2791,6 +2789,63 @@ body,
                         background-color: $btnPinkHover;
                     }
                 }
+            }
+        }
+    }
+}
+
+/* Media Query for samsung S9 Devices */
+@media (max-width: 366px) {
+    #root {
+        header{
+             nav{
+                 ul{
+                     li:first-child a{
+                        font-size: 0.9em;
+                     }
+                 }
+             }
+        }
+
+        h1.header-title{
+            margin-top: 1em;
+            font-size: 1.2em!important;
+        }
+
+        .header-title{
+            font-size: 1.2em;
+        }
+            .money-block {
+                max-width: 86.3vw;
+
+                p:first-child {
+                    max-width: 91%;
+                }
+
+                .money {
+                    padding-top: 0.4em;
+                }
+            }
+
+        .section-page-two {
+            .modal {
+                .groceries-modal {
+                    height: 16em;
+                }
+            }
+        }
+
+        .saving-page{
+            .modal{
+                .popup-block{
+                    height: 9em;
+                }
+            }
+        }
+
+        .modal {
+            a {
+                font-size: 0.9em;
             }
         }
     }

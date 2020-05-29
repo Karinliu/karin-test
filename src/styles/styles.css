@@ -489,10 +489,11 @@ body,
     overflow-y: scroll;
     overflow-x: hidden; }
     #root .home-page .carousel #slide-1 .label-button-text {
-      margin-top: 1.5em;
-      margin-bottom: -1em;
       text-align: center;
-      font-style: italic; }
+      font-style: italic;
+      margin: 1.5em;
+      margin-bottom: 1.5em;
+      margin-bottom: -1em; }
   #root .home-page .carousel #slide-2 {
     height: auto;
     overflow-y: scroll;
@@ -1369,7 +1370,7 @@ body,
   #root .saving-page .btn-block-row {
     margin-bottom: 1.5em; }
   #root .saving-page .popup-block {
-    position: absolute;
+    position: fixed;
     top: -100em; }
   #root .saving-page .modal .popup-block {
     position: absolute;
@@ -1399,14 +1400,12 @@ body,
     background: rgba(222, 16, 105, 0.1);
     display: flex;
     flex-direction: row;
-    padding: 0 1.5em;
     flex-wrap: nowrap;
     overflow-x: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-y: hidden;
-    padding: 1.5em;
-    padding-left: 2.5em; }
+    padding: 1.5em; }
     #root .saving-page .jar-money-add .jar-money-title {
       width: 100%;
       position: absolute;
@@ -1414,41 +1413,37 @@ body,
       left: 0;
       right: 0;
       margin: 0 auto; }
-    #root .saving-page .jar-money-add .money-items {
-      padding: 0;
-      margin-top: 1.5em;
-      margin-right: 1.5em; }
-      #root .saving-page .jar-money-add .money-items label {
-        margin-top: 1em; }
-        #root .saving-page .jar-money-add .money-items label input {
-          opacity: 0;
-          position: absolute;
-          width: 100%;
-          height: 70%; }
-          #root .saving-page .jar-money-add .money-items label input:hover, #root .saving-page .jar-money-add .money-items label input:focus {
-            cursor: pointer; }
-        #root .saving-page .jar-money-add .money-items label section {
-          display: block;
-          width: 5rem;
-          height: 3rem;
-          padding: .5em;
-          position: relative;
-          border-radius: .5em; }
-          #root .saving-page .jar-money-add .money-items label section img {
-            margin: auto;
-            display: inline-block;
-            max-height: 3rem;
-            max-width: 5rem;
-            top: 0;
-            bottom: 0;
-            position: absolute;
-            left: 0;
-            right: 0; }
-        #root .saving-page .jar-money-add .money-items label:hover, #root .saving-page .jar-money-add .money-items label:focus {
+    #root .saving-page .jar-money-add .money-items label {
+      margin-top: 2.5em; }
+      #root .saving-page .jar-money-add .money-items label input {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 70%; }
+        #root .saving-page .jar-money-add .money-items label input:hover, #root .saving-page .jar-money-add .money-items label input:focus {
           cursor: pointer; }
-        #root .saving-page .jar-money-add .money-items label .price-item {
-          margin: 0;
-          text-align: center; }
+      #root .saving-page .jar-money-add .money-items label section {
+        display: block;
+        width: 5rem;
+        height: 3rem;
+        padding: .5em;
+        position: relative;
+        border-radius: .5em; }
+        #root .saving-page .jar-money-add .money-items label section img {
+          margin: auto;
+          display: inline-block;
+          max-height: 3rem;
+          max-width: 5rem;
+          top: 0;
+          bottom: 0;
+          position: absolute;
+          left: 0;
+          right: 0; }
+      #root .saving-page .jar-money-add .money-items label:hover, #root .saving-page .jar-money-add .money-items label:focus {
+        cursor: pointer; }
+      #root .saving-page .jar-money-add .money-items label .price-item {
+        margin: 0;
+        text-align: center; }
   #root .saving-page .jar-money {
     padding: 1.5em 2.5em; }
   #root .saving-page .progress-bar {
@@ -1766,6 +1761,28 @@ body,
           background-color: #FBCFE2; }
       #root footer nav ul li:hover, #root footer nav ul li:focus {
         background-color: #FBCFE2; }
+
+/* Media Query for samsung S9 Devices */
+@media (max-width: 366px) {
+  #root header nav ul li:first-child a {
+    font-size: 0.9em; }
+  #root h1.header-title {
+    margin-top: 1em;
+    font-size: 1.2em !important; }
+  #root .header-title {
+    font-size: 1.2em; }
+  #root .money-block {
+    max-width: 86.3vw; }
+    #root .money-block p:first-child {
+      max-width: 91%; }
+    #root .money-block .money {
+      padding-top: 0.4em; }
+  #root .section-page-two .modal .groceries-modal {
+    height: 16em; }
+  #root .saving-page .modal .popup-block {
+    height: 9em; }
+  #root .modal a {
+    font-size: 0.9em; } }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 366px) {
