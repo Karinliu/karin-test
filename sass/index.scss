@@ -795,6 +795,12 @@ body,
                 flex: 0 0 100%;
                 padding: 0;
                 scrollbar-width: none;
+                overflow: hidden;
+                -ms-overflow-style: none;
+
+                &::-webkit-scrollbar {
+                  display: none;
+                }
             }
 
             #slide-1 {
@@ -2043,17 +2049,15 @@ body,
 
         .row {
             &:first-child {
+                
+            }
+
+            .confirm-header {
                 padding: 1.5em 0;
                 background-image: url('../assets/images/hand.png');
                 background-repeat: no-repeat;
                 background-position: left top;
                 background-size: 85% 85%;
-            }
-
-            .confirm-header {
-
-                padding: 1em;
-
 
 
                 p {
@@ -3128,6 +3132,16 @@ body,
             font-weight: 400;
             z-index: 10;
         }
+
+        .money-block{
+            background-position: left 0.5em;
+        }
+    }
+
+    .settings-page{
+        table{
+            width: 100%;
+        }
     }
 }
 
@@ -3177,7 +3191,7 @@ body,
         }
 
         .to-spend {
-            margin-top: 2.5em;
+            margin-top: 3.5em;
         }
 
         .background-gray {
@@ -3224,13 +3238,30 @@ body,
     body {
         // background-color: blue;
     }
-
     #root {
         .login-page {
             .logo {
 
                 img {
                     width: 10em;
+                }
+            }
+        }
+
+        .confirm-expenses-page{
+            .confirm-section-block{
+                width: 40.5em;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                height: 20em;
+            }
+
+            .row{
+                .confirm-header{
+                    margin: 1.5em auto;
+                    background-size: auto 100%;
+                    background-position: left -1.5em;
                 }
             }
         }
@@ -3262,7 +3293,7 @@ body,
                 margin: 1em;
 
                 li {
-                    width: 46%;
+                    width: 45%;
                     margin: 1em;
 
                 }
@@ -3282,6 +3313,18 @@ body,
                 margin-bottom: 2em;
             }
         }
+
+        .home-page{
+            .carousel{
+                .slide{
+                    .money-block{
+                        margin: 1.5em auto;
+                    }
+                }
+            }
+        }
+
+        
 
         .clothes-page {
             .btn-col {
