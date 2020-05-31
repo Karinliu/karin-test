@@ -90,7 +90,7 @@ class ConfirmExpenses extends Component {
                             <div class="col">
                             <button className="btn btn-green" onClick={this.clickedYes.bind(this)}>Bevestig aankoop</button>
                             <button onClick={this.handlerSec} className="btn btn-red">Verwijder aankoop</button>
-                            <Link className="btn btn-orange" to="/NogUitgeven">Ga terug naar overzicht mijn lijst</Link>
+                            <Link className="btn btn-orange" to="/NogUitgeven">Ga terug naar overzicht</Link>
                             </div>
                     </div>
                     < Modal5 

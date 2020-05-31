@@ -81,7 +81,7 @@
     "chat_link": [
     {
     	"contact": "Whatsapp",
-        "user_link": "whatsapp://send?abid=phonenumber&text=Hello%2C%20World!",
+        "user_link": "whatsapp://send?abid=phonenumber&text=Hello!",
         "image_link": "https://icons.iconarchive.com/icons/dtafalonso/android-l/512/WhatsApp-icon.png"
     }],
     "all_expenses": [

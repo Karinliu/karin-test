@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import {myAccount, piggybank, todo} from '../assets/';
 
 class Overview extends Component {
+
     render() {
         const moneyToSpend = myAccount.my_account.map(data =>
                 data.total_money)
@@ -66,7 +67,7 @@ class Overview extends Component {
 
         return ( 
             <>
-            <Header text=""
+            <Header text="d-none"
                     textLink =""/>
             <div className = "container home-page" >
                 <Title classes="header-title" text="Overzicht"/> 
@@ -100,7 +101,7 @@ class Overview extends Component {
                                 </div>
                             </div>
                             <div className="piggy">
-                                <div class="piggy-body">
+                                <div className="piggy-body">
                                     <p>Huh? Je hebt nog niets gespaard!</p>
                                     <div className="leg-1"></div>
                                     <div className="leg-2"></div>

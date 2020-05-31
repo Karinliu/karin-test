@@ -855,7 +855,6 @@ body,
                     display: inline-block;
                     margin-left: 0.5em;
 
-
                     .piggy-body {
                         background: pink;
                         border-radius: 100%;
@@ -2059,12 +2058,12 @@ body,
 
                 p {
                     &:first-child {
-                        background: $white;
+                        width: max-content;
+                        background: $whiteLight;
                         border-radius: 0.5em;
                         text-align: center;
-                        width: max-content;
                         margin: 0 auto;
-                        padding: 0.3em 1em;
+                        padding: 0.5em 1em;
                     }
                 }
 
@@ -3088,6 +3087,10 @@ body,
                     }
                 }
             }
+        }
+
+        .money-block{
+            background-position: left 0.5em;
         }
     }
 }

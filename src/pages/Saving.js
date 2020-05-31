@@ -158,7 +158,8 @@ class Saving extends Component {
 
         })
 
-        const items =  itemsJson.data_price.map(data => {        
+        const items =  itemsJson.data_price.map(data => {  
+
                     return <MoneyListItems 
                             price={data.price}
                             image_link={data.image_link}
