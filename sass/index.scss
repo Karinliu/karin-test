@@ -2444,6 +2444,7 @@ body,
                     .price-item {
                         margin: 0;
                         text-align: center;
+                        margin-top: 0.5em;
                     }
                 }
             }
@@ -3066,6 +3067,11 @@ body,
 /* Media Query for Mobile Devices */
 @media (max-width: 386px) {
     #root {
+
+        .money-block{
+            background-position: left 1em;
+        }
+
         .home-page {
             .sub-header {
                 ul {
@@ -3093,9 +3099,7 @@ body,
             }
         }
 
-        .money-block{
-            background-position: left 0.5em;
-        }
+
     }
 }
 
@@ -3134,7 +3138,7 @@ body,
         }
 
         .money-block{
-            background-position: left 0.5em;
+            background-position: left 1em;
         }
     }
 

@@ -1533,7 +1533,8 @@ body,
           cursor: pointer; }
         #root .saving-page .jar-money-add .money-items label .price-item {
           margin: 0;
-          text-align: center; }
+          text-align: center;
+          margin-top: 0.5em; }
   #root .saving-page .jar-money {
     padding: 1.5em; }
   #root .saving-page .progress-bar {
@@ -1907,6 +1908,8 @@ body,
 
 /* Media Query for Mobile Devices */
 @media (max-width: 386px) {
+  #root .money-block {
+    background-position: left 1em; }
   #root .home-page .sub-header ul {
     margin: 0;
     margin-top: 1em;
@@ -1920,9 +1923,7 @@ body,
         margin-left: 1.5em; }
       #root .home-page .sub-header ul li:last-child {
         margin: 0;
-        margin-right: 1.5em; }
-  #root .money-block {
-    background-position: left 0.5em; } }
+        margin-right: 1.5em; } }
 
 @media (max-width: 480px) {
   #root .login-page .logo img {
@@ -1941,7 +1942,7 @@ body,
     font-weight: 400;
     z-index: 10; }
   #root .money-block {
-    background-position: left 0.5em; }
+    background-position: left 1em; }
   .settings-page table {
     width: 100%; } }
 
