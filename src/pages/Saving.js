@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Title, Header, MoneyListItems, Modal3, HeaderMoney} from '../components/';
+import {Title, Header, MoneyListItems, Modal3, Modal9, HeaderMoney} from '../components/';
 import {itemsJson, myAccount} from '../assets/';
 
 class Saving extends Component {
@@ -9,13 +9,39 @@ class Saving extends Component {
             addClass: '',
             moneyAnimation: "coin d-none",
             disable: "modal d-none",
+            disable2: "modal d-none",
             lastClickedValue: 0,
             value: 0,
-            chooseCategory: '',
-            showNext:''
+            showNext:'',
+            closeModal: '',
+            removeMoney: '',
+            removeNext: '',
+            cryAnimation: "cry-animation d-none",
+            pigAnimation: "piggy no-shake"
         };
         this.handler = this.handler.bind(this);
+        this.handler2 = this.handler2.bind(this);
       }
+
+    handleModal = (val) => {
+
+        const currentVal = val
+        this.setState({
+                disable: currentVal,
+                showNext: !this.state.showNext,
+                addClass: !this.state.addClass
+        })
+    }
+
+    handleModal2 = (val) => {
+
+        const currentVal = val
+        this.setState({
+                disable2: currentVal,
+                removeNext: !this.state.removeNext,
+                removeMoney: !this.state.removeMoney
+        })
+    }
 
     addAnimation = (val) => {
         setTimeout(() => {
@@ -33,11 +59,40 @@ class Saving extends Component {
         this.setState({addClass: !this.state.addClass})
     }
 
-    clickedNext() {
+    clickedRemoveMoney(){
+        setTimeout(() => {
+          this.setState({
+            removeMoney: !this.state.removeMoney,
+            cryAnimation: "cry-animation d-none",
+            pigAnimation: "piggy no-shake"
+          })
+        }, 1000);
+
         this.setState({
-            chooseCategory: 'next',
-            showNext: !this.state.addShow
+                cryAnimation: "cry-animation d-block",
+                pigAnimation: "piggy with-shake"
         });
+    }
+
+    clickedRemoveMoneyBackFirst(){
+        this.setState({
+               removeMoney: !this.state.removeMoney
+        });
+    }
+
+    clickedRemoveMoneyBack(){
+        this.setState({
+               removeMoney: !this.state.removeMoney,
+               removeNext: !this.state.removeNext
+        });
+    }
+
+    clickedRemoveNext() {
+        this.setState({removeNext: !this.state.removeNext})
+    }
+
+    clickedNext() {
+        this.setState({showNext: !this.state.showNext})
     }
 
     addTotalPrice = (val) => {
@@ -59,7 +114,7 @@ class Saving extends Component {
 
     handler2() {
         this.setState({
-              disable: "modal d-block"
+              disable2: "modal d-block"
           });
     }
 
@@ -103,15 +158,15 @@ class Saving extends Component {
 
         })
 
-        const items =  itemsJson.data_price.map(data => 
-            <MoneyListItems 
-                    price={data.price}
-                    image_link={data.image_link}
-                    id_item = {data.id_item}
-                    dataAddValue = {this.addTotalPrice}
-                    addAnimation = {this.addAnimation}
-                    moneyToSpend = {moneyToSpend}
-                    />)
+        const items =  itemsJson.data_price.map(data => {        
+                    return <MoneyListItems 
+                            price={data.price}
+                            image_link={data.image_link}
+                            id_item = {data.id_item}
+                            dataAddValue = {this.addTotalPrice}
+                            addAnimation = {this.addAnimation}
+                            moneyToSpend = {moneyToSpend}
+                            />})
 
         let boxClassHide = ['d-none'];
         let boxClassSee = ['d-block'];
@@ -133,6 +188,28 @@ class Saving extends Component {
         }else{
             boxClassSee2.push('d-block');
             boxClassHide2.push('d-none');
+        }
+
+        let boxClassHide3 = ['d-none'];
+        let boxClassSee3 = ['d-block'];
+
+        if(this.state.removeMoney) {
+            boxClassSee3.push('d-none');
+            boxClassHide3.push('d-block');
+        }else{
+            boxClassSee3.push('d-block');
+            boxClassHide3.push('d-none');
+        }
+
+        let boxClassHide4 = ['d-none'];
+        let boxClassSee4 = ['d-block'];
+
+        if(this.state.removeNext) {
+            boxClassSee4.push('d-none');
+            boxClassHide4.push('d-block');
+        }else{
+            boxClassSee4.push('d-block');
+            boxClassHide4.push('d-none');
         }
 
         return (
@@ -163,7 +240,7 @@ class Saving extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="piggy">
+                            <div className={this.state.pigAnimation}>
                             <div className={this.state.moneyAnimation}>
                                     <div className="dollar dollar-one">€</div>
                                     <div className="dollar dollar-two">€</div>
@@ -179,6 +256,7 @@ class Saving extends Component {
                                     <div className="ear"></div>
                                     <div className="tail"></div>
                                     <div className="eye"></div>
+                                    <div className={this.state.cryAnimation}> </div>
                                 </div>
                             
 
@@ -192,30 +270,62 @@ class Saving extends Component {
                             <button 
                             className="btn btn-pink plus-icon"
                             onClick={this.toggleDetails.bind(this)}>Doelen toevoegen</button>
+
+                            <button 
+                            className="btn btn-pink min-icon"
+                            onClick={this.clickedRemoveMoney.bind(this)}>Geld uithalen</button>
                         </div>
                     </div>
 
-                <div className={boxClassHide.join('row target-option-block ')}>
-                    <div className={boxClassSee2.join('col ')}>
-                        <p>Voor wat wil je sparen?</p>
+                <div className={boxClassHide.join('test row target-option-block ')}>
+                    <div className={boxClassSee2.join('test target-option-col col ')}>
+                        <p>Voor wat wil je voor sparen?</p>
                         <input type="text"/>
-                        <button onClick={this.clickedNext.bind(this)} className='test btn btn-red '>Volgende</button>
+                        <button onClick={this.clickedNext.bind(this)} className='test btn btn-green '>Volgende</button>
+                        <button onClick={this.toggleDetails.bind(this)} className='test btn btn-red '>Ik wil geen doel zetten</button>
                     </div>
 
-                    <div className={boxClassHide2.join('col ')}>
+                    <div className={boxClassHide2.join('test target-option-col col  ')}>
                         <p>Okay, tof! Wat kost het?</p>
-                        <input type="text"/>
-                        <button onClick={this.handler} className='test btn btn-red '>Volgende</button>
+                        <span>€</span>
+                        <input className="price-input" type="text"/>
+                        <button onClick={this.handler} className='test btn btn-green '>Doel zetten</button>
+                        <button onClick={this.toggleDetails.bind(this)}  className='test btn btn-red '>Stoppen</button>
+                        <button onClick={this.clickedNext.bind(this)}  className='test btn btn-orange '>1 stap terug</button>  
                     </div>
+                </div>
+
+                <div className={boxClassHide3.join('test row target-option-block ')}>
+                    <div className={boxClassSee4.join('test target-option-col col  ')}>
+                        <p>Ohh... Weet je zeker dat je geld wilt uithalen?</p>
+                        <button onClick={this.clickedRemoveNext.bind(this)} className='test btn btn-green '>Ja, ik weet het zeker!</button>
+                        <button onClick={this.clickedRemoveMoneyBackFirst.bind(this)} className='test btn btn-red '>Ik wil geen geld uithalen</button>
+                    </div>
+
+                    <div className={boxClassHide4.join('test target-option-col col  ')}>
+                        <p>Hoeveel wil je er uit halen?</p>
+                        <span>€</span>
+                        <input className="price-input" type="text"/>
+                        <button onClick={this.handler2} className='test btn btn-green '>Geld uithalen</button>
+                        <button onClick={this.clickedRemoveMoneyBack.bind(this)}  className='test btn btn-red '>Stoppen</button>
+                        <button onClick={this.clickedRemoveNext.bind(this)}  className='test btn btn-orange '>1 stap terug</button>  
+                    </div>
+
                 </div>
 
 
                     
           
 
-                < Modal3 
+                <Modal3 
                 addClass={this.state.disable}
-                action={this.handler}/>
+                action={this.handler}
+                handleModal={this.handleModal}/>
+
+                <Modal9 
+                addClass={this.state.disable2}
+                action={this.handler2}
+                handleModal={this.handleModal2}/>
             </div>
 
             </>

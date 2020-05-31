@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
 
 class HeaderMoney extends Component {
+    constructor(props) {
+    super(props);
+        this.state = {
+            addClass: ''
+        }
+    }
+
   render() {
     return(
     	<div className="container to-spend">

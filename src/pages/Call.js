@@ -15,7 +15,7 @@ class Call extends Component {
         return (
         	 <>
             <Header text="Terug"
-                    textLink ="/Help"/>
+                    textLink ="/Support"/>
             <div className="container pink-list list-help-page">
               <Title classes="header-title" text="Bellen"/> 
               <TitleCategory title="Bellen naar"/>

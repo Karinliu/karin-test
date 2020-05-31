@@ -144,7 +144,7 @@ class FreeTimeAdd extends Component {
                 textDate="week"
                 textEnd="te besteden"
                 toSpend={moneyToSpend} />
-            <div className={boxClassSee.join('container pink-list clothes-page ')}>
+            <div className={boxClassSee.join('test container pink-list clothes-page ')}>
                 <Title classes="header-title"/> 
                 
                 <TitleCategory title="Deze kledingstukken wil ik gaan halen"/>
@@ -156,13 +156,13 @@ class FreeTimeAdd extends Component {
 
                 <div class="row">
                     <div class="btn-col col col-md-10 col-lg-6">
-                        <button onClick={this.toggleDetails.bind(this)} className="btn-pink btn">Toevoegen</button>
+                        <button onClick={this.toggleDetails.bind(this)} className="btn-pink btn plus-icon">Toevoegen</button>
                         </div>
                     </div>
                 </form>
             </div>
 
-            <div className={boxClassHide.join('container section-page-two ')}>
+            <div className={boxClassHide.join('test container section-page-two ')}>
                 <div className="row">
                     {newItemsList}
                 </div>

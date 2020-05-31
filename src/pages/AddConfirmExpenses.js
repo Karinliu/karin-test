@@ -86,8 +86,9 @@ class AddConfirmExpenses extends Component {
                 <div className = "row confirm-section-block" >
                     <form onSubmit={this.submitHandler} method="post" action="/overview">
                             <fieldset>
+                            <legend className={boxClassHide.join('test ')}>Klopt de datum en het uitgegeven bedrag die je hebt gekozen?</legend>
                             <legend className={boxClassSee.join('test ')}>Welke categorie en uitgave hoort hierbij?</legend>
-                                <select className="custom-select" id="options-categories">
+                                <select className={boxClassSee.join('test custom-select ')} id="options-categories">
                                     <option value="kies_categorie">Kies categorie</option>
                                     <option value="1">Boodschappen</option>
                                     <option value="2">Kleding</option>
@@ -100,15 +101,16 @@ class AddConfirmExpenses extends Component {
 
                             </fieldset>
                             <fieldset>
-                                <legend className={boxClassHide.join('test ')}>Klopt de datum en het uitgegeven bedrag?</legend>
-                                <select className="custom-select" id="options">
-                                    <option value="0">Kies datum en het uitgegeven bedrag</option>
+                                
+                                <select className={boxClassSee.join('test custom-select ')} id="options">
+                                    <option value="0">Kies datum en het uitgegeven bedrag die je had gekozen?</option>
                                     <option value="1">{date} Uitgave: € 1.50</option>
                                 </select>
                             </fieldset>
-                            <fieldset className="image-send">
-                                <label >Voeg een foto toe als bevestiging</label>
+                            <fieldset className={boxClassSee.join('test image-send ')} >
+                                <label >Voeg een foto van je bon toe als bevestiging
                                 <input type="file" accept="image/*" required/>
+                                </label>
                             </fieldset>
 
                             <button 
@@ -127,7 +129,7 @@ class AddConfirmExpenses extends Component {
                             </button>
 
                         <button onClick={this.toggleDetails.bind(this)} className={boxClassHide.join('test btn btn-red ')}>Nee</button>
-                        <button className={boxClassHide.join('test btn btn-orange ')} onClick={this.toggleDetails.bind(this)}> Ik wil nog wat wijzigen</button>
+                        <button className={boxClassHide.join('test btn btn-orange ')} onClick={this.toggleDetails.bind(this)}> 1 stap terug</button>
                     </form> 
                 </div>
                 < Modal2 

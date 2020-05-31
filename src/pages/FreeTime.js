@@ -21,7 +21,7 @@ class FreeTime extends Component {
                     addClass=""/>
             <div className="container overview-page">
                 <MoneyBlock
-                    timeDate="Nodig voor deze"
+                    timeDate="Wat heb ik uit te geven voor deze"
                     boldText="week"
                     toSpend={moneyToSpend}
                     />

@@ -78,6 +78,7 @@ class ConfirmExpenses extends Component {
                     addClass=""/> 
 
                     <div className={boxFirstClassSee.join('test container confirm-show-pink-list ')}>
+
                     <div className="row items">
                         <PinkItemsList2 
                             id_item="brood"
@@ -108,15 +109,16 @@ class ConfirmExpenses extends Component {
                     <form onSubmit={this.submitHandler} method="post" action="/overview">
                             <fieldset>
                                 <legend className={boxClassSee.join('test ')}>Welke uitgave hoort hierbij?</legend>
-                                <legend className={boxClassHide.join('test ')}>Klopt de datum en het uitgegeven bedrag?</legend>
-                                <select className="custom-select" id="options">
+                                <legend className={boxClassHide.join('test ')}>Klopt de datum en het uitgegeven bedrag die je hebt gekozen?</legend>
+                                <select className={boxClassSee.join('test custom-select ')} id="options">
                                     <option value="0">Kies datum en het uitgegeven bedrag</option>
                                     <option value="1">{date} Uitgave: € 1.50</option>
                                 </select>
                             </fieldset>
-                            <fieldset className="image-send">
-                                <label >Voeg een foto toe als bevestiging</label>
-                                <input type="file" accept="image/*" required/>
+                            <fieldset className={boxClassSee.join('test image-send ')}>
+                                <label >Voeg een foto van je bon toe als bevestiging
+                                    <input type="file" accept="image/*" required/>
+                                </label>
                             </fieldset>
 
                             <button 
@@ -135,7 +137,7 @@ class ConfirmExpenses extends Component {
                             </button>
 
                         <button onClick={this.toggleDetails.bind(this)} className={boxClassHide.join('test btn btn-red ')}>Nee</button>
-                        <button className={boxClassHide.join('test btn btn-orange ')} onClick={this.toggleDetails.bind(this)}> Ik wil nog wat wijzigen</button>
+                        <button className={boxClassHide.join('test btn btn-orange ')} onClick={this.toggleDetails.bind(this)}>1 stap terug</button>
                     </form> 
                 </div>
                 < Modal2 

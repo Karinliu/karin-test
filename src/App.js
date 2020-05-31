@@ -15,7 +15,7 @@ function App() {
           <Route path='/NogUitgeven' component={ExtraExpenses}/>
           <Route path='/Uitgegeven' component={AllExpenses}/>
           <Route path='/Toevoegen' component={Add}/>
-          <Route path='/Help' component={Help}/>
+          <Route path='/Support' component={Help}/>
           <Route path='/BoodschappenToevoegen' component={GroceriesAdd}/>
           <Route path='/Boodschappen' component={Groceries}/>
           <Route path='/Kleding' component={Clothes}/>

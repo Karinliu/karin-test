@@ -143,7 +143,7 @@ class FreeTimeAdd extends Component {
                 textDate="week"
                 textEnd="te besteden"
                 toSpend={moneyToSpend} />
-            <div className={boxClassSee.join('container pink-list clothes-page ')}>
+            <div className={boxClassSee.join('test container pink-list clothes-page ')}>
                 <Title classes="header-title"/> 
                 
                 <TitleCategory title="Deze kledingstukken wil ik gaan halen"/>
@@ -161,7 +161,7 @@ class FreeTimeAdd extends Component {
                 </form>
             </div>
 
-            <div className={boxClassHide.join('container section-page-two ')}>
+            <div className={boxClassHide.join('test container section-page-two ')}>
                 <div className="row">
                     {newItemsList}
                 </div>

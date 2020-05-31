@@ -15,7 +15,7 @@ class Chat extends Component {
         return (
         	 <>
             <Header text="Terug"
-                    textLink ="/Help"/>
+                    textLink ="/Support"/>
             <div className="container pink-list list-help-page">
               <Title classes="header-title" text="Chatten"/> 
               <TitleCategory title="Open"/>

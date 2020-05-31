@@ -474,7 +474,7 @@ class GroceriesAdd extends Component {
             textDate="hou ik over"
             textEnd="voor boodschappen"
             toSpend={moneyToSpend} />
-            <div className={boxClassSee.join('container pink-list grocery-list ')}>
+            <div className={boxClassSee.join('test container pink-list grocery-list ')}>
                 <Title classes="header-title"/> 
                 
                 {titleCategory[0]}
@@ -483,42 +483,42 @@ class GroceriesAdd extends Component {
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container pink-list grocery-list ')}>
+            <div className={boxClassSee.join('test container pink-list grocery-list ')}>
                 {titleCategory[1]}
                 <div className="row item-list">
                     {items_2}
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container pink-list grocery-list ')}>                
+            <div className={boxClassSee.join('test container pink-list grocery-list ')}>                
                 {titleCategory[2]}
                 <div className="row item-list">
                     {items_3}
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container pink-list grocery-list ')}>
+            <div className={boxClassSee.join('test container pink-list grocery-list ')}>
                 {titleCategory[3]}
                 <div className="row item-list">
                     {items_4}
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container pink-list grocery-list ')}>
+            <div className={boxClassSee.join('test container pink-list grocery-list ')}>
                 {titleCategory[4]}
                 <div className="row item-list">
                     {items_5}
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container pink-list grocery-list ')}>
+            <div className={boxClassSee.join('test container pink-list grocery-list ')}>
                 {titleCategory[5]}
                 <div className="row item-list">
                     {items_6}
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container pink-list grocery-list ')}>
+            <div className={boxClassSee.join('test container pink-list grocery-list ')}>
                 {titleCategory[6]}
                 <div className="row item-list">
                     {items_7}
@@ -526,28 +526,28 @@ class GroceriesAdd extends Component {
             </div>
 
 
-            <div className={boxClassSee.join('container pink-list grocery-list ')}>
+            <div className={boxClassSee.join('test container pink-list grocery-list ')}>
                 {titleCategory[7]}
                 <div className="row item-list">
                     {items_8}
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container pink-list grocery-list ')}>
+            <div className={boxClassSee.join('test container pink-list grocery-list ')}>
                 {titleCategory[8]}
                 <div className="row item-list">
                     {items_9}
                 </div>
             </div>
 
-            <div className={boxClassSee.join('container btn-container ')}>
+            <div className={boxClassSee.join('test container btn-container ')}>
             <div className="row">
                 <div className="col col-md-10 col-lg-6">
                     <button onClick={this.toggleDetails.bind(this)} className="btn btn-pink plus-icon">Toevoegen</button>
                 </div>
             </div></div>
 
-            <div className={boxClassHide.join('container section-page-two section-page-two-grocery-one ')}>
+            <div className={boxClassHide.join('test container section-page-two section-page-two-grocery-one ')}>
             <div className="row option-block-see-items groceries-see-items">
                         {newItemsList_1}
                         {newItemsList_2}
@@ -561,7 +561,7 @@ class GroceriesAdd extends Component {
                 </div>
             </div>
 
-            <div className={boxClassHide.join('container section-page-two section-page-two-grocery-two ')}>
+            <div className={boxClassHide.join('test container section-page-two section-page-two-grocery-two ')}>
                 <div className="row option-block option-block-grocery">
                     <div className="col">
                         <p>Wil ik al deze items gaan halen?</p>

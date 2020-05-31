@@ -10,7 +10,7 @@ class Modal extends Component {
 	    <div className={this.props.addClass}>
 	    	<div className="popup-block">
 	    		<h2>Lijstje is afgevinkt</h2>
-	    		<Link to="/NogUitgeven" className="btn btn-pink ">Okay!</Link>
+	    		<Link to="/Overview" className="btn btn-pink ">Okay!</Link>
 	    	</div>
 	    </div>
       )

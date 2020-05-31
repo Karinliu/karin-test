@@ -30,103 +30,103 @@
     "data_vegetables": [
     {
         "title": "Aardappelen (2 kg)",
-        "price": "3.99",
+        "price": "3.69",
         "id_item": "1",
-        "image_link": "https://static-images.jumbo.com/product_images/77340ZK-2_720x720.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/44352.png?width=155"
     },
     {
         "title": "Zoete aardappel (1 kg)",
         "price": "3.29",
         "id_item": "2",
-        "image_link": "https://groentegroente.nl/wp-content/uploads/Zoete-aardappel-2-S-D-698.jpg"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/45782.png?width=155"
     },
     {
-        "title": "Avocado (per stuk)",
-        "price": "1.35",
+        "title": "Avocado (2 stuks)",
+        "price": "2.79",
         "id_item": "3",
-        "image_link": "https://pngimg.com/uploads/avocado/avocado_PNG15489.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/45331.png?width=155"
     },
     {
         "title": "Brocolli (per stuk)",
-        "price": "1.39",
+        "price": "1.49",
         "id_item": "4",
-        "image_link": "https://pluspng.com/img-png/broccoli-hd-png-isolated-broccoli-vegetables-healthy-food-green-795.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/41408.png?width=155"
     },
     {
         "title": "Bloemkool",
-        "price": "2.99",
+        "price": "3.29",
         "id_item": "5",
-        "image_link": "https://www.deframbozenboerderij.nl/image/cache/catalog/Producten/bloemkool-500x500.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/41394.png?width=155"
     },
     {
         "title": "Komkommer 1 stuk",
         "price": "0.79",
         "id_item": "6",
-        "image_link": "https://pngimage.net/wp-content/uploads/2018/06/komkommer-png-3.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/41718.png?width=155"
     },
     {
         "title": "Paprika per stuk",
         "price": "0.99",
         "id_item": "7",
-        "image_link": "https://lh3.googleusercontent.com/proxy/h67eaJj2TqGWX07dSLiEtlon2HEj6t1OO-i2Ju689QcnE9-c8tdfxsUkynfAaze2QTDuJAZ4hgJ7s5xLmsg4A5XjCdqnYT3T5U3h6uAIaaI7pxpsG6Veg2tfHITy4zlWBUAGjnEkz6HSE7kN0OU"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/42820.png?width=155"
     },
     {
         "title": "Kropsla",
         "price": "0.69",
         "id_item": "8",
-        "image_link": "https://www.limburgsmaaktnaarmeer.be/site/data/images/product/sla.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/41017.png?width=155"
     },
     {
         "title": "Tomaten 500 gram",
         "price": "1.59",
         "id_item": "9",
-        "image_link": "https://pngimg.com/uploads/tomato/tomato_PNG12567.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/43613.png?width=155"
     },
     {
         "title": "Uien 1 kilo",
-        "price": "0.99",
+        "price": "1.19",
         "id_item": "10",
-        "image_link": "https://pluspng.com/img-png/onion-png-brown-onion-png-image-1265.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/41547.png?width=155"
     },
     {
         "title": "Wortels 1 kilo",
         "price": "1.59",
         "id_item": "11",
-        "image_link": "https://pluspng.com/img-png/carrot-png-carrot-cutting-pieces-png-500.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/45462.png?width=155"
     },
     {
-        "title": "Appels per kilo",
+        "title": "Appels 1 kilo",
         "price": "1.99",
         "id_item": "12",
-        "image_link": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Single_apple.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/43028.png?width=155"
     },
     {
         "title": "Bananen 1 kilo",
         "price": "1.99",
         "id_item": "13",
-        "image_link": "https://i.pinimg.com/originals/39/ca/0e/39ca0e8f1bc2a9ed642dc3e4411802a8.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/44135.png?width=155"
     },
     {
         "title": "Zespri Kiwi Green",
         "price": "2.59",
         "id_item": "14",
-        "image_link": "https://pluspng.com/img-png/kiwi-png-kiwi-png-image-fruit-kiwi-png-pictures-download-png-image-2464.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/43818.png?width=155"
     },
     {
         "title": "Citroen 1 kilo",
         "price": "1.99",
         "id_item": "15",
-        "image_link": "https://pngimg.com/uploads/lemon/lemon_PNG25203.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/45128.png?width=155"
     }],
     "data_oil": [
     {
-        "title": "Olie",
-        "price": "1.19",
+        "title": "Zonnebloemolie 1 L",
+        "price": "1.29",
         "id_item": "16",
-        "image_link": "https://www.aldi.nl/content/dam/aldi/netherlands/aldi_merken/0801_01.png/_jcr_content/renditions/opt.1250w.png.res/1548160264474/opt.1250w.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/175911.png?width=155"
     },
     {
-        "title": "Olijfolie gewoon",
+        "title": "Olijfolie gewoon 250ml",
         "price": "2.69",
         "id_item": "17",
         "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/175893.png?width=155"
@@ -144,22 +144,16 @@
         "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/263009.png?width=155"
     },
     {
-        "title": "Yoghurt 1 kilo",
-        "price": "1.19",
-        "id_item": "20",
-        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/765102.png?width=155"
-    },
-    {
         "title": "Mayonaise",
         "price": "1.79",
         "id_item": "21",
         "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/164909.png?width=155"
     },
     {
-        "title": "Ketchup",
+        "title": "Heinz ketchup",
         "price": "1.69",
         "id_item": "22",
-        "image_link": "https://pngimg.com/uploads/ketchup/ketchup_PNG21.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/370750.png?width=155"
     },
     {
         "title": "Mosterd",
@@ -199,20 +193,73 @@
     }],
     "data_meat_fish": [
     {
-        "title": "Vlees 300 gram",
-        "price": "2.49",
+        "title": "Rundergehakt 500 gram",
+        "price": "3.89",
         "id_item": "29",
-        "image_link": "https://www.limburgsmaaktnaarmeer.be/site/data/images/product/thumb_gehakt.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/885264.png?width=155"
     },
     {
-        "title": "Vis 350 gram",
-        "price": "3.99",
+        "title": "Half om half gehakt 500 gram",
+        "price": "3.69",
         "id_item": "30",
-        "image_link": "https://static.ah.nl/image-optimization/static/product/AHI_43545238303135343132_1_200x200_JPG.JPG?options=399,q85"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/884384.png?width=155"
+    },
+    {
+        "title": "Kipfilet 300 gram",
+        "price": "2.90",
+        "id_item": "71",
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/807372.png?width=155"
+    },
+    {
+        "title": "Runderschenkel 250 gram",
+        "price": "2.49",
+        "id_item": "72",
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/886918.png?width=155"
+    },
+    {
+        "title": "Bieflappen 250 gram",
+        "price": "4.74",
+        "id_item": "73",
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/886918.png?width=155"
+    },{
+        "title": "Speklapjes 250 gram",
+        "price": "2.24",
+        "id_item": "75",
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/885080.png?width=155"
+    },{
+        "title": "Hamlappen 500 gram",
+        "price": "5.24",
+        "id_item": "76",
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/882912.png?width=155"
+    },{
+        "title": "Varkensfiletlapjes 250 gram",
+        "price": "3.24",
+        "id_item": "77",
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/882940.png?width=155"
+    },{
+        "title": "Gerookte zalmfilet 200 gram",
+        "price": "4.75",
+        "id_item": "78",
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/472501.png?width=155"
+    },{
+        "title": "Gerookte Forelfilet 125 g",
+        "price": "2.19",
+        "id_item": "79",
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/472130.png?width=155"
+    },{
+        "title": "Kabeljauwfilet 260 gram",
+        "price": "5.99",
+        "id_item": "80",
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/472141.png?width=155"
+    },{
+        "title": "Zalmfilet 175 gram (zonder huid)",
+        "price": "4.99",
+        "id_item": "81",
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/472498.png?width=155"
     },
     {
         "title": "Gerookte kipfilet",
-        "price": "2.29",
+        "price": "3,69",
         "id_item": "31",
         "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/351645.png?width=155"
     },
@@ -230,16 +277,31 @@
     }],
     "data_grain": [
     {
-        "title": "Brood",
-        "price": "1.22",
+        "title": "Brood volkoren heel",
+        "price": "2.15",
         "id_item": "34",
-        "image_link": "https://sgorun.nl/wp-content/uploads/2019/06/Natuurlijk-Brood-Natuurlijk-volkoren-brood-1-V-1000x720.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/632911.png?width=155"
+    },{
+        "title": "Brood tarwe heel",
+        "price": "1.99",
+        "id_item": "82",
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/633624.png?width=155"
+    },{
+        "title": "Brood meergranen heel",
+        "price": "2.15",
+        "id_item": "83",
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/633207.png?width=155"
+    },{
+        "title": "Brood Wit",
+        "price": "1.85",
+        "id_item": "84",
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/633535.png?width=155"
     },
     {
         "title": "Zilvervliesrijst 1 kilo",
         "price": "1.43",
         "id_item": "35",
-        "image_link": "https://favorflav.com/images/shutterstock_1100571566-1-916x458.jpg"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/168791.png?width=155"
     },
     {
         "title": "Spaghetti 500 gram",
@@ -254,20 +316,20 @@
         "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/134710.png?width=155"
     },
     {
-        "title": "Gewoon Macaroni 1 kilo",
-        "price": "1.94",
+        "title": "Macaroni 1 kilo",
+        "price": "0.94",
         "id_item": "38",
-        "image_link": "https://dg3w27tmpqz1r.cloudfront.net/artikelen/634_1_359892_637171102311973523.png?width=500&height=500&mode=crop"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/153878.png?width=155"
     },
     {
         "title": "Tarwebloem",
-        "price": "0.50",
+        "price": "0.49",
         "id_item": "39",
         "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/162045.png?width=155"
     },
     {
         "title": "Patentbloem",
-        "price": "0.50",
+        "price": "0.66",
         "id_item": "40",
         "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/162047.png?width=155"
     },
@@ -279,10 +341,10 @@
     }],
     "data_drinks": [
     {
-        "title": "Melk 1,5 Liter",
-        "price": "1.45",
+        "title": "Melk 1 Liter",
+        "price": "1.25",
         "id_item": "42",
-        "image_link": "https://webcomicms.net/sites/default/files/clipart/171971/milk-png-transparent-images-171971-135652.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/294031.png?width=155"
     },
     {
         "title": "Thee Pickwick",
@@ -297,13 +359,13 @@
         "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/101095.png?width=155"
     },
     {
-        "title": "Frisdrank",
-        "price": "5.99",
+        "title": "Frisdrank divers",
+        "price": "1.85",
         "id_item": "45",
-        "image_link": "https://pluspng.com/img-png/coca-cola-png-clipart-png-image-2000.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/237034.png?width=155"
     },
     {
-        "title": "Bier (Grolsch)",
+        "title": "Bier (Grolsch) 6x50cl",
         "price": "6.99",
         "id_item": "46",
         "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/235415.png?width=155"
@@ -318,13 +380,13 @@
         "title": "Wijn",
         "price": "5.99",
         "id_item": "48",
-        "image_link": "https://static.ah.nl/image-optimization/static/product/AHI_43545239363530323738_1_200x200_JPG.JPG?options=399,q85"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/335070.png?width=155"
     },
     {
-        "title": "Appelsientje",
-        "price": "2.55",
+        "title": "Appelsientje 1L",
+        "price": "1.59",
         "id_item": "49",
-        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/240248.png?width=155"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/240012.png?width=155"
     }],
     "data_huishoudelijk": [
     {
@@ -384,7 +446,7 @@
     "data_snacks": [
     {
         "title": "Chips lays 45gram",
-        "price": ".69",
+        "price": "1.69",
         "id_item": "59",
         "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/228648.png?width=155"
     },
@@ -395,16 +457,16 @@
         "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/186339.png?width=155"
     },
     {
-        "title": "Koeken Diverse",
+        "title": "Koeken Divers",
         "price": "1.59",
         "id_item": "61",
         "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/131544.png?width=155"
     },
     {
-        "title": "Noten 200 gram",
-        "price": "2.39",
+        "title": "Noten 250 gram",
+        "price": "2.59",
         "id_item": "62",
-        "image_link": "https://pngimage.net/wp-content/uploads/2018/06/mixed-nuts-png-5.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/232103.png?width=155"
     }],
     "data_beleg": [
     {
@@ -420,6 +482,12 @@
         "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/114759.png?width=155"
     },
     {
+        "title": "Yoghurt 1 kilo",
+        "price": "1.19",
+        "id_item": "20",
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/765102.png?width=155"
+    },
+    {
         "title": "Slagroom bus",
         "price": "1.15",
         "id_item": "65",
@@ -433,9 +501,9 @@
     },
     {
         "title": "Eieren 10 stuks",
-        "price": "1.63",
+        "price": "2.99",
         "id_item": "67",
-        "image_link": "https://www.freepnglogos.com/uploads/egg-png/download-egg-png-transparent-image-and-clipart-33.png"
+        "image_link": "https://webwinkel.poiesz-supermarkten.nl/artikelen/225347.png?width=155"
     },
     {
         "title": "Calve pindakaas",
@@ -576,45 +644,10 @@
         "image_link": "https://pluspng.com/img-png/free-png-plus-sign-plus-icon-512.png"
     }],
     "data_price": [
-    {
-        "price": "50.00",
-        "id_item": "50",
-        "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/50-Euro.svg/1200px-50-Euro.svg.png"
-    },
-    {
-        "price": "20.00",
-        "id_item": "20",
-        "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/20-Euro.svg/1200px-20-Euro.svg.png"
-    },
-    {
-        "price": "10.00",
-        "id_item": "10",
-        "image_link": "https://upload.wikimedia.org/wikipedia/commons/8/88/10_Euro.Recto.printcode_place.png"
-    },
-    {
-        "price": "5.00",
-        "id_item": "5",
-        "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/5-Euro.svg/1200px-5-Euro.svg.png"
-    },
-    {
-        "price": "2.00",
-        "id_item": "2",
-        "image_link": "https://www.munthuis.be/images/stories/sn/verdrag-van-rome/50-jaar-verdrag-Rome-Herdenkingseuro-achterzijde.png"
-    },
-    {
-        "price": "1.00",
-        "id_item": "1",
-        "image_link": "https://www.sum.nl/wp-content/uploads/2020/02/images_A_Illustraties_euro-145386_1280.png"
-    },
-    {
-        "price": "0.50",
-        "id_item": "0_50",
-        "image_link": "https://www.knijff.nl/wp-content/uploads/2016/01/50cent.png"
-    },
-    {
-        "price": "0.20",
-        "id_item": "0_20",
-        "image_link": "https://www.pngmart.com/files/3/Euro-Coin-PNG-Transparent-Image.png"
+        {
+        "price": "0.05",
+        "id_item": "0_10",
+        "image_link": "https://touchcoins.moneymuseum.com/coins_media/Republic-of-Greece-5-Euro-Cent-2002/1989/reverse.png"
     },
     {
         "price": "0.10",
@@ -622,8 +655,43 @@
         "image_link": "https://i.ya-webdesign.com/images/euro-coins-png-1.png"
     },
     {
-        "price": "0.05",
-        "id_item": "0_10",
-        "image_link": "https://touchcoins.moneymuseum.com/coins_media/Republic-of-Greece-5-Euro-Cent-2002/1989/reverse.png"
+        "price": "0.20",
+        "id_item": "0_20",
+        "image_link": "https://touchcoins.moneymuseum.com/coins_media/2009/reverse.png"
+    },
+    {
+        "price": "0.50",
+        "id_item": "0_50",
+        "image_link": "https://www.knijff.nl/wp-content/uploads/2016/01/50cent.png"
+    },
+        {
+        "price": "1.00",
+        "id_item": "1",
+        "image_link": "https://pngimage.net/wp-content/uploads/2018/06/piece-1-euro-png-4.png"
+    },
+        {
+        "price": "2.00",
+        "id_item": "2",
+        "image_link": "https://www.pngkey.com/png/full/980-9800496_2-euro-coin-european-union-flag-2-euro.png"
+    },
+        {
+        "price": "5.00",
+        "id_item": "5",
+        "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/5-Euro.svg/1200px-5-Euro.svg.png"
+    },
+        {
+        "price": "10.00",
+        "id_item": "10",
+        "image_link": "https://upload.wikimedia.org/wikipedia/commons/8/88/10_Euro.Recto.printcode_place.png"
+    },
+        {
+        "price": "20.00",
+        "id_item": "20",
+        "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/20-Euro.svg/1200px-20-Euro.svg.png"
+    },
+    {
+        "price": "50.00",
+        "id_item": "50",
+        "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/50-Euro.svg/1200px-50-Euro.svg.png"
     }]
 }

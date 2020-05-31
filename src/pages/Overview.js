@@ -78,7 +78,7 @@ class Overview extends Component {
                     <nav className="sub-header">
                         <ul>
                             <li><a href="#slide-1" >Mijn lijsten</a></li>
-                            <li><a href="#slide-2" className="selected">Mijn profiel</a></li>
+                            <li><a href="#slide-2" className="selected">Mijn rekening</a></li>
                             <li><a href="#slide-3">Uitgaven</a></li>                      
                         </ul>
                     </nav>
@@ -101,7 +101,7 @@ class Overview extends Component {
                             </div>
                             <div className="piggy">
                                 <div class="piggy-body">
-                                    <p>Totaal gespaard <br /> € 0,-</p>
+                                    <p>Huh? Je hebt nog niets gespaard!</p>
                                     <div className="leg-1"></div>
                                     <div className="leg-2"></div>
                                     <div className="nose"></div>
@@ -126,7 +126,7 @@ class Overview extends Component {
                     <nav className="sub-header">
                         <ul>
                             <li><a href="#slide-1" className="selected">Mijn lijsten</a></li>
-                            <li><a href="#slide-2">Mijn profiel</a></li>
+                            <li><a href="#slide-2">Mijn rekening</a></li>
                             <li><a href="#slide-3">Uitgaven</a></li>                                   
                         </ul>
                     </nav>
@@ -135,7 +135,7 @@ class Overview extends Component {
                     boldText="halen"/>
         
                         <label> 
-                            <h2 className="title-overview"><span><img src={todo} alt="todo"/></span>Bekijk mijn gemaakte lijstjes!</h2>
+                            <h2 className="title-overview">Bekijk mijn gemaakte lijstjes!</h2>
                             {extraExpensesItems}
                               
                         </label>
@@ -149,7 +149,7 @@ class Overview extends Component {
                     <nav className="sub-header">
                         <ul>
                             <li><a href="#slide-1" >Mijn lijsten</a></li>
-                            <li><a href="#slide-2">Mijn profiel</a></li>
+                            <li><a href="#slide-2">Mijn rekening</a></li>
                             <li><a href="#slide-3" className="selected">Uitgaven</a></li>                                      
                         </ul>
                     </nav>
