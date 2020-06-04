@@ -45,7 +45,7 @@ body,
   #root .login-header:after {
     content: " ";
     position: absolute;
-    bottom: -10em;
+    bottom: -9.9em;
     z-index: -1;
     border-top: 10em solid #DA106C;
     border-right: 24.5em solid transparent; }
@@ -90,7 +90,7 @@ body,
   margin: auto;
   background-color: rgba(255, 255, 255, 0.6); }
   #root .modal .popup-block {
-    height: 14em;
+    height: 15em;
     background-color: #fff;
     margin: 1.5em auto;
     display: block;
@@ -1886,7 +1886,7 @@ body,
     #root .money-block p:first-child {
       max-width: 90%; }
   #root .section-page-two .modal .groceries-modal {
-    height: 16em; }
+    height: 14.5em; }
   #root .saving-page .modal .popup-block {
     height: 12em; }
   #root .modal a {

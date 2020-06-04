@@ -83,7 +83,7 @@ body,
         &:after {
             content: " ";
             position: absolute;
-            bottom: -10em;
+            bottom: -9.9em;
             z-index: -1;
             border-top: 10em solid #DA106C;
             border-right: 24.5em solid transparent;
@@ -142,7 +142,7 @@ body,
         background-color: $whiteLight;
 
         .popup-block {
-            height: 14em;
+            height: 15em;
             background-color: $white;
             margin: 1.5em auto;
             display: block;
@@ -3009,7 +3009,7 @@ body,
         .section-page-two {
             .modal {
                 .groceries-modal {
-                    height: 16em;
+                    height: 14.5em;
                 }
             }
         }
